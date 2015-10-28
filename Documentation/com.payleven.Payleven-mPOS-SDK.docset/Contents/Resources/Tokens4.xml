@@ -229,6 +229,78 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setTerminalId:</TokenIdentifier>
+			<Abstract type="html">Terminal Identifier</Abstract>
+			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/terminalId</TokenIdentifier>
+			<Abstract type="html">Terminal Identifier</Abstract>
+			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResult/terminalId</TokenIdentifier>
+			<Abstract type="html">Terminal Identifier</Abstract>
+			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *terminalId</Declaration>
+			
+			
+			<Anchor>//api/name/terminalId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setMerchantId:</TokenIdentifier>
+			<Abstract type="html">Merchant Identifier</Abstract>
+			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *merchantId</Declaration>
+			
+			
+			<Anchor>//api/name/merchantId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/merchantId</TokenIdentifier>
+			<Abstract type="html">Merchant Identifier</Abstract>
+			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *merchantId</Declaration>
+			
+			
+			<Anchor>//api/name/merchantId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResult/merchantId</TokenIdentifier>
+			<Abstract type="html">Merchant Identifier</Abstract>
+			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *merchantId</Declaration>
+			
+			
+			<Anchor>//api/name/merchantId</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setReceiptGenerator:</TokenIdentifier>
 			<Abstract type="html">Receipt generator.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>

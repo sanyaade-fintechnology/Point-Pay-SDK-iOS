@@ -336,6 +336,78 @@
             <NodeRef refid="5"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setExpiryMonth:</TokenIdentifier>
+			<Abstract type="html">Card expiryMonth</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expiryMonth</Declaration>
+			
+			
+			<Anchor>//api/name/expiryMonth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/expiryMonth</TokenIdentifier>
+			<Abstract type="html">Card expiryMonth</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expiryMonth</Declaration>
+			
+			
+			<Anchor>//api/name/expiryMonth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/expiryMonth</TokenIdentifier>
+			<Abstract type="html">Card expiryMonth</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expiryMonth</Declaration>
+			
+			
+			<Anchor>//api/name/expiryMonth</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setExpiryYear:</TokenIdentifier>
+			<Abstract type="html">Card expiryYear</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expiryYear</Declaration>
+			
+			
+			<Anchor>//api/name/expiryYear</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/expiryYear</TokenIdentifier>
+			<Abstract type="html">Card expiryYear</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expiryYear</Declaration>
+			
+			
+			<Anchor>//api/name/expiryYear</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/expiryYear</TokenIdentifier>
+			<Abstract type="html">Card expiryYear</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger expiryYear</Declaration>
+			
+			
+			<Anchor>//api/name/expiryYear</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
         
         
 	</File>

@@ -4,7 +4,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentTask</TokenIdentifier>
-			<Abstract type="html">PLVPaymentTask instances are used to make payments.</Abstract>
+			<Abstract type="html">PLVPaymentTask instance is used to make payments.
+It contains a PLVPaymentRequest, PLVPaymentResult and PLVPaymentTaskDelegate.
+The delegate is a required delegate which needs the methods implement on
+adoption.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
             
 			
@@ -134,7 +137,9 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/cancel</TokenIdentifier>
-			<Abstract type="html">Cancels the payment task.</Abstract>
+			<Abstract type="html">Cancels the payment task. Calling this method doesn&apos;t cancel the task immediately.
+When the task finishes or fails after the cancellation, the corresponding delegate methods will be called.
+The result will be nil afterwards.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
 			
 			<Declaration>- (void)cancel</Declaration>

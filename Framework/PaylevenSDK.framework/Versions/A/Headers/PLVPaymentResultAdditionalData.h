@@ -40,5 +40,13 @@
 
 /** Card brand name. */
 @property(nonatomic, readonly, copy) NSString *cardBrandName;
+/**
+ * Card expiryMonth
+ */
+@property(nonatomic, readonly) NSInteger expiryMonth;
+/**
+ * Card expiryYear
+ */
+@property(nonatomic, readonly) NSInteger expiryYear;
 
 @end

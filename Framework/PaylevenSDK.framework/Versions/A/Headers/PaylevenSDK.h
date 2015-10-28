@@ -15,3 +15,7 @@
 #import <PaylevenSDK/PLVPaymentResult.h>
 #import <PaylevenSDK/PLVPaymentTask.h>
 #import <PaylevenSDK/PLVReceiptGenerator.h>
+#import <PaylevenSDK/PLVRefundRequest.h>
+#import <PaylevenSDK/PLVRefundTask.h>
+#import <PaylevenSDK/PLVRefundResult.h>
+#import <PaylevenSDK/PLVRefund.h>

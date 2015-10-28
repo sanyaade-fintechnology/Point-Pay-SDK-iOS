@@ -4,7 +4,20 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PLVPayleven</TokenIdentifier>
-			<Abstract type="html">PLVPayleven class is the central point of Payleven SDK.</Abstract>
+			<Abstract type="html">PLVPayleven class is the central point of Payleven SDK. It holds most of the methods need for payment.
+Steps to make a payment:
+
+1. Login using Payleven username and password.
+
+2. Pair the payment device via the Bluetooth.
+
+3. Get the PLVDevice object from the devices property.
+
+4. Check if the device is ready for payments, and if not, call the perparation method.
+
+5. Create a payment task using paymentTaskWithRequest:device:delegate:.
+
+6. Start the payment task.</Abstract>
 			<DeclaredIn>PLVPayleven.h</DeclaredIn>
             
 			
@@ -19,7 +32,7 @@
 			
 			<Declaration>+ (NSString *)SDKVersion</Declaration>
 			
-			<ReturnValue><Abstract type="html">String with the version of the sdk (i.e. &apos;1.0&apos;)</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">String with the version of the sdk (i.e. &apos;1.1.0&apos;)</Abstract></ReturnValue>
 			<Anchor>//api/name/SDKVersion</Anchor>
             <NodeRef refid="2"/>
 		</Token>
@@ -62,7 +75,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPayleven/setDevices:</TokenIdentifier>
-			<Abstract type="html">The array of currently available devices represented by PLVDevice objects. KVO-observable.</Abstract>
+			<Abstract type="html">The array of currently available devices represented by PLVDevice objects. KVO-observable.
+  </Abstract>
 			<DeclaredIn>PLVPayleven.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, strong) NSArray *devices</Declaration>
@@ -74,7 +88,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPayleven/devices</TokenIdentifier>
-			<Abstract type="html">The array of currently available devices represented by PLVDevice objects. KVO-observable.</Abstract>
+			<Abstract type="html">The array of currently available devices represented by PLVDevice objects. KVO-observable.
+  </Abstract>
 			<DeclaredIn>PLVPayleven.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, strong) NSArray *devices</Declaration>
@@ -86,7 +101,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPayleven/devices</TokenIdentifier>
-			<Abstract type="html">The array of currently available devices represented by PLVDevice objects. KVO-observable.</Abstract>
+			<Abstract type="html">The array of currently available devices represented by PLVDevice objects. KVO-observable.
+  </Abstract>
 			<DeclaredIn>PLVPayleven.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, strong) NSArray *devices</Declaration>
@@ -162,6 +178,28 @@ parameter error: An NSError indicating the error during the logout. nil indicate
 			<ReturnValue><Abstract type="html">A newly created payment task or nil if the receiver is not logged in or the device is not ready. Run
 [PLVPaymentTask start] to start the payment process.</Abstract></ReturnValue>
 			<Anchor>//api/name/paymentTaskWithRequest:device:delegate:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPayleven/refundTaskWithRequest:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a refund task.</Abstract>
+			<DeclaredIn>PLVPayleven.h</DeclaredIn>
+			
+			<Declaration>- (PLVRefundTask *)refundTaskWithRequest:(PLVRefundRequest *)request completionHandler:(void ( ^ ) ( PLVRefundResult *result , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">Refund request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block called when the refund request finishes or an error occurs. The block takes two
+parameters. result: The refund result. error: An NSError indicating and error when making a refund.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly created refund task or nil if the receiver is not logged in. Run [PLVRefundTask start] to start
+the refund task.</Abstract></ReturnValue>
+			<Anchor>//api/name/refundTaskWithRequest:completionHandler:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

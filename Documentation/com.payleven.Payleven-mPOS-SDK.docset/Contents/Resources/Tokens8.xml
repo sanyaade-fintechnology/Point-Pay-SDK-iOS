@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/PLVPaymentTaskDelegate.html">
+	<File path="Classes/PLVRefund.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/PLVPaymentTaskDelegate</TokenIdentifier>
-			<Abstract type="html">The delegate of a PLVPaymentTask must adopt PLVPaymentTaskDelegate protocol.</Abstract>
-			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVRefund</TokenIdentifier>
+			<Abstract type="html">PLVRefund represents a refund object. That contans the merchantIdentifier which is the merchant Id
+refundIdentifier which represents the refund Id provided in PLVRefundRequest. The refundedAmount is a
+NSDecimalNumber of the refundedAmount. The paymentAmount is an NSDecimalNumber that holds the original
+Payment given in the PLVPaymentRequest at payment time. NSDecimalNumber remainingAmount is residual amount
+in case of partial refunds. The currency is Three-letter ISO 4217 currency code. For example, EUR. The
+refundDate represents the date of execution. The refundDescription represents the refund desc.
+  </Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
             
 			
 			<NodeRef refid="8"/>
@@ -13,61 +19,326 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PLVPaymentTaskDelegate/paymentTask:needsSignatureWithCompletionHandler:</TokenIdentifier>
-			<Abstract type="html">Called when a signature needs to be provided.</Abstract>
-			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setMerchantIdentifier:</TokenIdentifier>
+			<Abstract type="html">The merchant identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
 			
-			<Declaration>- (void)paymentTask:(PLVPaymentTask *)paymentTask needsSignatureWithCompletionHandler:(void ( ^ ) ( BOOL confirmed , CGImageRef image ))completionHandler</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>paymentTask</Name>
-					<Abstract type="html">Payment task that needs a signature.</Abstract>
-				</Parameter><Parameter>
-					<Name>completionHandler</Name>
-					<Abstract type="html">A handler that your delegate method must call. The block takes two parameters:
-confirmed A Boolean value indicating if the signature has been confirmed or denied by an attendant.
-image     Signature image. Must not be NULL.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSString *merchantIdentifier</Declaration>
 			
-			<Anchor>//api/name/paymentTask:needsSignatureWithCompletionHandler:</Anchor>
+			
+			<Anchor>//api/name/merchantIdentifier</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PLVPaymentTaskDelegate/paymentTaskDidFinish:</TokenIdentifier>
-			<Abstract type="html">Called when payment task finishes. Check the result property for the result.</Abstract>
-			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/merchantIdentifier</TokenIdentifier>
+			<Abstract type="html">The merchant identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
 			
-			<Declaration>- (void)paymentTaskDidFinish:(PLVPaymentTask *)paymentTask</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>paymentTask</Name>
-					<Abstract type="html">The finished payment task.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSString *merchantIdentifier</Declaration>
 			
-			<Anchor>//api/name/paymentTaskDidFinish:</Anchor>
+			
+			<Anchor>//api/name/merchantIdentifier</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/PLVPaymentTaskDelegate/paymentTask:didFailWithError:</TokenIdentifier>
-			<Abstract type="html">Called when payment task fails.</Abstract>
-			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/merchantIdentifier</TokenIdentifier>
+			<Abstract type="html">The merchant identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
 			
-			<Declaration>- (void)paymentTask:(PLVPaymentTask *)paymentTask didFailWithError:(NSError *)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>paymentTask</Name>
-					<Abstract type="html">The failed payment task.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">Error object containing information about the failure.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) NSString *merchantIdentifier</Declaration>
 			
-			<Anchor>//api/name/paymentTask:didFailWithError:</Anchor>
+			
+			<Anchor>//api/name/merchantIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setRefundIdentifier:</TokenIdentifier>
+			<Abstract type="html">The refund identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refundIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/refundIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/refundIdentifier</TokenIdentifier>
+			<Abstract type="html">The refund identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refundIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/refundIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/refundIdentifier</TokenIdentifier>
+			<Abstract type="html">The refund identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refundIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/refundIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setPaymentIdentifier:</TokenIdentifier>
+			<Abstract type="html">The payment identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *paymentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/paymentIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/paymentIdentifier</TokenIdentifier>
+			<Abstract type="html">The payment identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *paymentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/paymentIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/paymentIdentifier</TokenIdentifier>
+			<Abstract type="html">The payment identifier</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *paymentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/paymentIdentifier</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setRefundedAmount:</TokenIdentifier>
+			<Abstract type="html">The refunded amount.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *refundedAmount</Declaration>
+			
+			
+			<Anchor>//api/name/refundedAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/refundedAmount</TokenIdentifier>
+			<Abstract type="html">The refunded amount.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *refundedAmount</Declaration>
+			
+			
+			<Anchor>//api/name/refundedAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/refundedAmount</TokenIdentifier>
+			<Abstract type="html">The refunded amount.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *refundedAmount</Declaration>
+			
+			
+			<Anchor>//api/name/refundedAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setPaymentAmount:</TokenIdentifier>
+			<Abstract type="html">The original payment amount</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *paymentAmount</Declaration>
+			
+			
+			<Anchor>//api/name/paymentAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/paymentAmount</TokenIdentifier>
+			<Abstract type="html">The original payment amount</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *paymentAmount</Declaration>
+			
+			
+			<Anchor>//api/name/paymentAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/paymentAmount</TokenIdentifier>
+			<Abstract type="html">The original payment amount</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *paymentAmount</Declaration>
+			
+			
+			<Anchor>//api/name/paymentAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setRemainingAmount:</TokenIdentifier>
+			<Abstract type="html">The remaining amount</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *remainingAmount</Declaration>
+			
+			
+			<Anchor>//api/name/remainingAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/remainingAmount</TokenIdentifier>
+			<Abstract type="html">The remaining amount</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *remainingAmount</Declaration>
+			
+			
+			<Anchor>//api/name/remainingAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/remainingAmount</TokenIdentifier>
+			<Abstract type="html">The remaining amount</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDecimalNumber *remainingAmount</Declaration>
+			
+			
+			<Anchor>//api/name/remainingAmount</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setCurrency:</TokenIdentifier>
+			<Abstract type="html">The currency.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currency</Declaration>
+			
+			
+			<Anchor>//api/name/currency</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/currency</TokenIdentifier>
+			<Abstract type="html">The currency.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currency</Declaration>
+			
+			
+			<Anchor>//api/name/currency</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/currency</TokenIdentifier>
+			<Abstract type="html">The currency.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *currency</Declaration>
+			
+			
+			<Anchor>//api/name/currency</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setRefundDate:</TokenIdentifier>
+			<Abstract type="html">The refund date.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *refundDate</Declaration>
+			
+			
+			<Anchor>//api/name/refundDate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/refundDate</TokenIdentifier>
+			<Abstract type="html">The refund date.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *refundDate</Declaration>
+			
+			
+			<Anchor>//api/name/refundDate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/refundDate</TokenIdentifier>
+			<Abstract type="html">The refund date.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDate *refundDate</Declaration>
+			
+			
+			<Anchor>//api/name/refundDate</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setRefundDescription:</TokenIdentifier>
+			<Abstract type="html">The refund description.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refundDescription</Declaration>
+			
+			
+			<Anchor>//api/name/refundDescription</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/refundDescription</TokenIdentifier>
+			<Abstract type="html">The refund description.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refundDescription</Declaration>
+			
+			
+			<Anchor>//api/name/refundDescription</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefund/refundDescription</TokenIdentifier>
+			<Abstract type="html">The refund description.</Abstract>
+			<DeclaredIn>PLVRefund.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *refundDescription</Declaration>
+			
+			
+			<Anchor>//api/name/refundDescription</Anchor>
             <NodeRef refid="8"/>
 		</Token>
 		

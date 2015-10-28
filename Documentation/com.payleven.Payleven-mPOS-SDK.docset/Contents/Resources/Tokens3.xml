@@ -4,7 +4,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentRequest</TokenIdentifier>
-			<Abstract type="html">A payment request.</Abstract>
+			<Abstract type="html">PLVPaymentRequest is payment request instance that requires the identifier,
+amount, coordinate and currency.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
             
 			
@@ -50,7 +51,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setAmount:</TokenIdentifier>
-			<Abstract type="html">Payment amount.</Abstract>
+			<Abstract type="html">Payment amount. The value can be fractional, maximum two fraction digits are allowed.
+When creating NSDecimalNumber from NSString, don&apos;t forget to take the current locale and the decimal separator into account.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</Declaration>
@@ -62,7 +64,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/amount</TokenIdentifier>
-			<Abstract type="html">Payment amount.</Abstract>
+			<Abstract type="html">Payment amount. The value can be fractional, maximum two fraction digits are allowed.
+When creating NSDecimalNumber from NSString, don&apos;t forget to take the current locale and the decimal separator into account.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</Declaration>
@@ -74,7 +77,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentRequest/amount</TokenIdentifier>
-			<Abstract type="html">Payment amount.</Abstract>
+			<Abstract type="html">Payment amount. The value can be fractional, maximum two fraction digits are allowed.
+When creating NSDecimalNumber from NSString, don&apos;t forget to take the current locale and the decimal separator into account.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</Declaration>
@@ -169,8 +173,8 @@
 				</Parameter><Parameter>
 					<Name>amount</Name>
 					<Abstract type="html">Payment amount. The value can be fractional, maximum two fraction digits are allowed. When creating
-NSDecimalNumber from NSString, don&apos;t forget to take the current locale and the decimal separator
-into account.</Abstract>
+                NSDecimalNumber from NSString, don&apos;t forget to take the current locale and the decimal separator
+                into account.</Abstract>
 				</Parameter><Parameter>
 					<Name>currency</Name>
 					<Abstract type="html">Three-letter ISO 4217 currency code. For example, EUR.</Abstract>

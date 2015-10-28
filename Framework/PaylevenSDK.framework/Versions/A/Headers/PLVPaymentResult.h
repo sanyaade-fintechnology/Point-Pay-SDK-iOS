@@ -6,84 +6,131 @@
 //  Copyright (c) 2014 payleven Holding GmbH. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-
-/** Payment result state. */
+/** 
+ @brief Payment result state. Indicates the payment state as Approved, Declined or Cancelled
+ */
 typedef NS_ENUM(NSInteger, PLVPaymentResultState) {
     
-    /** Approved. */
+    /** 
+     Approved. 
+     */
     PLVPaymentResultStateApproved,
     
-    /** Declined. */
+    /** 
+     Declined. 
+     */
     PLVPaymentResultStateDeclined,
     
-    /** Cancelled. */
+    /** 
+     Cancelled. 
+     */
     PLVPaymentResultStateCancelled
 };
 
-/** POS entry mode constants. */
+/** 
+ @brief POS entry mode constants. Indicates point of sale type.
+ */
 typedef NS_ENUM(NSInteger, PLVPointOfSaleEntryMode) {
     
-    /** Unknown mode. */
+    /** 
+     Unknown mode. 
+     */
     PLVPointOfSaleEntryModeUnknown,
     
-    /** ICC (chip) mode. */
+    /** 
+     ICC (chip) mode. 
+     */
     PLVPointOfSaleEntryModeIntegratedCircuitCard,
     
-    /** Swipe mode. */
+    /** 
+     Swipe mode. 
+     */
     PLVPointOfSaleEntryModeMagneticStripeReader,
     
-    /** Manual mode. */
+    /** 
+     Manual mode. 
+     */
     PLVPointOfSaleEntryModePANKeyEntry
 };
 
-/** Cardholder verification method constants. */
+/** 
+ @brief Cardholder verification method constants.
+ */
 typedef NS_ENUM(NSInteger, PLVCardholderVerificationMethod) {
     
-    /** Could not detect CVM or CVM is unknown. */
+    /** 
+     Could not detect CVM or CVM is unknown. 
+     */
     PLVCardholderVerificationMethodUnknown,
     
-    /** No CVM required. */
+    /** 
+     No CVM required. 
+     */
     PLVCardholderVerificationMethodNone,
     
-    /** PIN verification. */
+    /** 
+     PIN verification. 
+     */
     PLVCardholderVerificationMethodPIN,
     
-    /** Signature verification. */
+    /** 
+     Signature verification. 
+     */
     PLVCardholderVerificationMethodSignature,
     
-    /** PIN and signature verification .*/
+    /** 
+     PIN and signature verification .
+     */
     PLVCardholderVerificationMethodPINSignature
 };
 
 @class PLVReceiptGenerator, PLVPaymentResultAdditionalData;
 
-/** PLVPaymentResult class represents payment results. */
+/** 
+ @brief PLVPaymentResult class represents payment results. 
+ */
 @interface PLVPaymentResult : NSObject
-
-/** Payment identifier. */
+/** 
+ Payment identifier. 
+ */
 @property(nonatomic, readonly, copy) NSString *identifier;
-
-/** Payment state. */
+/** 
+ Payment state. 
+ */
 @property(nonatomic, readonly, assign) PLVPaymentResultState state;
-
-/** Payment amount. */
+/** 
+ Payment amount. 
+ */
 @property(nonatomic, readonly, copy) NSDecimalNumber *amount;
-
-/** Payment currency. */
+/** 
+ Payment currency. 
+ */
 @property(nonatomic, readonly, copy) NSString *currency;
-
-/** Payment date. */
+/** 
+ Payment date. 
+ */
 @property(nonatomic, readonly, strong) NSDate *date;
-
-/** Signature image URL. */
+/** 
+ Signature image URL. 
+ */
 @property(nonatomic, readonly, strong) NSURL *signatureImageURL;
-
-/** Receipt generator. */
+/** 
+ Terminal Identifier 
+ */
+@property (nonatomic, readonly, copy) NSString *terminalId;
+/** 
+ Merchant Identifier 
+ */
+@property (nonatomic, readonly, copy) NSString *merchantId;
+/** 
+ Receipt generator. 
+ */
 @property(nonatomic, readonly, strong) PLVReceiptGenerator *receiptGenerator;
-
-/** Additional payment result data. */
+/** 
+ Additional payment result data. 
+ */
 @property(nonatomic, readonly, strong) PLVPaymentResultAdditionalData *additionalData;
 
 @end
