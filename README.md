@@ -29,12 +29,12 @@ The SDK is a static library which supports other platforms like Xamarin and is f
     * [Selecting a device in Objective-C](#selecting-a-device-in-objective-c)
     * [Boarding the device for payment in Objective-C](#boarding-the-device-for-payment-in-objective-c)
 * [Start payment](#start-payment)
-    * [Handle payment](#handle-payment)
-    * [Example of a card reader chip payment](#example-of-a-card-reader-chip-payment)
-    * [Example of a card reader swipe payment](#example-of-a-card-reader-swipe-payment)
+  * [Handle payment](#handle-payment)
+  * [Example of a card reader chip payment](#example-of-a-card-reader-chip-payment)
+  * [Example of a card reader swipe payment](#example-of-a-card-reader-swipe-payment)
 * [Refunds](#refunds)
-    * [Refund Prerequisites](#refund-prerequisites)
-    * [Handling refunds in Objective-C](#handling-refunds-in-objective-c)
+  * [Refund Prerequisites](#refund-prerequisites)
+  * [Handling refunds in Objective-C](#handling-refunds-in-objective-c)
 * [Documentation](#documentation)
 * [mPOS SDK Sample App](#mpos-sdk-sample-app)
 
@@ -144,7 +144,7 @@ Once a `PLVPayleven` instance is created you need to select the card reader for 
     });
  ```
   
-### Start payment
+#### Start payment
 Initialize the actual payment request. For security purposes you must provide the user's current location in the PaymentReuest.
 
  ```objective-c
@@ -240,7 +240,7 @@ ExpiryYear = 2017
 ExpiryMonth = 3
 ```
 
-### Refunds
+#### Refunds
 PLVRefundRequest is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. The SDK comes with a custom method that can be directly accessed from in the PLVPayleven.h file via the following method below:
 
 ```objective-c
