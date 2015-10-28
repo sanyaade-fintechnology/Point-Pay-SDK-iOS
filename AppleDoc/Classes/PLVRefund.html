@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PLVPaymentResult Class Reference</title>
+	<title>PLVRefund Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,25 +56,23 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/additionalData">additionalData</option>
-		
-		<option value="//api/name/amount">amount</option>
-		
 		<option value="//api/name/currency">currency</option>
 		
-		<option value="//api/name/date">date</option>
+		<option value="//api/name/merchantIdentifier">merchantIdentifier</option>
 		
-		<option value="//api/name/identifier">identifier</option>
+		<option value="//api/name/paymentAmount">paymentAmount</option>
 		
-		<option value="//api/name/merchantId">merchantId</option>
+		<option value="//api/name/paymentIdentifier">paymentIdentifier</option>
 		
-		<option value="//api/name/receiptGenerator">receiptGenerator</option>
+		<option value="//api/name/refundDate">refundDate</option>
 		
-		<option value="//api/name/signatureImageURL">signatureImageURL</option>
+		<option value="//api/name/refundDescription">refundDescription</option>
 		
-		<option value="//api/name/state">state</option>
+		<option value="//api/name/refundIdentifier">refundIdentifier</option>
 		
-		<option value="//api/name/terminalId">terminalId</option>
+		<option value="//api/name/refundedAmount">refundedAmount</option>
+		
+		<option value="//api/name/remainingAmount">remainingAmount</option>
 		
 	</optgroup>
 	
@@ -95,7 +93,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PLVPaymentResult Class Reference</h1>
+					<h1 class="title">PLVRefund Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -103,8 +101,11 @@
 	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>PLVPaymentResult.h</td>
+	<td>PLVRefund.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -124,8 +125,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/identifier" title="identifier"></a>
-	<h3 class="method-title"><code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+	<a name="//api/name/merchantIdentifier" title="merchantIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantIdentifier">&nbsp;&nbsp;merchantIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -135,12 +136,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment identifier.</p>
+				<p>The merchant identifier</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *identifier</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *merchantIdentifier</code></div>
 
 		    
 			
@@ -158,15 +159,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/state" title="state"></a>
-	<h3 class="method-title"><code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+	<a name="//api/name/refundIdentifier" title="refundIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refundIdentifier">&nbsp;&nbsp;refundIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -176,12 +177,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment state.</p>
+				<p>The refund identifier</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) PLVPaymentResultState state</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *refundIdentifier</code></div>
 
 		    
 			
@@ -199,15 +200,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/amount" title="amount"></a>
-	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+	<a name="//api/name/paymentIdentifier" title="paymentIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentIdentifier">&nbsp;&nbsp;paymentIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -217,12 +218,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment amount.</p>
+				<p>The payment identifier</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *paymentIdentifier</code></div>
 
 		    
 			
@@ -240,7 +241,130 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refundedAmount" title="refundedAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refundedAmount">&nbsp;&nbsp;refundedAmount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The refunded amount.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDecimalNumber *refundedAmount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentAmount" title="paymentAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentAmount">&nbsp;&nbsp;paymentAmount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The original payment amount</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDecimalNumber *paymentAmount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remainingAmount" title="remainingAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remainingAmount">&nbsp;&nbsp;remainingAmount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The remaining amount</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDecimalNumber *remainingAmount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
 			</div>
 			
 			
@@ -258,12 +382,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment currency.</p>
+				<p>The currency.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *currency</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *currency</code></div>
 
 		    
 			
@@ -281,15 +405,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/date" title="date"></a>
-	<h3 class="method-title"><code><a href="#//api/name/date">&nbsp;&nbsp;date</a></code>
+	<a name="//api/name/refundDate" title="refundDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refundDate">&nbsp;&nbsp;refundDate</a></code>
 </h3>
 
 	<div class="method-info">
@@ -299,12 +423,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment date.</p>
+				<p>The refund date.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDate *date</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDate *refundDate</code></div>
 
 		    
 			
@@ -322,15 +446,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/signatureImageURL" title="signatureImageURL"></a>
-	<h3 class="method-title"><code><a href="#//api/name/signatureImageURL">&nbsp;&nbsp;signatureImageURL</a></code>
+	<a name="//api/name/refundDescription" title="refundDescription"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refundDescription">&nbsp;&nbsp;refundDescription</a></code>
 </h3>
 
 	<div class="method-info">
@@ -340,12 +464,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Signature image URL.</p>
+				<p>The refund description.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSURL *signatureImageURL</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *refundDescription</code></div>
 
 		    
 			
@@ -363,171 +487,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/terminalId" title="terminalId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/terminalId">&nbsp;&nbsp;terminalId</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Terminal Identifier</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *terminalId</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/merchantId" title="merchantId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/merchantId">&nbsp;&nbsp;merchantId</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Merchant Identifier</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *merchantId</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/receiptGenerator" title="receiptGenerator"></a>
-	<h3 class="method-title"><code><a href="#//api/name/receiptGenerator">&nbsp;&nbsp;receiptGenerator</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Receipt generator.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) PLVReceiptGenerator *receiptGenerator</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/additionalData" title="additionalData"></a>
-	<h3 class="method-title"><code><a href="#//api/name/additionalData">&nbsp;&nbsp;additionalData</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Additional payment result data.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) PLVPaymentResultAdditionalData *additionalData</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+				<p><code class="declared-in-ref">PLVRefund.h</code></p>
 			</div>
 			
 			

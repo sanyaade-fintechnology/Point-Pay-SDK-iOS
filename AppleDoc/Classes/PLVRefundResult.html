@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PLVReceiptGenerator Class Reference</title>
+	<title>PLVRefundResult Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,15 +54,17 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:">- generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</option>
+		<option value="//api/name/receiptGenerator">receiptGenerator</option>
+		
+		<option value="//api/name/refund">refund</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -77,7 +79,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PLVReceiptGenerator Class Reference</h1>
+					<h1 class="title">PLVRefundResult Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -85,19 +87,16 @@
 	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>PLVReceiptGenerator.h</td>
+	<td>PLVRefundResult.h</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>PLVReceiptGenerator creates receipt images.</p>
-					</div>
 					
 					
 
@@ -112,8 +111,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:" title="generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:">&ndash;&nbsp;generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</a></code>
+	<a name="//api/name/refund" title="refund"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refund">&nbsp;&nbsp;refund</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,47 +122,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Generates the receipt image.</p>
+				<p><a href="../Classes/PLVRefund.html">PLVRefund</a> the refund object containing details for receipts.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)generateReceiptWithWidth:(CGFloat)<em>width</em> fontSize:(CGFloat)<em>fontSize</em> lineSpacing:(CGFloat)<em>lineSpacing</em> padding:(CGFloat)<em>padding</em> completionHandler:(void ( ^ ) ( CGImageRef receipt ))<em>completionHandler</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) PLVRefund *refund</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>width</code></th>
-						<td><p>Receipt image width.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>fontSize</code></th>
-						<td><p>Receipt font size.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>lineSpacing</code></th>
-						<td><p>Receipt text line spacing.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>padding</code></th>
-						<td><p>Receipt contents padding.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completionHandler</code></th>
-						<td><p>Block that is called when the receipt generation finishes. The block takes a single
-parameter <code>receipt</code>.</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -179,7 +145,48 @@ parameter <code>receipt</code>.</p></td>
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVReceiptGenerator.h</code></p>
+				<p><code class="declared-in-ref">PLVRefundResult.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receiptGenerator" title="receiptGenerator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receiptGenerator">&nbsp;&nbsp;receiptGenerator</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="../Classes/PLVReceiptGenerator.html">PLVReceiptGenerator</a> the receipt generator.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) PLVReceiptGenerator *receiptGenerator</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVRefundResult.h</code></p>
 			</div>
 			
 			

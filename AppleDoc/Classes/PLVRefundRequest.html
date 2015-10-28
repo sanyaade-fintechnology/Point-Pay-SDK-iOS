@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PLVPaymentRequest Class Reference</title>
+	<title>PLVRefundRequest Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -58,11 +58,13 @@
 		
 		<option value="//api/name/amount">amount</option>
 		
-		<option value="//api/name/coordinate">coordinate</option>
-		
 		<option value="//api/name/currency">currency</option>
 		
 		<option value="//api/name/identifier">identifier</option>
+		
+		<option value="//api/name/paymentIdentifier">paymentIdentifier</option>
+		
+		<option value="//api/name/refundDescription">refundDescription</option>
 		
 	</optgroup>
 	
@@ -72,7 +74,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/initWithIdentifier:amount:currency:coordinate:">- initWithIdentifier:amount:currency:coordinate:</option>
+		<option value="//api/name/initWithIdentifier:paymentIdentifier:amount:currency:refundDescription:">- initWithIdentifier:paymentIdentifier:amount:currency:refundDescription:</option>
 		
 	</optgroup>
 	
@@ -89,7 +91,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PLVPaymentRequest Class Reference</h1>
+					<h1 class="title">PLVRefundRequest Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -97,8 +99,11 @@
 	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>PLVPaymentRequest.h</td>
+	<td>PLVRefundRequest.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -129,12 +134,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment identifier.</p>
+				<p>Refund Identifier.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *identifier</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nonnull) NSString *identifier</code></div>
 
 		    
 			
@@ -143,6 +148,11 @@
 
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Used to identify the specific refund within a transaction</p>
+			</div>
 			
 
 			
@@ -152,7 +162,53 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
+				<p><code class="declared-in-ref">PLVRefundRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentIdentifier" title="paymentIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentIdentifier">&nbsp;&nbsp;paymentIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Payment Identifier.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nonnull) NSString *paymentIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The original payment <a href="#//api/name/identifier">identifier</a> from which refund could be deducted</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVRefundRequest.h</code></p>
 			</div>
 			
 			
@@ -170,13 +226,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment amount. The value can be fractional, maximum two fraction digits are allowed.
-When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator into account.</p>
+				<p>Refund Amount.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nonnull) NSDecimalNumber *amount</code></div>
 
 		    
 			
@@ -185,6 +240,14 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The value can be fractional, maximum two fraction digits are allowed.</p>
+
+<p>When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator
+into account.</p>
+			</div>
 			
 
 			
@@ -194,7 +257,7 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
+				<p><code class="declared-in-ref">PLVRefundRequest.h</code></p>
 			</div>
 			
 			
@@ -217,7 +280,7 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *currency</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, nonnull) NSString *currency</code></div>
 
 		    
 			
@@ -235,15 +298,15 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
+				<p><code class="declared-in-ref">PLVRefundRequest.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/coordinate" title="coordinate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/coordinate">&nbsp;&nbsp;coordinate</a></code>
+	<a name="//api/name/refundDescription" title="refundDescription"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refundDescription">&nbsp;&nbsp;refundDescription</a></code>
 </h3>
 
 	<div class="method-info">
@@ -253,12 +316,12 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Current device coordinate.</p>
+				<p>Refund Description</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) CLLocationCoordinate2D coordinate</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, nullable) NSString *refundDescription</code></div>
 
 		    
 			
@@ -267,6 +330,13 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Description that can be added by the client.</p>
+
+<p>The value is restricted to 140 characters</p>
+			</div>
 			
 
 			
@@ -276,15 +346,15 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
+				<p><code class="declared-in-ref">PLVRefundRequest.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initWithIdentifier:amount:currency:coordinate:" title="initWithIdentifier:amount:currency:coordinate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithIdentifier:amount:currency:coordinate:">&ndash;&nbsp;initWithIdentifier:amount:currency:coordinate:</a></code>
+	<a name="//api/name/initWithIdentifier:paymentIdentifier:amount:currency:refundDescription:" title="initWithIdentifier:paymentIdentifier:amount:currency:refundDescription:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithIdentifier:paymentIdentifier:amount:currency:refundDescription:">&ndash;&nbsp;initWithIdentifier:paymentIdentifier:amount:currency:refundDescription:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -294,12 +364,13 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initializes the receiver with the specified <a href="#//api/name/identifier">identifier</a>, <a href="#//api/name/amount">amount</a>, <a href="#//api/name/currency">currency</a>, and <a href="#//api/name/coordinate">coordinate</a>.</p>
+				<p>Initializer. With the specified <a href="#//api/name/identifier">identifier</a>, <a href="#//api/name/paymentIdentifier">paymentIdentifier</a>, <a href="#//api/name/amount">amount</a>, <a href="#//api/name/currency">currency</a> and <a href="#//api/name/refundDescription">refundDescription</a>
+<a href="#//api/name/refundDescription">refundDescription</a> could be nil and it is seen as optional in swift</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithIdentifier:(NSString *)<em>identifier</em> amount:(NSDecimalNumber *)<em>amount</em> currency:(NSString *)<em>currency</em> coordinate:(CLLocationCoordinate2D)<em>coordinate</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (nonnull instancetype)initWithIdentifier:(nonnull NSString *)<em>identifier</em> paymentIdentifier:(nonnull NSString *)<em>paymentIdentifier</em> amount:(nonnull NSDecimalNumber *)<em>amount</em> currency:(nonnull NSString *)<em>currency</em> refundDescription:(nullable NSString *)<em>refundDescription</em></code></div>
 
 		    
 			
@@ -309,14 +380,19 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>identifier</code></th>
-						<td><p>Payment <a href="#//api/name/identifier">identifier</a>.</p></td>
+						<td><p>Refund <a href="#//api/name/identifier">identifier</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>paymentIdentifier</code></th>
+						<td><p><a href="#//api/name/identifier">identifier</a>.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>amount</code></th>
 						<td><p>Payment <a href="#//api/name/amount">amount</a>. The value can be fractional, maximum two fraction digits are allowed. When creating
-                <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator
-                into account.</p></td>
+<code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator
+into account.</p></td>
 					</tr>
 				
 					<tr>
@@ -325,8 +401,8 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>coordinate</code></th>
-						<td><p>Current device <a href="#//api/name/coordinate">coordinate</a>.</p></td>
+						<th scope="row" class="argument-name"><code>refundDescription</code></th>
+						<td><p>a description that can be added by the client limited to 140 characters.</p></td>
 					</tr>
 				
 				</table>
@@ -346,7 +422,7 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
+				<p><code class="declared-in-ref">PLVRefundRequest.h</code></p>
 			</div>
 			
 			
