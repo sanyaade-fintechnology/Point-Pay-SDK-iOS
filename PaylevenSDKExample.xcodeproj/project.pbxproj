@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75B50F951BE24FC700121965 /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCB81BE22589009AB9E7 /* MyriadPro-Bold.otf */; };
+		75B50F961BE24FC700121965 /* MyriadPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCB91BE22589009AB9E7 /* MyriadPro-Light.otf */; };
+		75B50F971BE24FC700121965 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCBA1BE22589009AB9E7 /* MyriadPro-Regular.otf */; };
+		75B50F981BE24FC700121965 /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCBB1BE22589009AB9E7 /* MyriadPro-Semibold.otf */; };
 		75E9FCA71BE224C7009AB9E7 /* PSIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC941BE224C7009AB9E7 /* PSIdentifiers.m */; };
 		75E9FCA81BE224C7009AB9E7 /* PSSystemDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC961BE224C7009AB9E7 /* PSSystemDevice.m */; };
 		75E9FCA91BE224C7009AB9E7 /* PSOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC981BE224C7009AB9E7 /* PSOption.m */; };
@@ -494,6 +498,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B50F951BE24FC700121965 /* MyriadPro-Bold.otf in Resources */,
+				75B50F961BE24FC700121965 /* MyriadPro-Light.otf in Resources */,
+				75B50F971BE24FC700121965 /* MyriadPro-Regular.otf in Resources */,
+				75B50F981BE24FC700121965 /* MyriadPro-Semibold.otf in Resources */,
 				AA38D9491A1F950400FCF445 /* signature.png in Resources */,
 				AAB83D501A6D49C000951A81 /* AdyenToolkit.bundle in Resources */,
 				AA56130219ED338200F6C5E0 /* LaunchScreen.xib in Resources */,
