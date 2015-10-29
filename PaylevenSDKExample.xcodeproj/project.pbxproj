@@ -7,12 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75E9FCA71BE224C7009AB9E7 /* PSIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC941BE224C7009AB9E7 /* PSIdentifiers.m */; };
+		75E9FCA81BE224C7009AB9E7 /* PSSystemDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC961BE224C7009AB9E7 /* PSSystemDevice.m */; };
+		75E9FCA91BE224C7009AB9E7 /* PSOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC981BE224C7009AB9E7 /* PSOption.m */; };
+		75E9FCAA1BE224C7009AB9E7 /* PSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC9A1BE224C7009AB9E7 /* PSFormatter.m */; };
+		75E9FCAB1BE224C7009AB9E7 /* PSPriceDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC9C1BE224C7009AB9E7 /* PSPriceDecimal.m */; };
+		75E9FCAC1BE224C7009AB9E7 /* PSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FC9E1BE224C7009AB9E7 /* PSHomeTableViewCell.m */; };
+		75E9FCAD1BE224C7009AB9E7 /* PSTerminalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCA01BE224C7009AB9E7 /* PSTerminalTableViewCell.m */; };
+		75E9FCAE1BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCA21BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.m */; };
+		75E9FCAF1BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCA41BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.m */; };
+		75E9FCB01BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCA61BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.m */; };
+		75E9FCB21BE22510009AB9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCB11BE22510009AB9E7 /* Main.storyboard */; };
+		75E9FCB41BE22562009AB9E7 /* berlin.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCB31BE22562009AB9E7 /* berlin.gpx */; };
+		75E9FCB61BE2256B009AB9E7 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75E9FCB51BE2256B009AB9E7 /* Config.plist */; };
+		75E9FCC01BE225FA009AB9E7 /* PSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCBE1BE225FA009AB9E7 /* PSManager.m */; };
+		75E9FCC51BE22616009AB9E7 /* PSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCC41BE22616009AB9E7 /* PSCoreDataManager.m */; };
+		75E9FCCA1BE2262E009AB9E7 /* PSPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCC81BE2262E009AB9E7 /* PSPayment.m */; };
+		75E9FCD01BE2264F009AB9E7 /* PSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCCF1BE2264F009AB9E7 /* PSLocationManager.m */; };
+		75E9FCDD1BE2266B009AB9E7 /* PSHomeTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCD71BE2266B009AB9E7 /* PSHomeTableViewDelegate.m */; };
+		75E9FCDE1BE2266B009AB9E7 /* PSTerminalTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCD91BE2266B009AB9E7 /* PSTerminalTableViewDelegate.m */; };
+		75E9FCDF1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCDB1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.m */; };
+		75E9FCE71BE2267E009AB9E7 /* PSHomeTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCE21BE2267E009AB9E7 /* PSHomeTableViewDataSource.m */; };
+		75E9FCE81BE2267E009AB9E7 /* PSTerminalTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCE41BE2267E009AB9E7 /* PSTerminalTableViewDataSource.m */; };
+		75E9FCE91BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCE61BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.m */; };
+		75E9FD0B1BE2269B009AB9E7 /* PSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCEC1BE2269B009AB9E7 /* PSLoginViewController.m */; };
+		75E9FD0C1BE2269B009AB9E7 /* PSLoginProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCEE1BE2269B009AB9E7 /* PSLoginProcessViewController.m */; };
+		75E9FD0D1BE2269B009AB9E7 /* PSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCF01BE2269B009AB9E7 /* PSHomeViewController.m */; };
+		75E9FD0E1BE2269B009AB9E7 /* PSPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCF21BE2269B009AB9E7 /* PSPaymentViewController.m */; };
+		75E9FD0F1BE2269B009AB9E7 /* PSPaymentProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCF41BE2269B009AB9E7 /* PSPaymentProcessViewController.m */; };
+		75E9FD101BE2269B009AB9E7 /* PSPaymentResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCF61BE2269B009AB9E7 /* PSPaymentResultViewController.m */; };
+		75E9FD111BE2269B009AB9E7 /* PSReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCF81BE2269B009AB9E7 /* PSReceiptViewController.m */; };
+		75E9FD121BE2269B009AB9E7 /* PSLogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCFA1BE2269B009AB9E7 /* PSLogoutViewController.m */; };
+		75E9FD131BE2269B009AB9E7 /* PSTerminalMissingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCFC1BE2269B009AB9E7 /* PSTerminalMissingViewController.m */; };
+		75E9FD141BE2269B009AB9E7 /* PSTerminalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FCFE1BE2269B009AB9E7 /* PSTerminalTableViewController.m */; };
+		75E9FD151BE2269B009AB9E7 /* PSRefundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD001BE2269B009AB9E7 /* PSRefundViewController.m */; };
+		75E9FD161BE2269B009AB9E7 /* PSRefundResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD021BE2269B009AB9E7 /* PSRefundResultViewController.m */; };
+		75E9FD171BE2269B009AB9E7 /* PSRefundProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD041BE2269B009AB9E7 /* PSRefundProcessViewController.m */; };
+		75E9FD181BE2269B009AB9E7 /* PSLatestPaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD061BE2269B009AB9E7 /* PSLatestPaymentsViewController.m */; };
+		75E9FD191BE2269B009AB9E7 /* PSMissingPaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD081BE2269B009AB9E7 /* PSMissingPaymentsViewController.m */; };
+		75E9FD1A1BE2269B009AB9E7 /* PSSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD0A1BE2269B009AB9E7 /* PSSignViewController.m */; };
+		75E9FD211BE22DF8009AB9E7 /* PaylevenSDKExample.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 75E9FD201BE22DF8009AB9E7 /* PaylevenSDKExample.xcdatamodel */; };
 		AA38D9491A1F950400FCF445 /* signature.png in Resources */ = {isa = PBXBuildFile; fileRef = AA38D9481A1F950400FCF445 /* signature.png */; };
 		AA5612F419ED338200F6C5E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5612F319ED338200F6C5E0 /* main.m */; };
 		AA5612F719ED338200F6C5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5612F619ED338200F6C5E0 /* AppDelegate.m */; };
 		AA5612FF19ED338200F6C5E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5612FE19ED338200F6C5E0 /* Images.xcassets */; };
 		AA56130219ED338200F6C5E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA56130019ED338200F6C5E0 /* LaunchScreen.xib */; };
-		AA6449C719ED415600FAD24B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6449C619ED415600FAD24B /* LoginViewController.m */; };
 		AA6449D219ED685D00FAD24B /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D119ED685D00FAD24B /* ExternalAccessory.framework */; };
 		AA6449D819ED689C00FAD24B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D719ED689C00FAD24B /* SystemConfiguration.framework */; };
 		AA6449D919ED68A500FAD24B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D519ED687900FAD24B /* CoreLocation.framework */; };
@@ -29,6 +68,94 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75E9FC931BE224C7009AB9E7 /* PSIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSIdentifiers.h; sourceTree = "<group>"; };
+		75E9FC941BE224C7009AB9E7 /* PSIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSIdentifiers.m; sourceTree = "<group>"; };
+		75E9FC951BE224C7009AB9E7 /* PSSystemDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSystemDevice.h; sourceTree = "<group>"; };
+		75E9FC961BE224C7009AB9E7 /* PSSystemDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSystemDevice.m; sourceTree = "<group>"; };
+		75E9FC971BE224C7009AB9E7 /* PSOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOption.h; sourceTree = "<group>"; };
+		75E9FC981BE224C7009AB9E7 /* PSOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOption.m; sourceTree = "<group>"; };
+		75E9FC991BE224C7009AB9E7 /* PSFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSFormatter.h; sourceTree = "<group>"; };
+		75E9FC9A1BE224C7009AB9E7 /* PSFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSFormatter.m; sourceTree = "<group>"; };
+		75E9FC9B1BE224C7009AB9E7 /* PSPriceDecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPriceDecimal.h; sourceTree = "<group>"; };
+		75E9FC9C1BE224C7009AB9E7 /* PSPriceDecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPriceDecimal.m; sourceTree = "<group>"; };
+		75E9FC9D1BE224C7009AB9E7 /* PSHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeTableViewCell.h; sourceTree = "<group>"; };
+		75E9FC9E1BE224C7009AB9E7 /* PSHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeTableViewCell.m; sourceTree = "<group>"; };
+		75E9FC9F1BE224C7009AB9E7 /* PSTerminalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewCell.h; sourceTree = "<group>"; };
+		75E9FCA01BE224C7009AB9E7 /* PSTerminalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewCell.m; sourceTree = "<group>"; };
+		75E9FCA11BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignatureImageViewTableViewCell.h; sourceTree = "<group>"; };
+		75E9FCA21BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSignatureImageViewTableViewCell.m; sourceTree = "<group>"; };
+		75E9FCA31BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignatureDescriptionTableViewCell.h; sourceTree = "<group>"; };
+		75E9FCA41BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSignatureDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		75E9FCA51BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsTableViewCell.h; sourceTree = "<group>"; };
+		75E9FCA61BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsTableViewCell.m; sourceTree = "<group>"; };
+		75E9FCB11BE22510009AB9E7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		75E9FCB31BE22562009AB9E7 /* berlin.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = berlin.gpx; sourceTree = "<group>"; };
+		75E9FCB51BE2256B009AB9E7 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		75E9FCB81BE22589009AB9E7 /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		75E9FCB91BE22589009AB9E7 /* MyriadPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Light.otf"; sourceTree = "<group>"; };
+		75E9FCBA1BE22589009AB9E7 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		75E9FCBB1BE22589009AB9E7 /* MyriadPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.otf"; sourceTree = "<group>"; };
+		75E9FCBD1BE225FA009AB9E7 /* PSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSManager.h; sourceTree = "<group>"; };
+		75E9FCBE1BE225FA009AB9E7 /* PSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSManager.m; sourceTree = "<group>"; };
+		75E9FCBF1BE225FA009AB9E7 /* PSManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSManagerDelegate.h; sourceTree = "<group>"; };
+		75E9FCC21BE22616009AB9E7 /* PSCoreDataManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCoreDataManagerDelegate.h; sourceTree = "<group>"; };
+		75E9FCC31BE22616009AB9E7 /* PSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCoreDataManager.h; sourceTree = "<group>"; };
+		75E9FCC41BE22616009AB9E7 /* PSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCoreDataManager.m; sourceTree = "<group>"; };
+		75E9FCC71BE2262E009AB9E7 /* PSPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPayment.h; sourceTree = "<group>"; };
+		75E9FCC81BE2262E009AB9E7 /* PSPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPayment.m; sourceTree = "<group>"; };
+		75E9FCCD1BE2264F009AB9E7 /* PSLocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLocationManagerDelegate.h; sourceTree = "<group>"; };
+		75E9FCCE1BE2264F009AB9E7 /* PSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLocationManager.h; sourceTree = "<group>"; };
+		75E9FCCF1BE2264F009AB9E7 /* PSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLocationManager.m; sourceTree = "<group>"; };
+		75E9FCD21BE2266B009AB9E7 /* PSPaymentProcessDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentProcessDelegate.h; sourceTree = "<group>"; };
+		75E9FCD31BE2266B009AB9E7 /* PSLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginDelegate.h; sourceTree = "<group>"; };
+		75E9FCD41BE2266B009AB9E7 /* PSLogoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLogoutDelegate.h; sourceTree = "<group>"; };
+		75E9FCD51BE2266B009AB9E7 /* PSSignatureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignatureDelegate.h; sourceTree = "<group>"; };
+		75E9FCD61BE2266B009AB9E7 /* PSHomeTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeTableViewDelegate.h; sourceTree = "<group>"; };
+		75E9FCD71BE2266B009AB9E7 /* PSHomeTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeTableViewDelegate.m; sourceTree = "<group>"; };
+		75E9FCD81BE2266B009AB9E7 /* PSTerminalTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewDelegate.h; sourceTree = "<group>"; };
+		75E9FCD91BE2266B009AB9E7 /* PSTerminalTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewDelegate.m; sourceTree = "<group>"; };
+		75E9FCDA1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsTableViewDelegate.h; sourceTree = "<group>"; };
+		75E9FCDB1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsTableViewDelegate.m; sourceTree = "<group>"; };
+		75E9FCDC1BE2266B009AB9E7 /* PSRefundProcessDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundProcessDelegate.h; sourceTree = "<group>"; };
+		75E9FCE11BE2267E009AB9E7 /* PSHomeTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeTableViewDataSource.h; sourceTree = "<group>"; };
+		75E9FCE21BE2267E009AB9E7 /* PSHomeTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeTableViewDataSource.m; sourceTree = "<group>"; };
+		75E9FCE31BE2267E009AB9E7 /* PSTerminalTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewDataSource.h; sourceTree = "<group>"; };
+		75E9FCE41BE2267E009AB9E7 /* PSTerminalTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewDataSource.m; sourceTree = "<group>"; };
+		75E9FCE51BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsTableViewDataSource.h; sourceTree = "<group>"; };
+		75E9FCE61BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsTableViewDataSource.m; sourceTree = "<group>"; };
+		75E9FCEB1BE2269B009AB9E7 /* PSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginViewController.h; sourceTree = "<group>"; };
+		75E9FCEC1BE2269B009AB9E7 /* PSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginViewController.m; sourceTree = "<group>"; };
+		75E9FCED1BE2269B009AB9E7 /* PSLoginProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginProcessViewController.h; sourceTree = "<group>"; };
+		75E9FCEE1BE2269B009AB9E7 /* PSLoginProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginProcessViewController.m; sourceTree = "<group>"; };
+		75E9FCEF1BE2269B009AB9E7 /* PSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeViewController.h; sourceTree = "<group>"; };
+		75E9FCF01BE2269B009AB9E7 /* PSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeViewController.m; sourceTree = "<group>"; };
+		75E9FCF11BE2269B009AB9E7 /* PSPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentViewController.h; sourceTree = "<group>"; };
+		75E9FCF21BE2269B009AB9E7 /* PSPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPaymentViewController.m; sourceTree = "<group>"; };
+		75E9FCF31BE2269B009AB9E7 /* PSPaymentProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentProcessViewController.h; sourceTree = "<group>"; };
+		75E9FCF41BE2269B009AB9E7 /* PSPaymentProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPaymentProcessViewController.m; sourceTree = "<group>"; };
+		75E9FCF51BE2269B009AB9E7 /* PSPaymentResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentResultViewController.h; sourceTree = "<group>"; };
+		75E9FCF61BE2269B009AB9E7 /* PSPaymentResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPaymentResultViewController.m; sourceTree = "<group>"; };
+		75E9FCF71BE2269B009AB9E7 /* PSReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSReceiptViewController.h; sourceTree = "<group>"; };
+		75E9FCF81BE2269B009AB9E7 /* PSReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSReceiptViewController.m; sourceTree = "<group>"; };
+		75E9FCF91BE2269B009AB9E7 /* PSLogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLogoutViewController.h; sourceTree = "<group>"; };
+		75E9FCFA1BE2269B009AB9E7 /* PSLogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLogoutViewController.m; sourceTree = "<group>"; };
+		75E9FCFB1BE2269B009AB9E7 /* PSTerminalMissingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalMissingViewController.h; sourceTree = "<group>"; };
+		75E9FCFC1BE2269B009AB9E7 /* PSTerminalMissingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalMissingViewController.m; sourceTree = "<group>"; };
+		75E9FCFD1BE2269B009AB9E7 /* PSTerminalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewController.h; sourceTree = "<group>"; };
+		75E9FCFE1BE2269B009AB9E7 /* PSTerminalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewController.m; sourceTree = "<group>"; };
+		75E9FCFF1BE2269B009AB9E7 /* PSRefundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundViewController.h; sourceTree = "<group>"; };
+		75E9FD001BE2269B009AB9E7 /* PSRefundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRefundViewController.m; sourceTree = "<group>"; };
+		75E9FD011BE2269B009AB9E7 /* PSRefundResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundResultViewController.h; sourceTree = "<group>"; };
+		75E9FD021BE2269B009AB9E7 /* PSRefundResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRefundResultViewController.m; sourceTree = "<group>"; };
+		75E9FD031BE2269B009AB9E7 /* PSRefundProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundProcessViewController.h; sourceTree = "<group>"; };
+		75E9FD041BE2269B009AB9E7 /* PSRefundProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRefundProcessViewController.m; sourceTree = "<group>"; };
+		75E9FD051BE2269B009AB9E7 /* PSLatestPaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsViewController.h; sourceTree = "<group>"; };
+		75E9FD061BE2269B009AB9E7 /* PSLatestPaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsViewController.m; sourceTree = "<group>"; };
+		75E9FD071BE2269B009AB9E7 /* PSMissingPaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMissingPaymentsViewController.h; sourceTree = "<group>"; };
+		75E9FD081BE2269B009AB9E7 /* PSMissingPaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMissingPaymentsViewController.m; sourceTree = "<group>"; };
+		75E9FD091BE2269B009AB9E7 /* PSSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignViewController.h; sourceTree = "<group>"; };
+		75E9FD0A1BE2269B009AB9E7 /* PSSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSignViewController.m; sourceTree = "<group>"; };
+		75E9FD201BE22DF8009AB9E7 /* PaylevenSDKExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = PaylevenSDKExample.xcdatamodel; path = PaylevenSDKExample.xcdatamodeld/PaylevenSDKExample.xcdatamodel; sourceTree = "<group>"; };
 		AA38D9481A1F950400FCF445 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
 		AA5612EE19ED338200F6C5E0 /* PaylevenSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaylevenSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5612F219ED338200F6C5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,7 +164,6 @@
 		AA5612F619ED338200F6C5E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA5612FE19ED338200F6C5E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA56130119ED338200F6C5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AA6449C619ED415600FAD24B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AA6449D119ED685D00FAD24B /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		AA6449D319ED686F00FAD24B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		AA6449D519ED687900FAD24B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -75,6 +201,176 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75E9FC901BE22475009AB9E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FC931BE224C7009AB9E7 /* PSIdentifiers.h */,
+				75E9FC941BE224C7009AB9E7 /* PSIdentifiers.m */,
+				75E9FC951BE224C7009AB9E7 /* PSSystemDevice.h */,
+				75E9FC961BE224C7009AB9E7 /* PSSystemDevice.m */,
+				75E9FC971BE224C7009AB9E7 /* PSOption.h */,
+				75E9FC981BE224C7009AB9E7 /* PSOption.m */,
+				75E9FC991BE224C7009AB9E7 /* PSFormatter.h */,
+				75E9FC9A1BE224C7009AB9E7 /* PSFormatter.m */,
+				75E9FC9B1BE224C7009AB9E7 /* PSPriceDecimal.h */,
+				75E9FC9C1BE224C7009AB9E7 /* PSPriceDecimal.m */,
+				75E9FC9D1BE224C7009AB9E7 /* PSHomeTableViewCell.h */,
+				75E9FC9E1BE224C7009AB9E7 /* PSHomeTableViewCell.m */,
+				75E9FC9F1BE224C7009AB9E7 /* PSTerminalTableViewCell.h */,
+				75E9FCA01BE224C7009AB9E7 /* PSTerminalTableViewCell.m */,
+				75E9FCA11BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.h */,
+				75E9FCA21BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.m */,
+				75E9FCA31BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.h */,
+				75E9FCA41BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.m */,
+				75E9FCA51BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.h */,
+				75E9FCA61BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		75E9FC911BE2247D009AB9E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCBC1BE225EB009AB9E7 /* Manager */,
+				75E9FCC11BE22602009AB9E7 /* CoreData */,
+				75E9FCCC1BE2263C009AB9E7 /* CoreLocation */,
+				75E9FCD11BE2265B009AB9E7 /* Delegates */,
+				75E9FCE01BE2266F009AB9E7 /* DataSources */,
+				75E9FCEA1BE2268C009AB9E7 /* ViewControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		75E9FC921BE22491009AB9E7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCB11BE22510009AB9E7 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		75E9FCB71BE2257D009AB9E7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCB81BE22589009AB9E7 /* MyriadPro-Bold.otf */,
+				75E9FCB91BE22589009AB9E7 /* MyriadPro-Light.otf */,
+				75E9FCBA1BE22589009AB9E7 /* MyriadPro-Regular.otf */,
+				75E9FCBB1BE22589009AB9E7 /* MyriadPro-Semibold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		75E9FCBC1BE225EB009AB9E7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCBD1BE225FA009AB9E7 /* PSManager.h */,
+				75E9FCBE1BE225FA009AB9E7 /* PSManager.m */,
+				75E9FCBF1BE225FA009AB9E7 /* PSManagerDelegate.h */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		75E9FCC11BE22602009AB9E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCC21BE22616009AB9E7 /* PSCoreDataManagerDelegate.h */,
+				75E9FCC31BE22616009AB9E7 /* PSCoreDataManager.h */,
+				75E9FCC41BE22616009AB9E7 /* PSCoreDataManager.m */,
+				75E9FCC61BE2261B009AB9E7 /* CoreDataModels */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		75E9FCC61BE2261B009AB9E7 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCC71BE2262E009AB9E7 /* PSPayment.h */,
+				75E9FCC81BE2262E009AB9E7 /* PSPayment.m */,
+				75E9FD201BE22DF8009AB9E7 /* PaylevenSDKExample.xcdatamodel */,
+			);
+			name = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		75E9FCCC1BE2263C009AB9E7 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCCD1BE2264F009AB9E7 /* PSLocationManagerDelegate.h */,
+				75E9FCCE1BE2264F009AB9E7 /* PSLocationManager.h */,
+				75E9FCCF1BE2264F009AB9E7 /* PSLocationManager.m */,
+			);
+			name = CoreLocation;
+			sourceTree = "<group>";
+		};
+		75E9FCD11BE2265B009AB9E7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCD21BE2266B009AB9E7 /* PSPaymentProcessDelegate.h */,
+				75E9FCD31BE2266B009AB9E7 /* PSLoginDelegate.h */,
+				75E9FCD41BE2266B009AB9E7 /* PSLogoutDelegate.h */,
+				75E9FCD51BE2266B009AB9E7 /* PSSignatureDelegate.h */,
+				75E9FCD61BE2266B009AB9E7 /* PSHomeTableViewDelegate.h */,
+				75E9FCD71BE2266B009AB9E7 /* PSHomeTableViewDelegate.m */,
+				75E9FCD81BE2266B009AB9E7 /* PSTerminalTableViewDelegate.h */,
+				75E9FCD91BE2266B009AB9E7 /* PSTerminalTableViewDelegate.m */,
+				75E9FCDA1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.h */,
+				75E9FCDB1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.m */,
+				75E9FCDC1BE2266B009AB9E7 /* PSRefundProcessDelegate.h */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		75E9FCE01BE2266F009AB9E7 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCE11BE2267E009AB9E7 /* PSHomeTableViewDataSource.h */,
+				75E9FCE21BE2267E009AB9E7 /* PSHomeTableViewDataSource.m */,
+				75E9FCE31BE2267E009AB9E7 /* PSTerminalTableViewDataSource.h */,
+				75E9FCE41BE2267E009AB9E7 /* PSTerminalTableViewDataSource.m */,
+				75E9FCE51BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.h */,
+				75E9FCE61BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.m */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		75E9FCEA1BE2268C009AB9E7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				75E9FCEB1BE2269B009AB9E7 /* PSLoginViewController.h */,
+				75E9FCEC1BE2269B009AB9E7 /* PSLoginViewController.m */,
+				75E9FCED1BE2269B009AB9E7 /* PSLoginProcessViewController.h */,
+				75E9FCEE1BE2269B009AB9E7 /* PSLoginProcessViewController.m */,
+				75E9FCEF1BE2269B009AB9E7 /* PSHomeViewController.h */,
+				75E9FCF01BE2269B009AB9E7 /* PSHomeViewController.m */,
+				75E9FCF11BE2269B009AB9E7 /* PSPaymentViewController.h */,
+				75E9FCF21BE2269B009AB9E7 /* PSPaymentViewController.m */,
+				75E9FCF31BE2269B009AB9E7 /* PSPaymentProcessViewController.h */,
+				75E9FCF41BE2269B009AB9E7 /* PSPaymentProcessViewController.m */,
+				75E9FCF51BE2269B009AB9E7 /* PSPaymentResultViewController.h */,
+				75E9FCF61BE2269B009AB9E7 /* PSPaymentResultViewController.m */,
+				75E9FCF71BE2269B009AB9E7 /* PSReceiptViewController.h */,
+				75E9FCF81BE2269B009AB9E7 /* PSReceiptViewController.m */,
+				75E9FCF91BE2269B009AB9E7 /* PSLogoutViewController.h */,
+				75E9FCFA1BE2269B009AB9E7 /* PSLogoutViewController.m */,
+				75E9FCFB1BE2269B009AB9E7 /* PSTerminalMissingViewController.h */,
+				75E9FCFC1BE2269B009AB9E7 /* PSTerminalMissingViewController.m */,
+				75E9FCFD1BE2269B009AB9E7 /* PSTerminalTableViewController.h */,
+				75E9FCFE1BE2269B009AB9E7 /* PSTerminalTableViewController.m */,
+				75E9FCFF1BE2269B009AB9E7 /* PSRefundViewController.h */,
+				75E9FD001BE2269B009AB9E7 /* PSRefundViewController.m */,
+				75E9FD011BE2269B009AB9E7 /* PSRefundResultViewController.h */,
+				75E9FD021BE2269B009AB9E7 /* PSRefundResultViewController.m */,
+				75E9FD031BE2269B009AB9E7 /* PSRefundProcessViewController.h */,
+				75E9FD041BE2269B009AB9E7 /* PSRefundProcessViewController.m */,
+				75E9FD051BE2269B009AB9E7 /* PSLatestPaymentsViewController.h */,
+				75E9FD061BE2269B009AB9E7 /* PSLatestPaymentsViewController.m */,
+				75E9FD071BE2269B009AB9E7 /* PSMissingPaymentsViewController.h */,
+				75E9FD081BE2269B009AB9E7 /* PSMissingPaymentsViewController.m */,
+				75E9FD091BE2269B009AB9E7 /* PSSignViewController.h */,
+				75E9FD0A1BE2269B009AB9E7 /* PSSignViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AA5612E519ED338200F6C5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -95,10 +391,12 @@
 		AA5612F019ED338200F6C5E0 /* PaylevenSDKExample */ = {
 			isa = PBXGroup;
 			children = (
+				75E9FC901BE22475009AB9E7 /* Models */,
+				75E9FC911BE2247D009AB9E7 /* Controllers */,
+				75E9FC921BE22491009AB9E7 /* Storyboards */,
 				AAE125851A2F13F800F6B88A /* Readme.txt */,
 				AA5612F519ED338200F6C5E0 /* AppDelegate.h */,
 				AA5612F619ED338200F6C5E0 /* AppDelegate.m */,
-				AA6449C619ED415600FAD24B /* LoginViewController.m */,
 				AA5612FE19ED338200F6C5E0 /* Images.xcassets */,
 				AA56130019ED338200F6C5E0 /* LaunchScreen.xib */,
 				AA5612F119ED338200F6C5E0 /* Supporting Files */,
@@ -109,6 +407,9 @@
 		AA5612F119ED338200F6C5E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				75E9FCB71BE2257D009AB9E7 /* Fonts */,
+				75E9FCB31BE22562009AB9E7 /* berlin.gpx */,
+				75E9FCB51BE2256B009AB9E7 /* Config.plist */,
 				AA5612F219ED338200F6C5E0 /* Info.plist */,
 				AA5612F319ED338200F6C5E0 /* main.m */,
 				AA38D9481A1F950400FCF445 /* signature.png */,
@@ -196,6 +497,9 @@
 				AA38D9491A1F950400FCF445 /* signature.png in Resources */,
 				AAB83D501A6D49C000951A81 /* AdyenToolkit.bundle in Resources */,
 				AA56130219ED338200F6C5E0 /* LaunchScreen.xib in Resources */,
+				75E9FCB41BE22562009AB9E7 /* berlin.gpx in Resources */,
+				75E9FCB61BE2256B009AB9E7 /* Config.plist in Resources */,
+				75E9FCB21BE22510009AB9E7 /* Main.storyboard in Resources */,
 				AA5612FF19ED338200F6C5E0 /* Images.xcassets in Resources */,
 				AAE125861A2F13F800F6B88A /* Readme.txt in Resources */,
 			);
@@ -208,9 +512,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA6449C719ED415600FAD24B /* LoginViewController.m in Sources */,
+				75E9FCAD1BE224C7009AB9E7 /* PSTerminalTableViewCell.m in Sources */,
+				75E9FCAB1BE224C7009AB9E7 /* PSPriceDecimal.m in Sources */,
+				75E9FCB01BE224C7009AB9E7 /* PSLatestPaymentsTableViewCell.m in Sources */,
+				75E9FD1A1BE2269B009AB9E7 /* PSSignViewController.m in Sources */,
+				75E9FD131BE2269B009AB9E7 /* PSTerminalMissingViewController.m in Sources */,
+				75E9FCDF1BE2266B009AB9E7 /* PSLatestPaymentsTableViewDelegate.m in Sources */,
+				75E9FCDE1BE2266B009AB9E7 /* PSTerminalTableViewDelegate.m in Sources */,
+				75E9FD141BE2269B009AB9E7 /* PSTerminalTableViewController.m in Sources */,
+				75E9FCC51BE22616009AB9E7 /* PSCoreDataManager.m in Sources */,
+				75E9FCAE1BE224C7009AB9E7 /* PSSignatureImageViewTableViewCell.m in Sources */,
+				75E9FCAF1BE224C7009AB9E7 /* PSSignatureDescriptionTableViewCell.m in Sources */,
+				75E9FD181BE2269B009AB9E7 /* PSLatestPaymentsViewController.m in Sources */,
+				75E9FD151BE2269B009AB9E7 /* PSRefundViewController.m in Sources */,
+				75E9FCCA1BE2262E009AB9E7 /* PSPayment.m in Sources */,
+				75E9FD211BE22DF8009AB9E7 /* PaylevenSDKExample.xcdatamodel in Sources */,
+				75E9FD0D1BE2269B009AB9E7 /* PSHomeViewController.m in Sources */,
+				75E9FCE81BE2267E009AB9E7 /* PSTerminalTableViewDataSource.m in Sources */,
 				AA5612F719ED338200F6C5E0 /* AppDelegate.m in Sources */,
+				75E9FCAA1BE224C7009AB9E7 /* PSFormatter.m in Sources */,
+				75E9FD121BE2269B009AB9E7 /* PSLogoutViewController.m in Sources */,
+				75E9FCDD1BE2266B009AB9E7 /* PSHomeTableViewDelegate.m in Sources */,
+				75E9FD171BE2269B009AB9E7 /* PSRefundProcessViewController.m in Sources */,
+				75E9FCE91BE2267E009AB9E7 /* PSLatestPaymentsTableViewDataSource.m in Sources */,
+				75E9FCE71BE2267E009AB9E7 /* PSHomeTableViewDataSource.m in Sources */,
+				75E9FD161BE2269B009AB9E7 /* PSRefundResultViewController.m in Sources */,
+				75E9FD0C1BE2269B009AB9E7 /* PSLoginProcessViewController.m in Sources */,
+				75E9FD111BE2269B009AB9E7 /* PSReceiptViewController.m in Sources */,
+				75E9FCD01BE2264F009AB9E7 /* PSLocationManager.m in Sources */,
+				75E9FCC01BE225FA009AB9E7 /* PSManager.m in Sources */,
+				75E9FCAC1BE224C7009AB9E7 /* PSHomeTableViewCell.m in Sources */,
+				75E9FD0B1BE2269B009AB9E7 /* PSLoginViewController.m in Sources */,
+				75E9FD101BE2269B009AB9E7 /* PSPaymentResultViewController.m in Sources */,
 				AA5612F419ED338200F6C5E0 /* main.m in Sources */,
+				75E9FD0E1BE2269B009AB9E7 /* PSPaymentViewController.m in Sources */,
+				75E9FCA71BE224C7009AB9E7 /* PSIdentifiers.m in Sources */,
+				75E9FCA81BE224C7009AB9E7 /* PSSystemDevice.m in Sources */,
+				75E9FCA91BE224C7009AB9E7 /* PSOption.m in Sources */,
+				75E9FD191BE2269B009AB9E7 /* PSMissingPaymentsViewController.m in Sources */,
+				75E9FD0F1BE2269B009AB9E7 /* PSPaymentProcessViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +587,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -292,6 +633,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

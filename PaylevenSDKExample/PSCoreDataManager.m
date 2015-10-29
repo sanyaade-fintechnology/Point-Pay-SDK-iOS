@@ -14,6 +14,7 @@
 
 NSString *const kPaylevenSDKExample = @"PaylevenSDKExample";
 NSString *const kMomd = @"momd";
+NSString *const kMom = @"mom";
 NSString *const kDefaultKey = @"index";
 NSString *const kPaymentEntity = @"PSPayment";
 NSString *const PSCoreDataManagerErrorDomain = @"PSCoreDataManagerErrorDomain";
@@ -85,8 +86,18 @@ NSString *const PSCoreDataManagerErrorDomain = @"PSCoreDataManagerErrorDomain";
     if(_managedObjectModel){
         return _managedObjectModel;
     }
-    _managedObjectModel = [[NSManagedObjectModel alloc]initWithContentsOfURL:
-                           [[NSBundle mainBundle] URLForResource:kPaylevenSDKExample withExtension:kMomd]];
+    
+    
+    NSURL *modelContainerUrl = [[NSBundle mainBundle] URLForResource:kPaylevenSDKExample withExtension:kMomd];
+    
+    NSURL *modelVersionUrl = [[NSBundle mainBundle] URLForResource:kPaylevenSDKExample withExtension:kMom];
+    
+    if (modelContainerUrl) {
+        _managedObjectModel = [[NSManagedObjectModel alloc]initWithContentsOfURL:modelContainerUrl];
+    } else {
+        _managedObjectModel = [[NSManagedObjectModel alloc]initWithContentsOfURL:modelVersionUrl];
+    }
+    
     return _managedObjectModel;
 }
 

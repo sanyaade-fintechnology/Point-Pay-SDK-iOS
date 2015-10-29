@@ -13,7 +13,6 @@
 #import "PSIdentifiers.h"
 #import "PSPayment.h"
 #import "PSFormatter.h"
-#import "PSPaymentMock.h"
 
 @interface PSLatestPaymentsTableViewDataSource ()
 
