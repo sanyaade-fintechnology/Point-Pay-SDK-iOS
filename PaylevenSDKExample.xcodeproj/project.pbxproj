@@ -7,480 +7,170 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAB4FA041A5ECCAB0003CF18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB4F9F41A5ECCAB0003CF18 /* Images.xcassets */; };
-		AAB4FA091A5ECCAB0003CF18 /* signature.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB4F9FD1A5ECCAB0003CF18 /* signature.png */; };
-		AAB4FA0F1A5ECCD50003CF18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB4FA0B1A5ECCD50003CF18 /* LaunchScreen.xib */; };
-		AAB4FA3C1A5ED3760003CF18 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA3B1A5ED3760003CF18 /* CrashReporter.framework */; };
-		AAB4FA3E1A5ED38A0003CF18 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA3D1A5ED38A0003CF18 /* AssetsLibrary.framework */; };
-		AAB4FA401A5ED3950003CF18 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA3F1A5ED3950003CF18 /* CoreText.framework */; };
-		AAB4FA421A5ED39E0003CF18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA411A5ED39E0003CF18 /* CoreGraphics.framework */; };
-		AAB4FA441A5ED3AD0003CF18 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA431A5ED3AD0003CF18 /* MobileCoreServices.framework */; };
-		AAB4FA461A5ED3B70003CF18 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA451A5ED3B70003CF18 /* QuartzCore.framework */; };
-		AAB4FA481A5ED3BE0003CF18 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA471A5ED3BE0003CF18 /* QuickLook.framework */; };
-		AAB4FA4A1A5ED3C50003CF18 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA491A5ED3C50003CF18 /* Security.framework */; };
-		AAB4FA4C1A5ED3CE0003CF18 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA4B1A5ED3CE0003CF18 /* SystemConfiguration.framework */; };
-		AAB4FA511A5ED59C0003CF18 /* libPaylevenSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA501A5ED59C0003CF18 /* libPaylevenSDK.a */; };
-		AAB4FA531A5ED5C90003CF18 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA521A5ED5C90003CF18 /* CoreData.framework */; };
-		AAB4FA551A5ED5E50003CF18 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA541A5ED5E50003CF18 /* CoreLocation.framework */; };
-		AAB4FA571A5ED5FD0003CF18 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA561A5ED5FD0003CF18 /* ExternalAccessory.framework */; };
-		AAB4FA591A5ED6130003CF18 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB4FA581A5ED6120003CF18 /* libsqlite3.0.dylib */; };
-		AAB83D641A6D511900951A81 /* AdyenToolkit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAB83D621A6D511900951A81 /* AdyenToolkit.bundle */; };
-		AAB83D651A6D511900951A81 /* AdyenToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB83D631A6D511900951A81 /* AdyenToolkit.framework */; };
-		C44794641B81EEAA0050B477 /* PSLatestPaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44794631B81EEAA0050B477 /* PSLatestPaymentsViewController.m */; };
-		C447946C1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C447946B1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.m */; };
-		C447946F1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C447946E1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.m */; };
-		C44794721B81F6260050B477 /* PSLatestPaymentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C44794711B81F6260050B477 /* PSLatestPaymentsTableViewCell.m */; };
-		C44794751B82101D0050B477 /* PSRefundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44794741B82101D0050B477 /* PSRefundViewController.m */; };
-		C4630B8A1BB5303000BB6AE1 /* PSSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4630B891BB5303000BB6AE1 /* PSSignViewController.m */; };
-		C4B1772F1BA96FEF00EF4671 /* PSMissingPaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B1772E1BA96FEF00EF4671 /* PSMissingPaymentsViewController.m */; };
-		C4B60A9F1B7A23690007DCD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B60A9E1B7A23690007DCD8 /* Main.storyboard */; };
-		C4B60AA71B7A27E60007DCD8 /* PSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B60AA61B7A27E60007DCD8 /* PSLoginViewController.m */; };
-		C4B60AAB1B7A2A9B0007DCD8 /* PSIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B60AAA1B7A2A9B0007DCD8 /* PSIdentifiers.m */; };
-		C4BD43D11B9F379800F8C93E /* MyriadPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD43CD1B9F379800F8C93E /* MyriadPro-Bold.otf */; };
-		C4BD43D21B9F379800F8C93E /* MyriadPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD43CE1B9F379800F8C93E /* MyriadPro-Light.otf */; };
-		C4BD43D31B9F379800F8C93E /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD43CF1B9F379800F8C93E /* MyriadPro-Regular.otf */; };
-		C4BD43D41B9F379800F8C93E /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C4BD43D01B9F379800F8C93E /* MyriadPro-Semibold.otf */; };
-		C4D4A2691BB2A6CA00E059F7 /* PSRefundResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D4A2681BB2A6CA00E059F7 /* PSRefundResultViewController.m */; };
-		C4E9ECDD1B8DABF90059C7F1 /* PSRefundProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E9ECDC1B8DABF90059C7F1 /* PSRefundProcessViewController.m */; };
-		C4F300A61B7A4A5D00D80AB9 /* PSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300A51B7A4A5D00D80AB9 /* PSManager.m */; };
-		C4F300AF1B7B345600D80AB9 /* PSSystemDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300AE1B7B345600D80AB9 /* PSSystemDevice.m */; };
-		C4F300B21B7B415F00D80AB9 /* PSLoginProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300B11B7B415F00D80AB9 /* PSLoginProcessViewController.m */; };
-		C4F300B51B7B47F300D80AB9 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4F300B41B7B47F300D80AB9 /* Config.plist */; };
-		C4F300B91B7B5A7F00D80AB9 /* PSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300B81B7B5A7F00D80AB9 /* PSHomeViewController.m */; };
-		C4F300BC1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300BB1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.m */; };
-		C4F300BF1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300BE1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.m */; };
-		C4F300C21B7B7A5900D80AB9 /* PSOption.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300C11B7B7A5900D80AB9 /* PSOption.m */; };
-		C4F300C51B7B800300D80AB9 /* PSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300C41B7B800300D80AB9 /* PSHomeTableViewCell.m */; };
-		C4F300C91B7B8C9900D80AB9 /* PSLogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300C81B7B8C9900D80AB9 /* PSLogoutViewController.m */; };
-		C4F300CC1B7BA2B100D80AB9 /* PSPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300CB1B7BA2B100D80AB9 /* PSPaymentViewController.m */; };
-		C4F300D01B7C451000D80AB9 /* PSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300CF1B7C451000D80AB9 /* PSCoreDataManager.m */; };
-		C4F300D81B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4F300D61B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodeld */; };
-		C4F300DE1B7C7E1300D80AB9 /* PSPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300DD1B7C7E1300D80AB9 /* PSPayment.m */; };
-		C4F300E21B7C905B00D80AB9 /* PSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300E11B7C905B00D80AB9 /* PSLocationManager.m */; };
-		C4F300E51B7C9AEC00D80AB9 /* berlin.gpx in Resources */ = {isa = PBXBuildFile; fileRef = C4F300E41B7C9AEC00D80AB9 /* berlin.gpx */; };
-		C4F300E81B7CCA5D00D80AB9 /* PSFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300E71B7CCA5D00D80AB9 /* PSFormatter.m */; };
-		C4F300EB1B7CD41C00D80AB9 /* PSPriceDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300EA1B7CD41C00D80AB9 /* PSPriceDecimal.m */; };
-		C4F300EE1B7CF50100D80AB9 /* PSPaymentResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300ED1B7CF50100D80AB9 /* PSPaymentResultViewController.m */; };
-		C4F300F21B7D0E0200D80AB9 /* PSPaymentProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300F11B7D0E0200D80AB9 /* PSPaymentProcessViewController.m */; };
-		C4F300F61B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300F51B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.m */; };
-		C4F300F91B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300F81B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.m */; };
-		C4F300FC1B7DBCB800D80AB9 /* PSTerminalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F300FB1B7DBCB800D80AB9 /* PSTerminalTableViewController.m */; };
-		C4F301021B7DCA5000D80AB9 /* PSTerminalMissingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F301011B7DCA5000D80AB9 /* PSTerminalMissingViewController.m */; };
-		C4F301051B7DCC4100D80AB9 /* PSTerminalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F301041B7DCC4100D80AB9 /* PSTerminalTableViewCell.m */; };
-		C4F301081B7E3A8800D80AB9 /* PSReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F301071B7E3A8800D80AB9 /* PSReceiptViewController.m */; };
-		C4F3010D1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3010C1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.m */; };
-		C4F301101B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F3010F1B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.m */; };
+		AA38D9491A1F950400FCF445 /* signature.png in Resources */ = {isa = PBXBuildFile; fileRef = AA38D9481A1F950400FCF445 /* signature.png */; };
+		AA5612F419ED338200F6C5E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5612F319ED338200F6C5E0 /* main.m */; };
+		AA5612F719ED338200F6C5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5612F619ED338200F6C5E0 /* AppDelegate.m */; };
+		AA5612FF19ED338200F6C5E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5612FE19ED338200F6C5E0 /* Images.xcassets */; };
+		AA56130219ED338200F6C5E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA56130019ED338200F6C5E0 /* LaunchScreen.xib */; };
+		AA6449C719ED415600FAD24B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6449C619ED415600FAD24B /* LoginViewController.m */; };
+		AA6449D219ED685D00FAD24B /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D119ED685D00FAD24B /* ExternalAccessory.framework */; };
+		AA6449D819ED689C00FAD24B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D719ED689C00FAD24B /* SystemConfiguration.framework */; };
+		AA6449D919ED68A500FAD24B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D519ED687900FAD24B /* CoreLocation.framework */; };
+		AA6449DB19ED68AE00FAD24B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449DA19ED68AE00FAD24B /* CoreData.framework */; };
+		AA6449DC19ED68B500FAD24B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6449D319ED686F00FAD24B /* libsqlite3.0.dylib */; };
+		AAB601D91A092AB600AF070D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB601D41A092A8700AF070D /* CoreText.framework */; };
+		AAB601DA1A092ABD00AF070D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB601D61A092A9200AF070D /* CoreGraphics.framework */; };
+		AAB601DC1A092AD300AF070D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB601DB1A092AD300AF070D /* Foundation.framework */; };
+		AAB601E61A092C0900AF070D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB601E51A092C0900AF070D /* UIKit.framework */; };
+		AAB83D501A6D49C000951A81 /* AdyenToolkit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AAB83D4D1A6D49C000951A81 /* AdyenToolkit.bundle */; };
+		AAB83D511A6D49C000951A81 /* AdyenToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB83D4E1A6D49C000951A81 /* AdyenToolkit.framework */; };
+		AAB83D521A6D49C000951A81 /* PaylevenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */; };
+		AAE125861A2F13F800F6B88A /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = AAE125851A2F13F800F6B88A /* Readme.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAB4F9A51A5D70E10003CF18 /* PaylevenSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaylevenSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAB4F9F41A5ECCAB0003CF18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AAB4F9FD1A5ECCAB0003CF18 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
-		AAB4FA0C1A5ECCD50003CF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AAB4FA131A5ECF9E0003CF18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAB4FA3B1A5ED3760003CF18 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = ThirdParty/HockeySDK/Vendor/CrashReporter.framework; sourceTree = "<group>"; };
-		AAB4FA3D1A5ED38A0003CF18 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		AAB4FA3F1A5ED3950003CF18 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		AAB4FA411A5ED39E0003CF18 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AAB4FA431A5ED3AD0003CF18 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		AAB4FA451A5ED3B70003CF18 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		AAB4FA471A5ED3BE0003CF18 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
-		AAB4FA491A5ED3C50003CF18 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		AAB4FA4B1A5ED3CE0003CF18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		AAB4FA501A5ED59C0003CF18 /* libPaylevenSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPaylevenSDK.a; path = "build/Debug-iphoneos/libPaylevenSDK.a"; sourceTree = "<group>"; };
-		AAB4FA521A5ED5C90003CF18 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		AAB4FA541A5ED5E50003CF18 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		AAB4FA561A5ED5FD0003CF18 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		AAB4FA581A5ED6120003CF18 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		AAB83D621A6D511900951A81 /* AdyenToolkit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdyenToolkit.bundle; path = Framework/AdyenToolkit.bundle; sourceTree = "<group>"; };
-		AAB83D631A6D511900951A81 /* AdyenToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdyenToolkit.framework; path = Framework/AdyenToolkit.framework; sourceTree = "<group>"; };
-		C44794621B81EEAA0050B477 /* PSLatestPaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsViewController.h; sourceTree = "<group>"; };
-		C44794631B81EEAA0050B477 /* PSLatestPaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsViewController.m; sourceTree = "<group>"; };
-		C447946A1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsTableViewDataSource.h; sourceTree = "<group>"; };
-		C447946B1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsTableViewDataSource.m; sourceTree = "<group>"; };
-		C447946D1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsTableViewDelegate.h; sourceTree = "<group>"; };
-		C447946E1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsTableViewDelegate.m; sourceTree = "<group>"; };
-		C44794701B81F6260050B477 /* PSLatestPaymentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLatestPaymentsTableViewCell.h; sourceTree = "<group>"; };
-		C44794711B81F6260050B477 /* PSLatestPaymentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLatestPaymentsTableViewCell.m; sourceTree = "<group>"; };
-		C44794731B82101D0050B477 /* PSRefundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundViewController.h; sourceTree = "<group>"; };
-		C44794741B82101D0050B477 /* PSRefundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRefundViewController.m; sourceTree = "<group>"; };
-		C4630B881BB5303000BB6AE1 /* PSSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignViewController.h; sourceTree = "<group>"; };
-		C4630B891BB5303000BB6AE1 /* PSSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSignViewController.m; sourceTree = "<group>"; };
-		C4B1772D1BA96FEF00EF4671 /* PSMissingPaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMissingPaymentsViewController.h; sourceTree = "<group>"; };
-		C4B1772E1BA96FEF00EF4671 /* PSMissingPaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMissingPaymentsViewController.m; sourceTree = "<group>"; };
-		C4B60A9E1B7A23690007DCD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C4B60AA51B7A27E60007DCD8 /* PSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginViewController.h; sourceTree = "<group>"; };
-		C4B60AA61B7A27E60007DCD8 /* PSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginViewController.m; sourceTree = "<group>"; };
-		C4B60AA91B7A2A9B0007DCD8 /* PSIdentifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSIdentifiers.h; sourceTree = "<group>"; };
-		C4B60AAA1B7A2A9B0007DCD8 /* PSIdentifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSIdentifiers.m; sourceTree = "<group>"; };
-		C4BD43CD1B9F379800F8C93E /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
-		C4BD43CE1B9F379800F8C93E /* MyriadPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Light.otf"; sourceTree = "<group>"; };
-		C4BD43CF1B9F379800F8C93E /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
-		C4BD43D01B9F379800F8C93E /* MyriadPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Semibold.otf"; sourceTree = "<group>"; };
-		C4D4A2671BB2A6CA00E059F7 /* PSRefundResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundResultViewController.h; sourceTree = "<group>"; };
-		C4D4A2681BB2A6CA00E059F7 /* PSRefundResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRefundResultViewController.m; sourceTree = "<group>"; };
-		C4E9ECDB1B8DABF90059C7F1 /* PSRefundProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRefundProcessViewController.h; sourceTree = "<group>"; };
-		C4E9ECDC1B8DABF90059C7F1 /* PSRefundProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRefundProcessViewController.m; sourceTree = "<group>"; };
-		C4E9ECDE1B8DAC730059C7F1 /* PSRefundProcessDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSRefundProcessDelegate.h; sourceTree = "<group>"; };
-		C4F3009D1B7A429E00D80AB9 /* PSLoginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginDelegate.h; sourceTree = "<group>"; };
-		C4F300A41B7A4A5D00D80AB9 /* PSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSManager.h; sourceTree = "<group>"; };
-		C4F300A51B7A4A5D00D80AB9 /* PSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSManager.m; sourceTree = "<group>"; };
-		C4F300AD1B7B345600D80AB9 /* PSSystemDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSystemDevice.h; sourceTree = "<group>"; };
-		C4F300AE1B7B345600D80AB9 /* PSSystemDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSystemDevice.m; sourceTree = "<group>"; };
-		C4F300B01B7B415F00D80AB9 /* PSLoginProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLoginProcessViewController.h; sourceTree = "<group>"; };
-		C4F300B11B7B415F00D80AB9 /* PSLoginProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLoginProcessViewController.m; sourceTree = "<group>"; };
-		C4F300B41B7B47F300D80AB9 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
-		C4F300B61B7B522C00D80AB9 /* PSManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSManagerDelegate.h; sourceTree = "<group>"; };
-		C4F300B71B7B5A7F00D80AB9 /* PSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeViewController.h; sourceTree = "<group>"; };
-		C4F300B81B7B5A7F00D80AB9 /* PSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeViewController.m; sourceTree = "<group>"; };
-		C4F300BA1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeTableViewDataSource.h; sourceTree = "<group>"; };
-		C4F300BB1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeTableViewDataSource.m; sourceTree = "<group>"; };
-		C4F300BD1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeTableViewDelegate.h; sourceTree = "<group>"; };
-		C4F300BE1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeTableViewDelegate.m; sourceTree = "<group>"; };
-		C4F300C01B7B7A5900D80AB9 /* PSOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSOption.h; sourceTree = "<group>"; };
-		C4F300C11B7B7A5900D80AB9 /* PSOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSOption.m; sourceTree = "<group>"; };
-		C4F300C31B7B800300D80AB9 /* PSHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHomeTableViewCell.h; sourceTree = "<group>"; };
-		C4F300C41B7B800300D80AB9 /* PSHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHomeTableViewCell.m; sourceTree = "<group>"; };
-		C4F300C61B7B89D700D80AB9 /* PSLogoutDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLogoutDelegate.h; sourceTree = "<group>"; };
-		C4F300C71B7B8C9900D80AB9 /* PSLogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLogoutViewController.h; sourceTree = "<group>"; };
-		C4F300C81B7B8C9900D80AB9 /* PSLogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLogoutViewController.m; sourceTree = "<group>"; };
-		C4F300CA1B7BA2B100D80AB9 /* PSPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentViewController.h; sourceTree = "<group>"; };
-		C4F300CB1B7BA2B100D80AB9 /* PSPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPaymentViewController.m; sourceTree = "<group>"; };
-		C4F300CE1B7C451000D80AB9 /* PSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCoreDataManager.h; sourceTree = "<group>"; };
-		C4F300CF1B7C451000D80AB9 /* PSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSCoreDataManager.m; sourceTree = "<group>"; };
-		C4F300D11B7C45A600D80AB9 /* PSCoreDataManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSCoreDataManagerDelegate.h; sourceTree = "<group>"; };
-		C4F300D71B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaylevenSDKExample.xcdatamodel; sourceTree = "<group>"; };
-		C4F300DC1B7C7E1300D80AB9 /* PSPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPayment.h; sourceTree = "<group>"; };
-		C4F300DD1B7C7E1300D80AB9 /* PSPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPayment.m; sourceTree = "<group>"; };
-		C4F300E01B7C905B00D80AB9 /* PSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLocationManager.h; sourceTree = "<group>"; };
-		C4F300E11B7C905B00D80AB9 /* PSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSLocationManager.m; sourceTree = "<group>"; };
-		C4F300E31B7C907900D80AB9 /* PSLocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSLocationManagerDelegate.h; sourceTree = "<group>"; };
-		C4F300E41B7C9AEC00D80AB9 /* berlin.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = berlin.gpx; sourceTree = "<group>"; };
-		C4F300E61B7CCA5D00D80AB9 /* PSFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSFormatter.h; sourceTree = "<group>"; };
-		C4F300E71B7CCA5D00D80AB9 /* PSFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSFormatter.m; sourceTree = "<group>"; };
-		C4F300E91B7CD41C00D80AB9 /* PSPriceDecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPriceDecimal.h; sourceTree = "<group>"; };
-		C4F300EA1B7CD41C00D80AB9 /* PSPriceDecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPriceDecimal.m; sourceTree = "<group>"; };
-		C4F300EC1B7CF50100D80AB9 /* PSPaymentResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentResultViewController.h; sourceTree = "<group>"; };
-		C4F300ED1B7CF50100D80AB9 /* PSPaymentResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPaymentResultViewController.m; sourceTree = "<group>"; };
-		C4F300EF1B7D0CE500D80AB9 /* PSPaymentProcessDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentProcessDelegate.h; sourceTree = "<group>"; };
-		C4F300F01B7D0E0200D80AB9 /* PSPaymentProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPaymentProcessViewController.h; sourceTree = "<group>"; };
-		C4F300F11B7D0E0200D80AB9 /* PSPaymentProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPaymentProcessViewController.m; sourceTree = "<group>"; };
-		C4F300F41B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewDataSource.h; sourceTree = "<group>"; };
-		C4F300F51B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewDataSource.m; sourceTree = "<group>"; };
-		C4F300F71B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewDelegate.h; sourceTree = "<group>"; };
-		C4F300F81B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewDelegate.m; sourceTree = "<group>"; };
-		C4F300FA1B7DBCB800D80AB9 /* PSTerminalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewController.h; sourceTree = "<group>"; };
-		C4F300FB1B7DBCB800D80AB9 /* PSTerminalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewController.m; sourceTree = "<group>"; };
-		C4F301001B7DCA5000D80AB9 /* PSTerminalMissingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalMissingViewController.h; sourceTree = "<group>"; };
-		C4F301011B7DCA5000D80AB9 /* PSTerminalMissingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalMissingViewController.m; sourceTree = "<group>"; };
-		C4F301031B7DCC4100D80AB9 /* PSTerminalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTerminalTableViewCell.h; sourceTree = "<group>"; };
-		C4F301041B7DCC4100D80AB9 /* PSTerminalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTerminalTableViewCell.m; sourceTree = "<group>"; };
-		C4F301061B7E3A8800D80AB9 /* PSReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSReceiptViewController.h; sourceTree = "<group>"; };
-		C4F301071B7E3A8800D80AB9 /* PSReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSReceiptViewController.m; sourceTree = "<group>"; };
-		C4F3010A1B7E427700D80AB9 /* PSSignatureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignatureDelegate.h; sourceTree = "<group>"; };
-		C4F3010B1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignatureImageViewTableViewCell.h; sourceTree = "<group>"; };
-		C4F3010C1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSignatureImageViewTableViewCell.m; sourceTree = "<group>"; };
-		C4F3010E1B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSignatureDescriptionTableViewCell.h; sourceTree = "<group>"; };
-		C4F3010F1B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSignatureDescriptionTableViewCell.m; sourceTree = "<group>"; };
+		AA38D9481A1F950400FCF445 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
+		AA5612EE19ED338200F6C5E0 /* PaylevenSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaylevenSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5612F219ED338200F6C5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5612F319ED338200F6C5E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA5612F519ED338200F6C5E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA5612F619ED338200F6C5E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA5612FE19ED338200F6C5E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA56130119ED338200F6C5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA6449C619ED415600FAD24B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AA6449D119ED685D00FAD24B /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		AA6449D319ED686F00FAD24B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		AA6449D519ED687900FAD24B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AA6449D719ED689C00FAD24B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA6449DA19ED68AE00FAD24B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AAB601D41A092A8700AF070D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		AAB601D61A092A9200AF070D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AAB601DB1A092AD300AF070D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAB601E51A092C0900AF070D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AAB83D4D1A6D49C000951A81 /* AdyenToolkit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AdyenToolkit.bundle; path = Framework/AdyenToolkit.bundle; sourceTree = "<group>"; };
+		AAB83D4E1A6D49C000951A81 /* AdyenToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdyenToolkit.framework; path = Framework/AdyenToolkit.framework; sourceTree = "<group>"; };
+		AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaylevenSDK.framework; path = Framework/PaylevenSDK.framework; sourceTree = "<group>"; };
+		AAE125851A2F13F800F6B88A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AAB4F9A21A5D70E10003CF18 /* Frameworks */ = {
+		AA5612EB19ED338200F6C5E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB4FA3E1A5ED38A0003CF18 /* AssetsLibrary.framework in Frameworks */,
-				AAB4FA3C1A5ED3760003CF18 /* CrashReporter.framework in Frameworks */,
-				AAB4FA531A5ED5C90003CF18 /* CoreData.framework in Frameworks */,
-				AAB4FA421A5ED39E0003CF18 /* CoreGraphics.framework in Frameworks */,
-				AAB4FA551A5ED5E50003CF18 /* CoreLocation.framework in Frameworks */,
-				AAB4FA401A5ED3950003CF18 /* CoreText.framework in Frameworks */,
-				AAB4FA571A5ED5FD0003CF18 /* ExternalAccessory.framework in Frameworks */,
-				AAB4FA441A5ED3AD0003CF18 /* MobileCoreServices.framework in Frameworks */,
-				AAB4FA461A5ED3B70003CF18 /* QuartzCore.framework in Frameworks */,
-				AAB83D651A6D511900951A81 /* AdyenToolkit.framework in Frameworks */,
-				AAB4FA481A5ED3BE0003CF18 /* QuickLook.framework in Frameworks */,
-				AAB4FA4A1A5ED3C50003CF18 /* Security.framework in Frameworks */,
-				AAB4FA4C1A5ED3CE0003CF18 /* SystemConfiguration.framework in Frameworks */,
-				AAB4FA591A5ED6130003CF18 /* libsqlite3.0.dylib in Frameworks */,
-				AAB4FA511A5ED59C0003CF18 /* libPaylevenSDK.a in Frameworks */,
+				AAB83D521A6D49C000951A81 /* PaylevenSDK.framework in Frameworks */,
+				AA6449DC19ED68B500FAD24B /* libsqlite3.0.dylib in Frameworks */,
+				AA6449DB19ED68AE00FAD24B /* CoreData.framework in Frameworks */,
+				AA6449D919ED68A500FAD24B /* CoreLocation.framework in Frameworks */,
+				AA6449D219ED685D00FAD24B /* ExternalAccessory.framework in Frameworks */,
+				AAB601D91A092AB600AF070D /* CoreText.framework in Frameworks */,
+				AAB83D511A6D49C000951A81 /* AdyenToolkit.framework in Frameworks */,
+				AAB601DA1A092ABD00AF070D /* CoreGraphics.framework in Frameworks */,
+				AAB601DC1A092AD300AF070D /* Foundation.framework in Frameworks */,
+				AA6449D819ED689C00FAD24B /* SystemConfiguration.framework in Frameworks */,
+				AAB601E61A092C0900AF070D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAB4F99C1A5D70E10003CF18 = {
+		AA5612E519ED338200F6C5E0 = {
 			isa = PBXGroup;
 			children = (
-				AAB4FA4D1A5ED3FA0003CF18 /* Frameworks */,
-				AAB4F9EA1A5ECBBD0003CF18 /* PaylevenSDKExample */,
-				AAB4F9A61A5D70E10003CF18 /* Products */,
+				AA5612F019ED338200F6C5E0 /* PaylevenSDKExample */,
+				AA6449CC19ED681300FAD24B /* Frameworks */,
+				AA5612EF19ED338200F6C5E0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AAB4F9A61A5D70E10003CF18 /* Products */ = {
+		AA5612EF19ED338200F6C5E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAB4F9A51A5D70E10003CF18 /* PaylevenSDKExample.app */,
+				AA5612EE19ED338200F6C5E0 /* PaylevenSDKExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAB4F9EA1A5ECBBD0003CF18 /* PaylevenSDKExample */ = {
+		AA5612F019ED338200F6C5E0 /* PaylevenSDKExample */ = {
 			isa = PBXGroup;
 			children = (
-				C4B60AA41B7A27350007DCD8 /* Models */,
-				C4B60AA01B7A26900007DCD8 /* Controllers */,
-				C4B60A981B7A233C0007DCD8 /* Storyboards */,
-				AAB4F9F41A5ECCAB0003CF18 /* Images.xcassets */,
-				AAB4FA0B1A5ECCD50003CF18 /* LaunchScreen.xib */,
-				C4F300B31B7B479300D80AB9 /* Supporting Files */,
+				AAE125851A2F13F800F6B88A /* Readme.txt */,
+				AA5612F519ED338200F6C5E0 /* AppDelegate.h */,
+				AA5612F619ED338200F6C5E0 /* AppDelegate.m */,
+				AA6449C619ED415600FAD24B /* LoginViewController.m */,
+				AA5612FE19ED338200F6C5E0 /* Images.xcassets */,
+				AA56130019ED338200F6C5E0 /* LaunchScreen.xib */,
+				AA5612F119ED338200F6C5E0 /* Supporting Files */,
 			);
 			path = PaylevenSDKExample;
 			sourceTree = "<group>";
 		};
-		AAB4FA4D1A5ED3FA0003CF18 /* Frameworks */ = {
+		AA5612F119ED338200F6C5E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AAB4FA581A5ED6120003CF18 /* libsqlite3.0.dylib */,
-				AAB4FA501A5ED59C0003CF18 /* libPaylevenSDK.a */,
-				AAB83D621A6D511900951A81 /* AdyenToolkit.bundle */,
-				AAB83D631A6D511900951A81 /* AdyenToolkit.framework */,
-				AAB4FA3D1A5ED38A0003CF18 /* AssetsLibrary.framework */,
-				AAB4FA521A5ED5C90003CF18 /* CoreData.framework */,
-				AAB4FA411A5ED39E0003CF18 /* CoreGraphics.framework */,
-				AAB4FA541A5ED5E50003CF18 /* CoreLocation.framework */,
-				AAB4FA3F1A5ED3950003CF18 /* CoreText.framework */,
-				AAB4FA3B1A5ED3760003CF18 /* CrashReporter.framework */,
-				AAB4FA561A5ED5FD0003CF18 /* ExternalAccessory.framework */,
-				AAB4FA431A5ED3AD0003CF18 /* MobileCoreServices.framework */,
-				AAB4FA451A5ED3B70003CF18 /* QuartzCore.framework */,
-				AAB4FA471A5ED3BE0003CF18 /* QuickLook.framework */,
-				AAB4FA491A5ED3C50003CF18 /* Security.framework */,
-				AAB4FA4B1A5ED3CE0003CF18 /* SystemConfiguration.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C4B60A981B7A233C0007DCD8 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				C4B60A9E1B7A23690007DCD8 /* Main.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		C4B60AA01B7A26900007DCD8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C4B60AA81B7A29760007DCD8 /* Manager */,
-				C4F300CD1B7C44B400D80AB9 /* CoreData */,
-				C4F300DF1B7C8FBE00D80AB9 /* CoreLocation */,
-				C4B60AA31B7A27190007DCD8 /* Delegates */,
-				C4B60AA21B7A270A0007DCD8 /* DataSources */,
-				C4B60AA11B7A26C00007DCD8 /* ViewControllers */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		C4B60AA11B7A26C00007DCD8 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				C4B60AA51B7A27E60007DCD8 /* PSLoginViewController.h */,
-				C4B60AA61B7A27E60007DCD8 /* PSLoginViewController.m */,
-				C4F300B01B7B415F00D80AB9 /* PSLoginProcessViewController.h */,
-				C4F300B11B7B415F00D80AB9 /* PSLoginProcessViewController.m */,
-				C4F300B71B7B5A7F00D80AB9 /* PSHomeViewController.h */,
-				C4F300B81B7B5A7F00D80AB9 /* PSHomeViewController.m */,
-				C4F300CA1B7BA2B100D80AB9 /* PSPaymentViewController.h */,
-				C4F300CB1B7BA2B100D80AB9 /* PSPaymentViewController.m */,
-				C4F300F01B7D0E0200D80AB9 /* PSPaymentProcessViewController.h */,
-				C4F300F11B7D0E0200D80AB9 /* PSPaymentProcessViewController.m */,
-				C4F300EC1B7CF50100D80AB9 /* PSPaymentResultViewController.h */,
-				C4F300ED1B7CF50100D80AB9 /* PSPaymentResultViewController.m */,
-				C4F301061B7E3A8800D80AB9 /* PSReceiptViewController.h */,
-				C4F301071B7E3A8800D80AB9 /* PSReceiptViewController.m */,
-				C4F300C71B7B8C9900D80AB9 /* PSLogoutViewController.h */,
-				C4F300C81B7B8C9900D80AB9 /* PSLogoutViewController.m */,
-				C4F301001B7DCA5000D80AB9 /* PSTerminalMissingViewController.h */,
-				C4F301011B7DCA5000D80AB9 /* PSTerminalMissingViewController.m */,
-				C4F300FA1B7DBCB800D80AB9 /* PSTerminalTableViewController.h */,
-				C4F300FB1B7DBCB800D80AB9 /* PSTerminalTableViewController.m */,
-				C44794731B82101D0050B477 /* PSRefundViewController.h */,
-				C44794741B82101D0050B477 /* PSRefundViewController.m */,
-				C4D4A2671BB2A6CA00E059F7 /* PSRefundResultViewController.h */,
-				C4D4A2681BB2A6CA00E059F7 /* PSRefundResultViewController.m */,
-				C4E9ECDB1B8DABF90059C7F1 /* PSRefundProcessViewController.h */,
-				C4E9ECDC1B8DABF90059C7F1 /* PSRefundProcessViewController.m */,
-				C44794621B81EEAA0050B477 /* PSLatestPaymentsViewController.h */,
-				C44794631B81EEAA0050B477 /* PSLatestPaymentsViewController.m */,
-				C4B1772D1BA96FEF00EF4671 /* PSMissingPaymentsViewController.h */,
-				C4B1772E1BA96FEF00EF4671 /* PSMissingPaymentsViewController.m */,
-				C4630B881BB5303000BB6AE1 /* PSSignViewController.h */,
-				C4630B891BB5303000BB6AE1 /* PSSignViewController.m */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		C4B60AA21B7A270A0007DCD8 /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-				C4F300BA1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.h */,
-				C4F300BB1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.m */,
-				C4F300F41B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.h */,
-				C4F300F51B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.m */,
-				C447946A1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.h */,
-				C447946B1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.m */,
-			);
-			name = DataSources;
-			sourceTree = "<group>";
-		};
-		C4B60AA31B7A27190007DCD8 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				C4F300EF1B7D0CE500D80AB9 /* PSPaymentProcessDelegate.h */,
-				C4F3009D1B7A429E00D80AB9 /* PSLoginDelegate.h */,
-				C4F300C61B7B89D700D80AB9 /* PSLogoutDelegate.h */,
-				C4F3010A1B7E427700D80AB9 /* PSSignatureDelegate.h */,
-				C4F300BD1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.h */,
-				C4F300BE1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.m */,
-				C4F300F71B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.h */,
-				C4F300F81B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.m */,
-				C447946D1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.h */,
-				C447946E1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.m */,
-				C4E9ECDE1B8DAC730059C7F1 /* PSRefundProcessDelegate.h */,
-			);
-			name = Delegates;
-			sourceTree = "<group>";
-		};
-		C4B60AA41B7A27350007DCD8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C4B60AA91B7A2A9B0007DCD8 /* PSIdentifiers.h */,
-				C4B60AAA1B7A2A9B0007DCD8 /* PSIdentifiers.m */,
-				C4F300AD1B7B345600D80AB9 /* PSSystemDevice.h */,
-				C4F300AE1B7B345600D80AB9 /* PSSystemDevice.m */,
-				C4F300C01B7B7A5900D80AB9 /* PSOption.h */,
-				C4F300C11B7B7A5900D80AB9 /* PSOption.m */,
-				C4F300E61B7CCA5D00D80AB9 /* PSFormatter.h */,
-				C4F300E71B7CCA5D00D80AB9 /* PSFormatter.m */,
-				C4F300E91B7CD41C00D80AB9 /* PSPriceDecimal.h */,
-				C4F300EA1B7CD41C00D80AB9 /* PSPriceDecimal.m */,
-				C4F300C31B7B800300D80AB9 /* PSHomeTableViewCell.h */,
-				C4F300C41B7B800300D80AB9 /* PSHomeTableViewCell.m */,
-				C4F301031B7DCC4100D80AB9 /* PSTerminalTableViewCell.h */,
-				C4F301041B7DCC4100D80AB9 /* PSTerminalTableViewCell.m */,
-				C4F3010B1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.h */,
-				C4F3010C1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.m */,
-				C4F3010E1B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.h */,
-				C4F3010F1B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.m */,
-				C44794701B81F6260050B477 /* PSLatestPaymentsTableViewCell.h */,
-				C44794711B81F6260050B477 /* PSLatestPaymentsTableViewCell.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		C4B60AA81B7A29760007DCD8 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				C4F300A41B7A4A5D00D80AB9 /* PSManager.h */,
-				C4F300A51B7A4A5D00D80AB9 /* PSManager.m */,
-				C4F300B61B7B522C00D80AB9 /* PSManagerDelegate.h */,
-			);
-			name = Manager;
-			sourceTree = "<group>";
-		};
-		C4BD43C71B9F378200F8C93E /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				C4BD43CD1B9F379800F8C93E /* MyriadPro-Bold.otf */,
-				C4BD43CE1B9F379800F8C93E /* MyriadPro-Light.otf */,
-				C4BD43CF1B9F379800F8C93E /* MyriadPro-Regular.otf */,
-				C4BD43D01B9F379800F8C93E /* MyriadPro-Semibold.otf */,
-			);
-			name = Fonts;
-			sourceTree = "<group>";
-		};
-		C4F300B31B7B479300D80AB9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4BD43C71B9F378200F8C93E /* Fonts */,
-				C4F300E41B7C9AEC00D80AB9 /* berlin.gpx */,
-				C4F300B41B7B47F300D80AB9 /* Config.plist */,
-				AAB4FA131A5ECF9E0003CF18 /* Info.plist */,
-				AAB4F9FD1A5ECCAB0003CF18 /* signature.png */,
+				AA5612F219ED338200F6C5E0 /* Info.plist */,
+				AA5612F319ED338200F6C5E0 /* main.m */,
+				AA38D9481A1F950400FCF445 /* signature.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C4F300CD1B7C44B400D80AB9 /* CoreData */ = {
+		AA6449CC19ED681300FAD24B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4F300D11B7C45A600D80AB9 /* PSCoreDataManagerDelegate.h */,
-				C4F300CE1B7C451000D80AB9 /* PSCoreDataManager.h */,
-				C4F300CF1B7C451000D80AB9 /* PSCoreDataManager.m */,
-				C4F300D51B7C7C2A00D80AB9 /* CoreDataModels */,
+				AAB601E51A092C0900AF070D /* UIKit.framework */,
+				AAB601DB1A092AD300AF070D /* Foundation.framework */,
+				AAB601D61A092A9200AF070D /* CoreGraphics.framework */,
+				AAB601D41A092A8700AF070D /* CoreText.framework */,
+				AA6449DA19ED68AE00FAD24B /* CoreData.framework */,
+				AA6449D719ED689C00FAD24B /* SystemConfiguration.framework */,
+				AA6449D519ED687900FAD24B /* CoreLocation.framework */,
+				AA6449D319ED686F00FAD24B /* libsqlite3.0.dylib */,
+				AA6449D119ED685D00FAD24B /* ExternalAccessory.framework */,
+				AAB83D4D1A6D49C000951A81 /* AdyenToolkit.bundle */,
+				AAB83D4E1A6D49C000951A81 /* AdyenToolkit.framework */,
+				AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */,
 			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
-		C4F300D51B7C7C2A00D80AB9 /* CoreDataModels */ = {
-			isa = PBXGroup;
-			children = (
-				C4F300DC1B7C7E1300D80AB9 /* PSPayment.h */,
-				C4F300DD1B7C7E1300D80AB9 /* PSPayment.m */,
-				C4F300D61B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodeld */,
-			);
-			name = CoreDataModels;
-			sourceTree = "<group>";
-		};
-		C4F300DF1B7C8FBE00D80AB9 /* CoreLocation */ = {
-			isa = PBXGroup;
-			children = (
-				C4F300E31B7C907900D80AB9 /* PSLocationManagerDelegate.h */,
-				C4F300E01B7C905B00D80AB9 /* PSLocationManager.h */,
-				C4F300E11B7C905B00D80AB9 /* PSLocationManager.m */,
-			);
-			name = CoreLocation;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAB4F9A41A5D70E10003CF18 /* PaylevenSDKExample */ = {
+		AA5612ED19ED338200F6C5E0 /* PaylevenSDKExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAB4F9C81A5D70E10003CF18 /* Build configuration list for PBXNativeTarget "PaylevenSDKExample" */;
+			buildConfigurationList = AA56131119ED338200F6C5E0 /* Build configuration list for PBXNativeTarget "PaylevenSDKExample" */;
 			buildPhases = (
-				AAB4F9A11A5D70E10003CF18 /* Sources */,
-				AAB4F9A21A5D70E10003CF18 /* Frameworks */,
-				AAB4F9A31A5D70E10003CF18 /* Resources */,
+				AA5612EA19ED338200F6C5E0 /* Sources */,
+				AA5612EB19ED338200F6C5E0 /* Frameworks */,
+				AA5612EC19ED338200F6C5E0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PaylevenSDKExample;
-			productName = PaylevenSDKInternalApp;
-			productReference = AAB4F9A51A5D70E10003CF18 /* PaylevenSDKExample.app */;
+			productName = PaylevenSDKExample;
+			productReference = AA5612EE19ED338200F6C5E0 /* PaylevenSDKExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AAB4F99D1A5D70E10003CF18 /* Project object */ = {
+		AA5612E619ED338200F6C5E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Payleven Holding GmbH";
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "payleven Holding GmbH";
 				TargetAttributes = {
-					AAB4F9A41A5D70E10003CF18 = {
-						CreatedOnToolsVersion = 6.1.1;
+					AA5612ED19ED338200F6C5E0 = {
+						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = JPKY74ZN8Q;
 					};
 				};
 			};
-			buildConfigurationList = AAB4F9A01A5D70E10003CF18 /* Build configuration list for PBXProject "PaylevenSDKExample" */;
+			buildConfigurationList = AA5612E919ED338200F6C5E0 /* Build configuration list for PBXProject "PaylevenSDKExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -488,89 +178,49 @@
 				en,
 				Base,
 			);
-			mainGroup = AAB4F99C1A5D70E10003CF18;
-			productRefGroup = AAB4F9A61A5D70E10003CF18 /* Products */;
+			mainGroup = AA5612E519ED338200F6C5E0;
+			productRefGroup = AA5612EF19ED338200F6C5E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAB4F9A41A5D70E10003CF18 /* PaylevenSDKExample */,
+				AA5612ED19ED338200F6C5E0 /* PaylevenSDKExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AAB4F9A31A5D70E10003CF18 /* Resources */ = {
+		AA5612EC19ED338200F6C5E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB4FA041A5ECCAB0003CF18 /* Images.xcassets in Resources */,
-				AAB4FA0F1A5ECCD50003CF18 /* LaunchScreen.xib in Resources */,
-				C4BD43D11B9F379800F8C93E /* MyriadPro-Bold.otf in Resources */,
-				AAB4FA091A5ECCAB0003CF18 /* signature.png in Resources */,
-				AAB83D641A6D511900951A81 /* AdyenToolkit.bundle in Resources */,
-				C4F300B51B7B47F300D80AB9 /* Config.plist in Resources */,
-				C4BD43D31B9F379800F8C93E /* MyriadPro-Regular.otf in Resources */,
-				C4BD43D21B9F379800F8C93E /* MyriadPro-Light.otf in Resources */,
-				C4B60A9F1B7A23690007DCD8 /* Main.storyboard in Resources */,
-				C4F300E51B7C9AEC00D80AB9 /* berlin.gpx in Resources */,
-				C4BD43D41B9F379800F8C93E /* MyriadPro-Semibold.otf in Resources */,
+				AA38D9491A1F950400FCF445 /* signature.png in Resources */,
+				AAB83D501A6D49C000951A81 /* AdyenToolkit.bundle in Resources */,
+				AA56130219ED338200F6C5E0 /* LaunchScreen.xib in Resources */,
+				AA5612FF19ED338200F6C5E0 /* Images.xcassets in Resources */,
+				AAE125861A2F13F800F6B88A /* Readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAB4F9A11A5D70E10003CF18 /* Sources */ = {
+		AA5612EA19ED338200F6C5E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F300BC1B7B5BA500D80AB9 /* PSHomeTableViewDataSource.m in Sources */,
-				C4F300E81B7CCA5D00D80AB9 /* PSFormatter.m in Sources */,
-				C4F300F21B7D0E0200D80AB9 /* PSPaymentProcessViewController.m in Sources */,
-				C4F300E21B7C905B00D80AB9 /* PSLocationManager.m in Sources */,
-				C4F301101B7F538C00D80AB9 /* PSSignatureDescriptionTableViewCell.m in Sources */,
-				C4B60AAB1B7A2A9B0007DCD8 /* PSIdentifiers.m in Sources */,
-				C4F300DE1B7C7E1300D80AB9 /* PSPayment.m in Sources */,
-				C4F300D01B7C451000D80AB9 /* PSCoreDataManager.m in Sources */,
-				C4D4A2691BB2A6CA00E059F7 /* PSRefundResultViewController.m in Sources */,
-				C4F300BF1B7B5C3E00D80AB9 /* PSHomeTableViewDelegate.m in Sources */,
-				C4E9ECDD1B8DABF90059C7F1 /* PSRefundProcessViewController.m in Sources */,
-				C4F300AF1B7B345600D80AB9 /* PSSystemDevice.m in Sources */,
-				C4F301021B7DCA5000D80AB9 /* PSTerminalMissingViewController.m in Sources */,
-				C4F300F61B7DBC1400D80AB9 /* PSTerminalTableViewDataSource.m in Sources */,
-				C4F300EE1B7CF50100D80AB9 /* PSPaymentResultViewController.m in Sources */,
-				C4F301081B7E3A8800D80AB9 /* PSReceiptViewController.m in Sources */,
-				C4F301051B7DCC4100D80AB9 /* PSTerminalTableViewCell.m in Sources */,
-				C44794721B81F6260050B477 /* PSLatestPaymentsTableViewCell.m in Sources */,
-				C4F3010D1B7E446000D80AB9 /* PSSignatureImageViewTableViewCell.m in Sources */,
-				C4B60AA71B7A27E60007DCD8 /* PSLoginViewController.m in Sources */,
-				C4F300C91B7B8C9900D80AB9 /* PSLogoutViewController.m in Sources */,
-				C4F300EB1B7CD41C00D80AB9 /* PSPriceDecimal.m in Sources */,
-				C44794751B82101D0050B477 /* PSRefundViewController.m in Sources */,
-				C44794641B81EEAA0050B477 /* PSLatestPaymentsViewController.m in Sources */,
-				C4F300F91B7DBC7200D80AB9 /* PSTerminalTableViewDelegate.m in Sources */,
-				C4F300C21B7B7A5900D80AB9 /* PSOption.m in Sources */,
-				C4F300CC1B7BA2B100D80AB9 /* PSPaymentViewController.m in Sources */,
-				C4F300A61B7A4A5D00D80AB9 /* PSManager.m in Sources */,
-				C4F300D81B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodeld in Sources */,
-				C4F300C51B7B800300D80AB9 /* PSHomeTableViewCell.m in Sources */,
-				C447946F1B81EF550050B477 /* PSLatestPaymentsTableViewDelegate.m in Sources */,
-				C4F300FC1B7DBCB800D80AB9 /* PSTerminalTableViewController.m in Sources */,
-				C447946C1B81EF160050B477 /* PSLatestPaymentsTableViewDataSource.m in Sources */,
-				C4630B8A1BB5303000BB6AE1 /* PSSignViewController.m in Sources */,
-				C4B1772F1BA96FEF00EF4671 /* PSMissingPaymentsViewController.m in Sources */,
-				C4F300B91B7B5A7F00D80AB9 /* PSHomeViewController.m in Sources */,
-				C4F300B21B7B415F00D80AB9 /* PSLoginProcessViewController.m in Sources */,
+				AA6449C719ED415600FAD24B /* LoginViewController.m in Sources */,
+				AA5612F719ED338200F6C5E0 /* AppDelegate.m in Sources */,
+				AA5612F419ED338200F6C5E0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AAB4FA0B1A5ECCD50003CF18 /* LaunchScreen.xib */ = {
+		AA56130019ED338200F6C5E0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AAB4FA0C1A5ECCD50003CF18 /* Base */,
+				AA56130119ED338200F6C5E0 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -578,7 +228,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AAB4F9C61A5D70E10003CF18 /* Debug */ = {
+		AA56130F19ED338200F6C5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -597,7 +247,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -613,6 +262,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PaylevenSDK\"",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -620,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		AAB4F9C71A5D70E10003CF18 /* Release */ = {
+		AA56131019ED338200F6C5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -637,9 +290,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -649,6 +301,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PaylevenSDK\"",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -656,26 +312,20 @@
 			};
 			name = Release;
 		};
-		AAB4F9C91A5D70E10003CF18 /* Debug */ = {
+		AA56131219ED338200F6C5E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				"CODE_SIGN_RESOURCE_RULES_PATH[sdk=*]" = "$(SDKROOT)/ResourceRules.plist";
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ThirdParty/HockeySDK/Vendor",
 					"$(PROJECT_DIR)/Framework",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PaylevenSDK\"",
-					"\"$(SRCROOT)/ThirdParty/HockeySDK/Classes\"",
 				);
 				INFOPLIST_FILE = PaylevenSDKExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -685,27 +335,20 @@
 			};
 			name = Debug;
 		};
-		AAB4F9CA1A5D70E10003CF18 /* Release */ = {
+		AA56131319ED338200F6C5E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Jade 1360. GmbH";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
-				"CODE_SIGN_RESOURCE_RULES_PATH[sdk=*]" = "$(SDKROOT)/ResourceRules.plist";
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ThirdParty/HockeySDK/Vendor",
 					"$(PROJECT_DIR)/Framework",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PaylevenSDK\"",
-					"\"$(SRCROOT)/ThirdParty/HockeySDK/Classes\"",
 				);
 				INFOPLIST_FILE = PaylevenSDKExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -718,38 +361,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAB4F9A01A5D70E10003CF18 /* Build configuration list for PBXProject "PaylevenSDKExample" */ = {
+		AA5612E919ED338200F6C5E0 /* Build configuration list for PBXProject "PaylevenSDKExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAB4F9C61A5D70E10003CF18 /* Debug */,
-				AAB4F9C71A5D70E10003CF18 /* Release */,
+				AA56130F19ED338200F6C5E0 /* Debug */,
+				AA56131019ED338200F6C5E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAB4F9C81A5D70E10003CF18 /* Build configuration list for PBXNativeTarget "PaylevenSDKExample" */ = {
+		AA56131119ED338200F6C5E0 /* Build configuration list for PBXNativeTarget "PaylevenSDKExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAB4F9C91A5D70E10003CF18 /* Debug */,
-				AAB4F9CA1A5D70E10003CF18 /* Release */,
+				AA56131219ED338200F6C5E0 /* Debug */,
+				AA56131319ED338200F6C5E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C4F300D61B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C4F300D71B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodel */,
-			);
-			currentVersion = C4F300D71B7C7C6300D80AB9 /* PaylevenSDKExample.xcdatamodel */;
-			path = PaylevenSDKExample.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = AAB4F99D1A5D70E10003CF18 /* Project object */;
+	rootObject = AA5612E619ED338200F6C5E0 /* Project object */;
 }

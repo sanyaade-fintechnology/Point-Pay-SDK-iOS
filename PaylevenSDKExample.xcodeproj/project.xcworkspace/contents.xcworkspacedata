@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PaylevenSDKInternalApp.xcodeproj">
+      location = "self:PaylevenSDKExample.xcodeproj">
    </FileRef>
 </Workspace>
