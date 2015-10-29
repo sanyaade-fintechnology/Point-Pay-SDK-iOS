@@ -9,8 +9,7 @@
 #import "PSCoreDataManager.h"
 #import "PSCoreDataManagerDelegate.h"
 #import "PSPayment.h"
-#import <PLVPaymentResult.h>
-#import <PLVRefund.h>
+#import <PaylevenSDK/PaylevenSDK.h>
 
 NSString *const kPaylevenSDKExample = @"PaylevenSDKExample";
 NSString *const kMomd = @"momd";
