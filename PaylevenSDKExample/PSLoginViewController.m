@@ -89,16 +89,9 @@
                                      @"passwordTextFieldTopContraint": @(self.passwordTextFieldTopContraint.constant)
                                      };
     
-    //FIXME: Remove auth parameters
-    //self.username.text = @"info@payleven.de";
-    //self.username.text = @"b@dg.er";
-    //self.username.text = @"testeIT5@sharklasers.com";
-    //self.username.text = @"mposuk@sharklasers.com"
-    //self.username.text = @"mpospl@sharklasers.com";
-    //self.username.text = @"testeIT5@sharklasers.com";
-    
-    self.username.text = @"testlive16@sharklasers.com";
-    self.password.text = @"12345678";
+
+    self.username.text = @"";
+    self.password.text = @"";
 }
 
 - (void)configureNavigationController {
