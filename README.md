@@ -17,8 +17,9 @@ The SDK is a static library which supports other platforms like Xamarin and is f
 
 ### Table of Contents
 * [Installation](#installation)
-    * [CocoaPods](#cocoaPods)
+    * [CocoaPods](#cocoapods)
     * [Manual Set-Up](#manual-set-up)
+    * [MFi Program Authorization](#mfi-program-authorization)
     * [Bluetooth pairing](#bluetooth-pairing)
 * [Getting started](#getting-started)
   * [Authenticate your app](#authenticate-your-app)
@@ -44,7 +45,7 @@ The SDK is a static library which supports other platforms like Xamarin and is f
 
 	pod 'Payleven-mPos', '~> 1.0'
 
-##### Manual Set-Up
+##### Manual Set Up
 
 1. Drag *PaylevenSDK.framework*, *AdyenToolkit.framework*, and *AdyenToolkit.bundle* into your Xcode project.
 
@@ -56,19 +57,39 @@ The SDK is a static library which supports other platforms like Xamarin and is f
         SystemConfiguration.framework
         libsqlite3.0.dylib
 
-3. Open the *Build Settings* of your target and add `-ObjC` flag to Other Linker Flags.
+3. Open the *Build Settings* of your target and 
+  * add `-ObjC` flag to Other Linker Flags
+  * set Bitcode enabled `No`
 
-4. Open the *Info.plist* and add the following entries:
+4. Import PaylevenSDK into your files:
+
+        #import <PaylevenSDK/PaylevenSDK.h>
+
+5. Open the *Info.plist* and add the following entries:
 
   * `CFBundleDisplayName` with the display name for your app.
   * `UISupportedExternalAccessoryProtocols` with an array of just one value `com.adyen.bt1`.
   * For iOS 8: `NSLocationWhenInUseUsageDescription` or `NSLocationAlwaysUsageDescription`, for iOS 7: `NSLocationUsageDescription` with the location usage description message for the users.
+  * App Transport Security as follows:
+```	<key>NSAppTransportSecurity</key>
+	    <dict>
+	        <key>NSExceptionDomains</key>
+	        <dict>
+	            <key>payleven.de</key>
+	            <dict>
+	                <key>NSExceptionRequiresForwardSecrecy</key>
+	                <false/>
+	                <key>NSIncludesSubdomains</key>
+	                <true/>
+	            </dict>
+	        </dict>
+	    </dict>
+```
 
-5. Import PaylevenSDK into your files:
+##### MFi Program Authorization
+Before submitting your iOS app to iTunes, Apple requires registration of all iOS apps that communicate with approved MFi devices. This registration process officially associates your app with the card reader and can be performed by payleven. Once your app (bundle ID) has been registered, future app versions do not require additional registrations. Please contact developer@payleven.com for help with your submission.
 
-        #import <PaylevenSDK/PaylevenSDK.h>
-
-#### Bluetooth pairing
+##### Bluetooth pairing
 Before proceeding with the integration and testing make sure you have paired the card reader in the bluetooth settings on your iOS device.
  1. Make sure the device is charged and turned on.
  2. Press '0' key on the card reader for 5 sec and make sure the card reader has entered the pairing mode (there will be a corresponding sign on the screen).
