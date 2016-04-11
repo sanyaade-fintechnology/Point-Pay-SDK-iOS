@@ -56,10 +56,11 @@ The SDK is a static library which supports other platforms like Xamarin and is f
         ExternalAccessory.framework
         SystemConfiguration.framework
         libsqlite3.0.dylib
+		AVFoundation.framework
+		AudioToolbox.framework
 
 3. Open the *Build Settings* of your target and 
   * add `-ObjC` flag to Other Linker Flags
-  * set Bitcode enabled `No`
 
 4. Import PaylevenSDK into your files:
 
@@ -233,6 +234,53 @@ Implement PLVPaymentTaskDelegate's methods to respond to payment events such as 
     self.paymentTask = nil;
  }
 ```
+
+Optionally, you can offer a more meaningful user experience by implementing progressDidChange method as shown below. 
+
+```objective-c
+-(void)paymentTask:(PLVPaymentTask *)paymentTask progressDidChange:(PLVPaymentProgressState)progressState
+{
+    NSString *progressStateDescriptor;
+    
+    switch (progressState) {
+        case PLVPaymentProgressStateNone:
+            progressStateDescriptor = @"None";
+            break;
+        case PLVPaymentProgressStateStarted:
+            progressStateDescriptor = @"Started";
+            break;
+        case PLVPaymentProgressStateRequestInsertCard:
+            progressStateDescriptor = @"Please insert card";
+            break;
+        case PLVPaymentProgressStateRequestPresentCard:
+            progressStateDescriptor = @"Please present card";
+            break;
+        case PLVPaymentProgressStateCardInserted:
+            progressStateDescriptor = @"Card inserted";
+            break;
+        case PLVPaymentProgressStateRequestEnterPin:
+            progressStateDescriptor = @"Please enter Pin";
+            break;
+        case PLVPaymentProgressStatePinEntered:
+            progressStateDescriptor = @"Pin entered";
+            break;
+        case PLVPaymentProgressStateContactlessBeepFailed:
+            progressStateDescriptor = @"Contactless Tap failed";
+            break;
+        case PLVPaymentProgressStateContactlessBeepOk:
+            progressStateDescriptor = @"Contactless Tap Ok";
+            break;
+        case PLVPaymentProgressStateRequestSwipeCard:
+            progressStateDescriptor = @"Please swipe card";
+            break;
+        default:
+            break;
+    }
+    
+	//Display progressStateDescriptor to your user
+}
+```
+
 
 ##### Example of a card reader Chip payment
 ```
