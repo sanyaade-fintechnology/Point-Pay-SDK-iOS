@@ -70,6 +70,7 @@
 		AAB83D521A6D49C000951A81 /* PaylevenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */; };
 		AAE125861A2F13F800F6B88A /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = AAE125851A2F13F800F6B88A /* Readme.txt */; };
 		F3C12B3F1CBC11090084F93B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C12B3E1CBC11090084F93B /* AudioToolbox.framework */; };
+		F3ECBDE31CBC11AA009CF430 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ECBDE21CBC11A9009CF430 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,6 +184,7 @@
 		AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaylevenSDK.framework; path = Framework/PaylevenSDK.framework; sourceTree = "<group>"; };
 		AAE125851A2F13F800F6B88A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		F3C12B3E1CBC11090084F93B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F3ECBDE21CBC11A9009CF430 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ECBDE31CBC11AA009CF430 /* AVFoundation.framework in Frameworks */,
 				F3C12B3F1CBC11090084F93B /* AudioToolbox.framework in Frameworks */,
 				AAB83D521A6D49C000951A81 /* PaylevenSDK.framework in Frameworks */,
 				AA6449DC19ED68B500FAD24B /* libsqlite3.0.dylib in Frameworks */,
@@ -427,6 +430,7 @@
 		AA6449CC19ED681300FAD24B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3ECBDE21CBC11A9009CF430 /* AVFoundation.framework */,
 				F3C12B3E1CBC11090084F93B /* AudioToolbox.framework */,
 				AAB601E51A092C0900AF070D /* UIKit.framework */,
 				AAB601DB1A092AD300AF070D /* Foundation.framework */,
