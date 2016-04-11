@@ -24,5 +24,9 @@
  */
 - (void)presentSignViewController:(nonnull UIViewController *)viewController;
 
+/**
+ * Called when payment progress state changed
+ */
+- (void)paymentStateChangedToDesciption:(nonnull NSString *) description;
 
 @end

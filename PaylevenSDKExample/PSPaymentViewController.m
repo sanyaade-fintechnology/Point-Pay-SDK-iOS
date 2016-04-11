@@ -476,6 +476,48 @@
     }];
 }
 
+-(void)paymentTask:(PLVPaymentTask *)paymentTask progressDidChange:(PLVPaymentProgressState)progressState
+{
+    NSString *progressStateDescriptor;
+    
+    switch (progressState) {
+        case PLVPaymentProgressStateNone:
+            progressStateDescriptor = @"None";
+            break;
+        case PLVPaymentProgressStateStarted:
+            progressStateDescriptor = @"Started";
+            break;
+        case PLVPaymentProgressStateRequestInsertCard:
+            progressStateDescriptor = @"Please insert card";
+            break;
+        case PLVPaymentProgressStateRequestPresentCard:
+            progressStateDescriptor = @"Please present card";
+            break;
+        case PLVPaymentProgressStateCardInserted:
+            progressStateDescriptor = @"Card inserted";
+            break;
+        case PLVPaymentProgressStateRequestEnterPin:
+            progressStateDescriptor = @"Please enter Pin";
+            break;
+        case PLVPaymentProgressStatePinEntered:
+            progressStateDescriptor = @"Pin entered";
+            break;
+        case PLVPaymentProgressStateContactlessBeepFailed:
+            progressStateDescriptor = @"Contactless Tap failed";
+            break;
+        case PLVPaymentProgressStateContactlessBeepOk:
+            progressStateDescriptor = @"Contactless Tap Ok";
+            break;
+        case PLVPaymentProgressStateRequestSwipeCard:
+            progressStateDescriptor = @"Please swipe card";
+            break;
+        default:
+            break;
+    }
+    
+    [self.paymentProcessDelegate paymentStateChangedToDesciption:progressStateDescriptor];
+}
+
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {

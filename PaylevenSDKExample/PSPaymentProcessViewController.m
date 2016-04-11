@@ -12,6 +12,7 @@
 @interface PSPaymentProcessViewController()
 
 @property (weak, nonatomic) IBOutlet UILabel *paylevenCopyrightLabel;
+@property (weak, nonatomic) IBOutlet UILabel *paymentProgressLabel;
 
 @end
 
@@ -54,6 +55,10 @@
 
 - (void)presentSignViewController:(UIViewController *)viewController {
     [self presentViewController:viewController animated:YES completion:nil];
+}
+
+-(void)paymentStateChangedToDesciption:(NSString *)description{
+    self.paymentProgressLabel.text = description;
 }
 
 @end

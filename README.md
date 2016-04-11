@@ -336,5 +336,5 @@ The method below could be triggered as soon as it conforms to the prerequisites 
 [API Reference](http://payleven.github.io/mPOS-SDK-iOS/AppleDoc/)
 
 ### mPOS SDK Sample App
-The mPOS SDK includes a sample app that shows how the SDK can be integrated. Within this sample app is possible to choose a card reader, make payments and refund them. It contains as well a Signature View where the user can sign in case the payment requires a signature.
-Note that the location is hardcoded and needs to be changed depending on the country the user is paying from.
+The mPOS SDK includes a sample app that shows how the SDK can be integrated. Within this sample app is possible to choose a card reader, make payments and refund them. It contains a Signature View as well where the user can sign in case the payment requires a signature.
+Note that the location is hardcoded and needs to be changed depending on the country the user is conducting the payment.

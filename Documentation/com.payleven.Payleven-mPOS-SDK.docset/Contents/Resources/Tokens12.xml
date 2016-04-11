@@ -73,6 +73,26 @@ image     Signature image. Must not be NULL.</Abstract>
             <NodeRef refid="12"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PLVPaymentTaskDelegate/paymentTask:progressDidChange:</TokenIdentifier>
+			<Abstract type="html">Called when payment tasks state changes. Check the result property for the result.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>- (void)paymentTask:(PLVPaymentTask *)paymentTask progressDidChange:(PLVPaymentProgressState)progressState</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>paymentTask</Name>
+					<Abstract type="html">The payment task that did change</Abstract>
+				</Parameter><Parameter>
+					<Name>progressState</Name>
+					<Abstract type="html">The new payment progress State</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/paymentTask:progressDidChange:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
         
         
 	</File>

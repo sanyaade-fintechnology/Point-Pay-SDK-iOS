@@ -124,6 +124,42 @@ adoption.</Abstract>
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setProgressState:</TokenIdentifier>
+			<Abstract type="html">Payment progress state.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVPaymentProgressState progressState</Declaration>
+			
+			
+			<Anchor>//api/name/progressState</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/progressState</TokenIdentifier>
+			<Abstract type="html">Payment progress state.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVPaymentProgressState progressState</Declaration>
+			
+			
+			<Anchor>//api/name/progressState</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/progressState</TokenIdentifier>
+			<Abstract type="html">Payment progress state.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVPaymentProgressState progressState</Declaration>
+			
+			
+			<Anchor>//api/name/progressState</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/start</TokenIdentifier>
 			<Abstract type="html">Starts the payment task.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>

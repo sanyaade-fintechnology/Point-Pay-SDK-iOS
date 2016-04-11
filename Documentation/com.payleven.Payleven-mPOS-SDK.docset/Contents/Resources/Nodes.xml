@@ -46,6 +46,7 @@
 						<NodeRef refid="14"/>
 						<NodeRef refid="15"/>
 						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
 						
 					</Subnodes>
 				</Node>
@@ -436,11 +437,16 @@
             
         </Node>
 		<Node id="15" type="file" documentType="reference">
+            <Name>PLVPaymentProgressState</Name>
+            <Path>Constants/PLVPaymentProgressState.html</Path>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
             <Name>PLVPaymentResultState</Name>
             <Path>Constants/PLVPaymentResultState.html</Path>
             
         </Node>
-		<Node id="16" type="file" documentType="reference">
+		<Node id="17" type="file" documentType="reference">
             <Name>PLVPointOfSaleEntryMode</Name>
             <Path>Constants/PLVPointOfSaleEntryMode.html</Path>
             

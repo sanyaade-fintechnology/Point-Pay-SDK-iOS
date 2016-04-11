@@ -1,0 +1,6 @@
+framework module AdyenToolkit {
+  umbrella header "AdyenToolkit.h"
+
+  export *
+  module * { export * }
+}
