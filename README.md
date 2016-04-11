@@ -6,7 +6,7 @@
 [![CocoaPods](https://img.shields.io/github/tag/Payleven/mPOS-SDK-iOS.svg?style=flat-square)]()
 [![CocoaPods](https://img.shields.io/badge/Made%20in-Berlin-red.svg?style=flat-square)]()
 
-This project provides an iOS API to communicate with the payleven Chip & PIN card reader in order to accept debit and credit card payments. Learn more about the Chip & PIN card reader and payment options on one of payleven's regional [websites](https://payleven.com/).
+This project provides an iOS API to communicate with the payleven Classic (Chip & PIN) and Plus (NFC) card reader in order to accept debit and credit card payments. Learn more on one of payleven's regional [websites](https://payleven.com/).
 The Payleven mPOS SDK provides an API to process refund payments starting from version 1.1.0. Additionally, the SDK issues a receipt image of sale and refund payments that contains the bare minimum of receipt details. Please keep in mind to extend the image with the merchants name, address and a respective receipt ID. In case you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
 
 The SDK is a static library which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
