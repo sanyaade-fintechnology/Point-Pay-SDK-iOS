@@ -6,14 +6,14 @@
 [![CocoaPods](https://img.shields.io/github/tag/Payleven/mPOS-SDK-iOS.svg?style=flat-square)]()
 [![CocoaPods](https://img.shields.io/badge/Made%20in-Berlin-red.svg?style=flat-square)]()
 
-This project provides an iOS API to communicate with the payleven Classic (Chip & PIN) and Plus (NFC) card reader in order to accept debit and credit card payments. Learn more on one of payleven's regional [websites](https://payleven.com/).
-The Payleven mPOS SDK provides an API to process refund payments starting from version 1.1.0. Additionally, the SDK issues a receipt image of sale and refund payments that contains the bare minimum of receipt details. Please keep in mind to extend the image with the merchants name, address and a respective receipt ID. In case you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
+This project provides an iOS API to communicate with the payleven Classic (Chip & PIN) and Plus (NFC) card reader to accept debit and credit card payments. Learn more on one of payleven's country [websites](https://payleven.com/).
+The payleven mPOS SDK also provides an API to process refund payments (from version 1.1.0). Additionally, the SDK issues a receipt image of sale and refund payments that contains the bare minimum of receipt details. Please remember to extend the image with the merchants name, address and a respective receipt ID. If you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
 
-The SDK is a static library which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
+The SDK is a static library, which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
 
 ### Prerequisites
-1. Register on one of payleven's regional [websites](https://payleven.com/) in order to get personal merchant account and a card reader.
-2. Request an API key by registering at the [payleven developer page](https://service.payleven.com/uk/developer) for the mPOS SDK.
+1. Register on one of payleven's country [websites](https://payleven.com/) to get a merchant account and a card reader.
+2. Request an API key by registering for the mPOS SDK on the [payleven developer page](https://service.payleven.com/uk/developer).
 
 ### Table of Contents
 * [Installation](#installation)
@@ -59,8 +59,7 @@ The SDK is a static library which supports other platforms like Xamarin and is f
 		AVFoundation.framework
 		AudioToolbox.framework
 
-3. Open the *Build Settings* of your target and 
-  * add `-ObjC` flag to Other Linker Flags
+3. Open the *Build Settings* of your target and add `-ObjC` flag to Other Linker Flags
 
 4. Import PaylevenSDK into your files:
 
@@ -88,22 +87,22 @@ The SDK is a static library which supports other platforms like Xamarin and is f
 ```
 
 ##### MFi Program Authorization
-Before submitting your iOS app to iTunes, Apple requires registration of all iOS apps that communicate with approved MFi devices. This registration process officially associates your app with the card reader and can be performed by payleven. Once your app (bundle ID) has been registered, future app versions do not require additional registrations. Please contact developer@payleven.com for help with your submission.
+Before submitting your iOS app to iTunes, Apple requires registration of all iOS apps that communicate with approved MFi devices. This registration process officially associates your app with the payleven card reader and can be performed by payleven. Once your app (bundle ID) has been registered, future app versions will not require additional registrations. Please contact developer@payleven.com for help with your submission.
 
 ##### Bluetooth pairing
-Before proceeding with the integration and testing make sure you have paired the card reader in the bluetooth settings on your iOS device.
+Before proceeding with the integration and testing, make sure you have paired the card reader in the bluetooth settings on your iOS device.
  1. Make sure the device is charged and turned on.
  2. Press '0' key on the card reader for 5 sec and make sure the card reader has entered the pairing mode (there will be a corresponding sign on the screen).
  3. Go to the bluetooth settings of your iOS device and turn on bluetooth.
- 4. Select the discovered payleven card reader and follow the instructions on both devices to finish the pairing process.
+ 4. Select the "discovered" payleven card reader and follow the instructions on both devices to finish the pairing process.
 
 ### Getting started    
 #### Authenticate your app
-Use API key received from payleven together with your payleven merchant account to authenticate your app. 
+Use the API key received from payleven, together with your payleven merchant account (email address & password) to authenticate your app. 
 Hint: Check out our Sample Demo to see how you can easily observe the Login State using KVO.
 
 #### The manager Objective-C
-The object manager in our sample app provides a unified interface to a set of interfaces in a subsystem. It is a semi-facade system interface that makes easier to use. It contains many objects as well as our PLVPayleven object which is allocated on the first time a message is sent to self.manager.payleven.
+The object manager in our sample app provides a unified interface to a set of interfaces in a subsystem. It is a semi-facade system interface that makes it easier to use. It contains many objects, along with the PLVPayleven object, which is allocated on the first time a message is sent to self.manager.payleven.
 
 #### Lazy initialization Objective-C
 ```objective-c
@@ -167,7 +166,7 @@ Once a `PLVPayleven` instance is created you need to select the card reader for 
  ```
   
 #### Start payment
-Initialize the actual payment request. For security purposes you must provide the user's current location in the PaymentReuest.
+Initialize the actual payment request. For security purposes, you must provide the user's current location in the PaymentReuest.
 
  ```objective-c
  //Here we are using an arbitrary location. In your app you must provide the user's current location
@@ -317,16 +316,16 @@ PLVRefundRequest is used to create or generate the request for refunds that will
                        completionHandler:( void (^)(PLVRefundResult *result, NSError *error))completionHandler;
 ```
 
-The aforementioned method comes with a completionHandler block which returns two objects. The first is the PLVRefundResult which contains the server reponse and the later is NSError. This will be nil if the refund go through successfully. On the other hand if there is an execption the PLVRefundResult will be nil and the NSError will be populated.
+The aforementioned method comes with a completionHandler block, which returns two objects. The first is the PLVRefundResult, which contains the server reponse and the second is NSError. This will be nil if the refund go through successfully. On the other hand if there is an exeception the PLVRefundResult will be nil and the NSError will be populated.
 
 #### Refund Prerequisites
 
 ```c
 //Create a method that requires the necessary parameters 
-1. Identifier //A String type to identify the refund or better known as the refundId 
-2. Amount //An NSDecimalNumber indicating the amount to be refunded
-3. PaymentIdentifier //A String type. Basically original paymentId reference from which the refund will deducted.
-4. Currency //A 3 letter ISO character which is also the same referenced in the original payment. e.g EUR 
+1. Identifier //A String type to uniquely specify the refund payment (refundId).
+2. Amount //An NSDecimalNumber indicating the amount to be refunded.
+3. PaymentIdentifier //A String type specifying the original sale payment's ID that is supposed to be refunded.
+4. Currency //A 3 letter ISO character (e.g EUR) that is identical with the original sale payment's currency.  
 ```
 
 #### Handling refunds in Objective-C
@@ -343,7 +342,7 @@ This follows a similar design to the above mentioned swift workflow. The only di
     @property (nonatomic) PLVRefundResult *refundResult;
 
 ```
-The method below could be triggered as soon as it conforms to the prerequisites required for the refund.
+The method below could be triggered as soon as it conforms to the prerequisites required for the refund payment.
 
 ```objective-c
 
@@ -384,5 +383,5 @@ The method below could be triggered as soon as it conforms to the prerequisites 
 [API Reference](http://payleven.github.io/mPOS-SDK-iOS/AppleDoc/)
 
 ### mPOS SDK Sample App
-The mPOS SDK includes a sample app that shows how the SDK can be integrated. Within this sample app is possible to choose a card reader, make payments and refund them. It contains a Signature View as well where the user can sign in case the payment requires a signature.
-Note that the location is hardcoded and needs to be changed depending on the country the user is conducting the payment.
+The mPOS SDK includes a sample app illustrating how the SDK can be integrated. Within this sample app it is possible to select a card reader, make payments and refund them. It also contains a Signature View, where the user can sign in case the payment requires a signature.
+Please note that the location is hardcoded and needs to be changed depending on the country that the user is conducting the payment.
