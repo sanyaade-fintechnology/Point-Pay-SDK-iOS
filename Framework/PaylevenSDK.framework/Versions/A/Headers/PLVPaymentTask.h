@@ -12,6 +12,42 @@
 @class PLVPaymentRequest, PLVPaymentResult;
 @protocol PLVPaymentTaskDelegate;
 
+/**
+ @brief Payment Progress state constants.
+ */
+typedef NS_ENUM(NSInteger, PLVPaymentProgressState) {
+    /** Payment state none. */
+    PLVPaymentProgressStateNone,
+    
+    /** Payment started. */
+    PLVPaymentProgressStateStarted,
+    
+    /** Terminal requests customer to present (Tap or Insert) card. */
+    PLVPaymentProgressStateRequestPresentCard,
+    
+    /** Terminal requests customer to insert card. */
+    PLVPaymentProgressStateRequestInsertCard,
+    
+    /** Customer inserted card. */
+    PLVPaymentProgressStateCardInserted,
+    
+    /** Terminal requests customer to enter Pin. */
+    PLVPaymentProgressStateRequestEnterPin,
+    
+    /** Customer entered Pin. */
+    PLVPaymentProgressStatePinEntered,
+    
+    /** Customer Tapped contactless card failed. */
+    PLVPaymentProgressStateContactlessBeepFailed,
+    
+    /** Customer Tapped contactless card successfully. */
+    PLVPaymentProgressStateContactlessBeepOk,
+    
+    /** Terminal requests customer to Swipe Card. */
+    PLVPaymentProgressStateRequestSwipeCard
+};
+
+
 /** 
  @brief PLVPaymentTask instance is used to make payments. 
  It contains a PLVPaymentRequest, PLVPaymentResult and PLVPaymentTaskDelegate.
@@ -28,6 +64,9 @@
 
 /** Payment result. */
 @property(nonatomic, readonly, strong) PLVPaymentResult *result;
+
+/** Payment progress state. */
+@property(nonatomic, readonly) PLVPaymentProgressState progressState;
 
 /** Starts the payment task. */
 - (void)start;
@@ -80,5 +119,18 @@
  @param error Error object containing information about the failure.
  */
 - (void)paymentTask:(PLVPaymentTask *)paymentTask didFailWithError:(NSError *)error;
+
+
+@optional
+/**
+ @brief Called when payment tasks state changes. Check the `result` property for the result.
+ 
+ @param paymentTask The payment task that did change
+ 
+ @param progressState The new payment progress State
+ 
+ */
+- (void)paymentTask:(PLVPaymentTask *)paymentTask
+  progressDidChange:(PLVPaymentProgressState)progressState;
 
 @end

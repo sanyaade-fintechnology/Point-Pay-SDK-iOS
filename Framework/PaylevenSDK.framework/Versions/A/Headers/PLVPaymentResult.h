@@ -44,6 +44,11 @@ typedef NS_ENUM(NSInteger, PLVPointOfSaleEntryMode) {
      */
     PLVPointOfSaleEntryModeIntegratedCircuitCard,
     
+    /**
+     Contactless (NFC) mode.
+     */
+    PLVPointOfSaleEntryModeContactless,
+    
     /** 
      Swipe mode. 
      */
@@ -83,7 +88,7 @@ typedef NS_ENUM(NSInteger, PLVCardholderVerificationMethod) {
     /** 
      PIN and signature verification .
      */
-    PLVCardholderVerificationMethodPINSignature
+    PLVCardholderVerificationMethodPINSignature,
 };
 
 @class PLVReceiptGenerator, PLVPaymentResultAdditionalData;
