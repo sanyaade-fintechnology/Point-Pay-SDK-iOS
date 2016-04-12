@@ -22,19 +22,15 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
     * [MFi Program Authorization](#mfi-program-authorization)
     * [Bluetooth pairing](#bluetooth-pairing)
 * [Getting started](#getting-started)
-  * [Authenticate your app](#authenticate-your-app)
-  * [The manager Objective-C](#the-manager-objective-c)
-  * [Lazy initialization Objective-C](#lazy-initialization-objective-c)
-  * [Handling login in Objective-C](#handling-login-in-objective-c)
-  * [Select the card reader](#select-the-card-reader)
-    * [Selecting a device in Objective-C](#selecting-a-device-in-objective-c)
-    * [Boarding the device for payment in Objective-C](#boarding-the-device-for-payment-in-objective-c)
-* [Start payment](#start-payment)
+  * [Login](#login)
+  * [Select a device](#select-a-device)
+  * [Prepare device for payment](#prepare-device-for-payment)
+* [Payment](#payment)
+  * [Start payment](#start-payment)
   * [Handle payment](#handle-payment)
-  * [Example of a card reader chip payment](#example-of-a-card-reader-chip-payment)
-  * [Example of a card reader swipe payment](#example-of-a-card-reader-swipe-payment)
+  * [Finish payment](#finish-payment)
 * [Refunds](#refunds)
-  * [Refund Prerequisites](#refund-prerequisites)
+  * [Start refund](#start-refund)
   * [Handling refunds in Objective-C](#handling-refunds-in-objective-c)
 * [Documentation](#documentation)
 * [mPOS SDK Sample App](#mpos-sdk-sample-app)
@@ -73,7 +69,8 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 
   * `CFBundleDisplayName` with the display name for your app.
   * `UISupportedExternalAccessoryProtocols` with an array of just one value `com.adyen.bt1`.
-  * For iOS 8+: `NSLocationWhenInUseUsageDescription` or `NSLocationAlwaysUsageDescription`, for iOS 7: `NSLocationUsageDescription` with the location usage description message for the users.
+  * For iOS 8+: `NSLocationWhenInUseUsageDescription` or `NSLocationAlwaysUsageDescription`, 
+	for iOS 7: `NSLocationUsageDescription` with the location usage description message for the users.
   * App Transport Security as follows:
 ```	<key>NSAppTransportSecurity</key>
 	    <dict>
@@ -101,25 +98,10 @@ Before proceeding with the integration and testing, make sure you have paired th
  4. Select the "discovered" payleven card reader and follow the instructions on both devices to finish the pairing process.
 
 ### Getting started    
-#### Authenticate your app
+#### Login
+To fetch connected devices, start or refund a payment you must be logged into payleven SDK. 
 Use the API key received from payleven, together with your payleven merchant account (email address & password) to authenticate your app. 
 Hint: Check out our Sample Demo to see how you can easily observe the Login State using [Key-Value Observing](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html).
-
-#### The manager
-The object manager in our sample app provides a unified interface to a set of interfaces in a subsystem. It is a semi-facade system interface that makes it easier to use. It contains many objects, along with the PLVPayleven object, which is allocated on the first time a message is sent to self.manager.payleven.
-
-#### Lazy initialization
-```objective-c
-- (PLVPayleven *)payleven {
-    if (_payleven){
-        return _payleven;
-    }
-    _payleven = [[PLVPayleven alloc]init];
-    return _payleven;
-}
-```
-#### Handling login
-To fetch connected devices, start a payment or refund one you must be logged into payleven SDK using your merchant credentials.
 
  ```objective-c
 
@@ -137,12 +119,11 @@ To fetch connected devices, start a payment or refund one you must be logged int
     }];
 }
 ```
+#### Select a device
+Once a `PLVPayleven` instance is created you need to select the card reader for future payments.
 
-#### Select the card reader
-Once a `PLVPayleven` instance is created you need to select the card reader for your future payments.
+XXXX@KONRADXXXX DOES APP REMEMBER LAST SELECTION XXXXXXXXXXXXXX
 
-
-#### Selecting a device
  ```objective-c
  //You probably want to visualize the devices in a UITableView
  NSArray * pairedDevices = self.manager.payleven.devices;
@@ -152,9 +133,9 @@ Once a `PLVPayleven` instance is created you need to select the card reader for 
   NSString * deviceName = device.name;
  ```
 
-##### Prepare the device for payment
+#### Prepare device for payment
 
-After a device is selected it needs to be prepared to accept payments. We will run all required preparations and security checks for you. All you have to do is outlined below. Also, before triggering an actual payment you should check that your PLVDevice object returns ready == true.
+After a device is selected it needs to be prepared to accept payments. We will run all required preparations and security checks for you. All you have to do is outlined below. Also, before triggering a new payment you should always check that your PLVDevice object returns ready == true.
 
  ```objective-c
     dispatch_time_t dispatchTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.00 * NSEC_PER_SEC));
@@ -173,9 +154,9 @@ After a device is selected it needs to be prepared to accept payments. We will r
         }];
     });
  ```
-  
+### Payment    
 #### Start payment
-Initialize the actual payment request. For security purposes, you must provide the user's current location in the PaymentReuest. The identifier parameter allows you to reference this particular payment for a refund for instance. We strongly encourage you to save this value in your Backend. 
+Initialize the actual payment request. For security purposes, you must provide the user's current location in the PaymentReuest. The identifier parameter allows you to reference this particular payment for a potential refund in the future. We strongly encourage you to save this value in your Backend. 
 
  ```objective-c
  //Here we are using an arbitrary location. In your app you must provide the user's current location
@@ -200,7 +181,7 @@ Initialize the actual payment request. For security purposes, you must provide t
  ```
  
 #### Handle payment
-Implement PLVPaymentTaskDelegate's methods to respond to payment events such as the request of a payer's signature, its final approval or any errors.
+Implement PLVPaymentTaskDelegate's methods to respond to payment events such as the request of a payer's signature.
 
  ```objective-c
  - (void)paymentTask:(PLVPaymentTask *)paymentTask
@@ -219,28 +200,6 @@ Implement PLVPaymentTaskDelegate's methods to respond to payment events such as 
 
  }
 
- - (void)paymentTaskDidFinish:(PLVPaymentTask *)paymentTask { 
-	   
-    self.receiptGenerator = paymentTask.result.receiptGenerator;
-    CGFloat scale = [UIScreen mainScreen].scale;
-    [self.receiptGenerator generateReceiptWithWidth:(384.0 * scale)
-                                           fontSize:(16.0 * scale)
-                                        lineSpacing:(8.0 * scale)
-                                            padding:(20.0 * scale)
-                                  completionHandler:
-     ^(CGImageRef receipt) {
-         CGFloat scale = [UIScreen mainScreen].scale;
-         UIImage *image = [UIImage imageWithCGImage:receipt scale:scale orientation:UIImageOrientationUp];
-         self.receiptGenerator = nil;
-     }];
-    
-    self.paymentTask = nil;
- }
-
- - (void)paymentTask:(PLVPaymentTask *)paymentTask didFailWithError:(NSError *)error {
-   	//Error handling
-    self.paymentTask = nil;
- }
 ```
 
 Optionally, you can offer a more meaningful user experience by implementing progressDidChange method as shown below. 
@@ -289,69 +248,68 @@ Optionally, you can offer a more meaningful user experience by implementing prog
 }
 ```
 
+#### Finish payment
 
-##### Example of a card reader Chip payment
-```
-Pan = 7445
-PanMaximumLength = 16
-PanSequence = 00
-PosEntryMode = ICC
-CardBrandId = mastercard_mastercard
-CardBrandName = MasterCard
-Cvm = SIGNATURE
-Aid = A0000000041020
-AuthCode = 030720
-ExpiryYear = 2017
-ExpiryMonth = 3
+The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are called when the payment task finishes. You shall implement both and present the outcome of the payment to the user.
+
+ ```objective-c
+- (void)paymentTaskDidFinish:(PLVPaymentTask *)paymentTask { 
+	   
+    self.receiptGenerator = paymentTask.result.receiptGenerator;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    [self.receiptGenerator generateReceiptWithWidth:(384.0 * scale)
+                                           fontSize:(16.0 * scale)
+                                        lineSpacing:(8.0 * scale)
+                                            padding:(20.0 * scale)
+                                  completionHandler:
+     ^(CGImageRef receipt) {
+         CGFloat scale = [UIScreen mainScreen].scale;
+         UIImage *image = [UIImage imageWithCGImage:receipt scale:scale orientation:UIImageOrientationUp];
+         self.receiptGenerator = nil;
+     }];
+    
+    self.paymentTask = nil;
+ }
+
+ - (void)paymentTask:(PLVPaymentTask *)paymentTask didFailWithError:(NSError *)error {
+   	//Error handling
+    self.paymentTask = nil;
+ }
+
 ```
 
-##### Example of a card reader SWIPE payment
-```
-Pan = 7445
-PanMaximumLength = 16
-PosEntryMode = MAGNETIC_READER
-CardBrandId = mastercard_mastercard
-CardBrandName = MasterCard
-AuthCode = 010150
-ExpiryYear = 2017
-ExpiryMonth = 3
+
+### Refunds
+You can refund the payment partially meaning you do not have to refund the full amount. First, you create a PLVRefundRequest. 
+It is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. 
+For a refund you need
+
+1. Identifier 			//String to uniquely specify the refund
+2. Amount 				//NSDecimalNumber indicating the amount to be refunded, cannot be higher than original payment's amount
+3. PaymentIdentifier 	//String specifying the original sale payment's ID that is supposed to be refunded
+4. Currency 			//3 letter ISO character (e.g EUR) that is identical with the original sale payment's currency  
+
+
+```objective-c
+
+PLVRefundRequest *request = [[PLVRefundRequest alloc]initWithIdentifier:refundIdentifier 
+                                                      paymentIdentifier:originalPaymentId
+                                                                 amount:amount
+                                                               currency:@"EUR"
+                                                      refundDescription:@"Customer request"];
 ```
 
-#### Refunds
-PLVRefundRequest is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. The SDK comes with a custom method that can be directly accessed from in the PLVPayleven.h file via the following method below:
+
+#### Start refund
 
 ```objective-c
 - (PLVRefundTask *)refundTaskWithRequest:(PLVRefundRequest *)request
-                       completionHandler:( void (^)(PLVRefundResult *result, NSError *error))completionHandler;
+                       completionHandler:(void (^)(PLVRefundResult *result, NSError *error))completionHandler;
 ```
 
-The aforementioned method comes with a completionHandler block, which returns two objects. The first is the PLVRefundResult, which contains the server reponse and the second is NSError. This will be nil if the refund go through successfully. On the other hand if there is an exeception the PLVRefundResult will be nil and the NSError will be populated.
+#### Handle refund
 
-#### Refund Prerequisites
-
-```c
-//Create a method that requires the necessary parameters 
-1. Identifier //A String type to uniquely specify the refund payment (refundId).
-2. Amount //An NSDecimalNumber indicating the amount to be refunded.
-3. PaymentIdentifier //A String type specifying the original sale payment's ID that is supposed to be refunded.
-4. Currency //A 3 letter ISO character (e.g EUR) that is identical with the original sale payment's currency.  
-```
-
-#### Handling refunds
-
-This follows a similar design to the above mentioned swift workflow. The only difference is the change in the programming syntax.
-
-```objective-c
-
-//Create an internal refundTask object to store the task. 
-//We used internal but this is based on what you want to do
-//and how your app is designed. You can also add it in the header file.
-    @property (nonatomic) PLVRefundTask *refundTask;
-//Same applies here for the result so create a refundResult object to hold the response
-    @property (nonatomic) PLVRefundResult *refundResult;
-
-```
-The method below could be triggered as soon as it conforms to the prerequisites required for the refund payment.
+Once you have initialised PLVRefundRequest sucessfully you can trigger the refund as outlined below.
 
 ```objective-c
 
@@ -367,22 +325,12 @@ The method below could be triggered as soon as it conforms to the prerequisites 
     __strong typeof(weakSelf)strongSelf = weakSelf;
     self.refundTask = [self.manager.payleven refundTaskWithRequest:request completionHandler:^(PLVRefundResult *result, NSError *error) {
         if(error){
-            [strongSelf.delegate refundViewControllerDidFinish:^{
-                strongSelf.refundMessage = error.localizedDescription;
-                [strongSelf performSegueWithIdentifier:RefundResultViewSegue sender:self];
-            }];
+           //Inform user about error
         } else {
-            [strongSelf updatePayment:result.refund merchantId:strongSelf.manager.merchantId];
-            [strongSelf.delegate refundViewControllerDidFinish:^{
-                strongSelf.refundResult = result;
-                strongSelf.refundMessage = @"Refund successful";
-                [strongSelf performSegueWithIdentifier:RefundResultViewSegue sender:self];
-            }];
+           //Inform user about success
         }
     }];
-    
-    [self performSegueWithIdentifier:RefundProcessSegue sender:self];
-    [self.refundTask start];
+     [self.refundTask start];
 }
 
 ```
