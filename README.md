@@ -31,7 +31,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
   * [Finish payment](#finish-payment)
 * [Refunds](#refunds)
   * [Start refund](#start-refund)
-  * [Handling refunds in Objective-C](#handling-refunds-in-objective-c)
+  * [Handle refunds](#handle-refunds)
 * [Documentation](#documentation)
 * [mPOS SDK Sample App](#mpos-sdk-sample-app)
 
