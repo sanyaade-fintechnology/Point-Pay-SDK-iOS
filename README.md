@@ -22,9 +22,9 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
     * [CocoaPods](#cocoapods)
     * [Manual Set-Up](#manual-set-up)
     * [MFi Program Authorization](#mfi-program-authorization)
-    * [Bluetooth pairing](#bluetooth-pairing)
 * [Getting started](#getting-started)
   * [Login](#login)
+  * [Bluetooth pairing](#bluetooth-pairing)
   * [Select a device](#select-a-device)
   * [Prepare device for payment](#prepare-device-for-payment)
 * [Payment](#payment)
@@ -92,13 +92,6 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 ##### MFi Program Authorization
 Before submitting your iOS app to iTunes, Apple requires registration of all iOS apps that communicate with approved MFi devices. This registration process officially associates your app with the payleven card reader and can be performed by payleven. Once your app (bundle ID) has been registered, future app versions will not require additional registrations. Please contact developer@payleven.com for help with your submission.
 
-##### Bluetooth pairing
-Before proceeding with the integration and testing, make sure you have paired the card reader in the bluetooth settings on your iOS device.
- 1. Make sure the device is charged and turned on.
- 2. Press '0' key on the card reader for 5 sec and make sure the card reader has entered the pairing mode (there will be a corresponding sign on the screen).
- 3. Go to the bluetooth settings of your iOS device and turn on bluetooth.
- 4. Select the "discovered" payleven card reader and follow the instructions on both devices to finish the pairing process.
-
 ### Getting started    
 #### Login
 To fetch connected devices, start or refund a payment you must be logged into payleven SDK. 
@@ -121,6 +114,13 @@ Hint: Check out our Sample Demo to see how you can easily observe the Login Stat
     }];
 }
 ```
+#### Bluetooth pairing
+Before proceeding with the integration and testing, make sure you have paired the card reader in the bluetooth settings on your iOS device.
+ 1. Make sure the device is charged and turned on.
+ 2. Press '0' key on the card reader for 5 sec and make sure the card reader has entered the pairing mode (there will be a corresponding sign on the screen).
+ 3. Go to the bluetooth settings of your iOS device and turn on bluetooth.
+ 4. Select the "discovered" payleven card reader and follow the instructions on both devices to finish the pairing process.
+ 
 #### Select a device
 Once a `PLVPayleven` instance is created you need to select the card reader for future payments. Please remember to select a device every time you start a new session.
 
