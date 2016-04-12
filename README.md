@@ -120,9 +120,7 @@ Hint: Check out our Sample Demo to see how you can easily observe the Login Stat
 }
 ```
 #### Select a device
-Once a `PLVPayleven` instance is created you need to select the card reader for future payments.
-
-XXXX@KONRADXXXX DOES APP REMEMBER LAST SELECTION XXXXXXXXXXXXXX
+Once a `PLVPayleven` instance is created you need to select the card reader for future payments. Please remember to select a device every time you start a new session.
 
  ```objective-c
  //You probably want to visualize the devices in a UITableView
