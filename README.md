@@ -6,8 +6,8 @@
 [![CocoaPods](https://img.shields.io/github/tag/Payleven/mPOS-SDK-iOS.svg?style=flat-square)]()
 [![CocoaPods](https://img.shields.io/badge/Made%20in-Berlin-red.svg?style=flat-square)]()
 
-This project provides an iOS API to communicate with the payleven Classic (Chip & PIN) and Plus (NFC) card reader to accept debit and credit card payments. Learn more on one of payleven's country [websites](https://payleven.com/).
-The payleven mPOS SDK also provides an API to process refund payments (from version 1.1.0). Additionally, the SDK issues a receipt image of sale and refund payments that contains the bare minimum of receipt details. Please remember to extend the image with the merchants name, address and a respective receipt ID. If you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
+This project enables an iOS API to communicate with the payleven Classic (Chip & PIN) and Plus (NFC) card reader to accept debit and credit card payments. Learn more about the card readers on one of payleven's country [websites](https://payleven.com/).
+The payleven mPOS SDK provides an API to process refund payments (from version 1.1.0 onwards). Additionally, the SDK issues a receipt images of both sale and refund payments that contain the bare minimum of receipt details. Please remember to extend the image with the merchants name, address and a respective receipt ID. If you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
 
 The SDK is a static library, which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
 
@@ -20,7 +20,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 ### Table of Contents
 * [Installation](#installation)
     * [CocoaPods](#cocoapods)
-    * [Manual Set-Up](#manual-set-up)
+    * [Manual Setup](#manual-setup)
     * [MFi Program Authorization](#mfi-program-authorization)
 * [Getting started](#getting-started)
   * [Login](#login)
@@ -33,7 +33,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
   * [Finish payment](#finish-payment)
 * [Refund](#refund)
   * [Start refund](#start-refund)
-  * [Handle refunds](#handle-refund)
+  * [Handle refund](#handle-refund)
 * [Documentation](#documentation)
 * [mPOS SDK Sample App](#mpos-sdk-sample-app)
 
@@ -43,7 +43,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 
 	pod 'Payleven-mPos', '~> 1.1.0'
 
-##### Manual Set Up
+##### Manual Setup
 
 1. Drag the following files into your Xcode project.
 
@@ -117,12 +117,12 @@ Hint: Check out our Sample Demo to see how you can easily observe the Login Stat
 #### Bluetooth pairing
 Before proceeding with the integration and testing, make sure you have paired the card reader in the bluetooth settings on your iOS device.
  1. Make sure the device is charged and turned on.
- 2. Press '0' key on the card reader for 5 sec and make sure the card reader has entered the pairing mode (there will be a corresponding sign on the screen).
+ 2. Press '0' key on the card reader for 5 seconds and check that the card reader has entered the pairing mode (there will be a corresponding sign on the screen).
  3. Go to the bluetooth settings of your iOS device and turn on bluetooth.
  4. Select the "discovered" payleven card reader and follow the instructions on both devices to finish the pairing process.
  
 #### Select a device
-Once a `PLVPayleven` instance is created you need to select the card reader for future payments. Please remember to select a device every time you start a new session.
+Once a `PLVPayleven` instance is created, you need to select the card reader to process payments. Please remember to select a device every time you start a new session.
 
  ```objective-c
  //You probably want to visualize the devices in a UITableView
@@ -156,7 +156,7 @@ After a device is selected it needs to be prepared to accept payments. We will r
  ```
 ### Payment    
 #### Start payment
-Initialize the actual payment request. For security purposes, you must provide the user's current location in the PaymentReuest. The identifier parameter allows you to reference this particular payment for a potential refund in the future. We strongly encourage you to save this value in your Backend. 
+Initialize the actual payment request. For security purposes, you must provide the user's current location in the PaymentRequest. The identifier parameter allows you to reference this particular payment for a potential refund in the future. We strongly advise you to save this value in your Backend. 
 
  ```objective-c
  //Here we are using an arbitrary location. In your app you must provide the user's current location
@@ -202,7 +202,7 @@ Implement PLVPaymentTaskDelegate's methods to respond to payment events such as 
 
 ```
 
-Optionally, you can offer a more meaningful user experience by implementing progressDidChange method as shown below. 
+Optionally, you can offer a more comprehensive user experience by implementing progressDidChange method as shown below. 
 
 ```objective-c
 -(void)paymentTask:(PLVPaymentTask *)paymentTask progressDidChange:(PLVPaymentProgressState)progressState
@@ -250,7 +250,7 @@ Optionally, you can offer a more meaningful user experience by implementing prog
 
 #### Finish payment
 
-The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are called when the payment task finishes. You shall implement both and present the outcome of the payment to the user.
+The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are called when the payment task finishes. You need to implement both and present the outcome of the payment to the user.
 
  ```objective-c
 - (void)paymentTaskDidFinish:(PLVPaymentTask *)paymentTask { 
@@ -280,13 +280,13 @@ The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are calle
 
 
 ### Refund
-You can refund a payment conducted via the mPOS SDK completely or partially, meaning you are able to refund less than the full amount. First, you create a PLVRefundRequest. 
+You can refund a payment conducted via the mPOS SDK partially or in full. First, you create a PLVRefundRequest. 
 It is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. 
 For a refund you need
 
 1. Identifier 			//String to uniquely specify the refund
-2. Amount 				//NSDecimalNumber indicating the amount to be refunded, cannot be higher than original payment's amount
-3. PaymentIdentifier 	//String specifying the original sale payment's ID that is supposed to be refunded
+2. Amount 				//NSDecimalNumber indicating the amount to be refunded, which cannot be greater than original payment's amount
+3. PaymentIdentifier 	//String to specify the original sale payment's ID that is supposed to be refunded
 4. Currency 			//3 letter ISO character (e.g EUR) that is identical with the original sale payment's currency  
 
 
