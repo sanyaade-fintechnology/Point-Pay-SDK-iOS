@@ -31,7 +31,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
   * [Start payment](#start-payment)
   * [Handle payment](#handle-payment)
   * [Finish payment](#finish-payment)
-* [Refunds](#refunds)
+* [Refund](#refund)
   * [Start refund](#start-refund)
   * [Handle refunds](#handle-refund)
 * [Documentation](#documentation)
@@ -279,7 +279,7 @@ The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are calle
 ```
 
 
-### Refunds
+### Refund
 You can refund the payment partially meaning you do not have to refund the full amount. First, you create a PLVRefundRequest. 
 It is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. 
 For a refund you need
