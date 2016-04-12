@@ -280,7 +280,7 @@ The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are calle
 
 
 ### Refund
-You can refund the payment partially meaning you do not have to refund the full amount. First, you create a PLVRefundRequest. 
+You can refund a payment conducted via the mPOS SDK completely or partially, meaning you are able to refund less than the full amount. First, you create a PLVRefundRequest. 
 It is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. 
 For a refund you need
 
