@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Payleven mPOS SDK </a>
+				<a href="../index.html">payleven Point Pay SDK </a>
 			</h1>
 
 			<p id="developer-home">
@@ -64,19 +64,21 @@
 		
 		<option value="//api/name/cardBrandName">cardBrandName</option>
 		
+		<option value="//api/name/cardExpiryMonth">cardExpiryMonth</option>
+		
+		<option value="//api/name/cardExpiryYear">cardExpiryYear</option>
+		
 		<option value="//api/name/cardholderVerificationMethod">cardholderVerificationMethod</option>
 		
-		<option value="//api/name/expiryMonth">expiryMonth</option>
-		
-		<option value="//api/name/expiryYear">expiryYear</option>
-		
-		<option value="//api/name/maximumPrimaryAccountNumberLength">maximumPrimaryAccountNumberLength</option>
+		<option value="//api/name/maximumPrimaryAccountNumberMaskedLength">maximumPrimaryAccountNumberMaskedLength</option>
 		
 		<option value="//api/name/pointOfSaleEntryMode">pointOfSaleEntryMode</option>
 		
-		<option value="//api/name/primaryAccountNumber">primaryAccountNumber</option>
+		<option value="//api/name/primaryAccountNumberLastDigits">primaryAccountNumberLastDigits</option>
 		
-		<option value="//api/name/primaryAccountNumberSequenceNumber">primaryAccountNumberSequenceNumber</option>
+		<option value="//api/name/primaryAccountNumberMasked">primaryAccountNumberMasked</option>
+		
+		<option value="//api/name/primaryAccountNumberMaskedSequenceNumber">primaryAccountNumberMaskedSequenceNumber</option>
 		
 	</optgroup>
 	
@@ -132,8 +134,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/primaryAccountNumber" title="primaryAccountNumber"></a>
-	<h3 class="method-title"><code><a href="#//api/name/primaryAccountNumber">&nbsp;&nbsp;primaryAccountNumber</a></code>
+	<a name="//api/name/primaryAccountNumberLastDigits" title="primaryAccountNumberLastDigits"></a>
+	<h3 class="method-title"><code><a href="#//api/name/primaryAccountNumberLastDigits">&nbsp;&nbsp;primaryAccountNumberLastDigits</a></code>
 </h3>
 
 	<div class="method-info">
@@ -143,12 +145,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Primary account number (PAN), also known as card number. Truncated for security reasons.</p>
+				<p>Truncated Primary Account Number (PAN) displaying the last four digits of the PAN. Possible characters: [0-9]. E.g. 1234</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *primaryAccountNumber</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberLastDigits</code></div>
 
 		    
 			
@@ -173,8 +175,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/maximumPrimaryAccountNumberLength" title="maximumPrimaryAccountNumberLength"></a>
-	<h3 class="method-title"><code><a href="#//api/name/maximumPrimaryAccountNumberLength">&nbsp;&nbsp;maximumPrimaryAccountNumberLength</a></code>
+	<a name="//api/name/primaryAccountNumberMasked" title="primaryAccountNumberMasked"></a>
+	<h3 class="method-title"><code><a href="#//api/name/primaryAccountNumberMasked">&nbsp;&nbsp;primaryAccountNumberMasked</a></code>
 </h3>
 
 	<div class="method-info">
@@ -184,12 +186,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Maximum length of the untruncated primary account number for the card brand specified in <a href="#//api/name/cardBrandIdentifier">cardBrandIdentifier</a>.</p>
+				<p>Masked Primary Account Number (PAN) that displays the last four digits of the card number used for the payment. Possible characters: 0-9, X. E.g. XXXXXXXXXXXX1234</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) NSUInteger maximumPrimaryAccountNumberLength</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMasked</code></div>
 
 		    
 			
@@ -214,8 +216,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/primaryAccountNumberSequenceNumber" title="primaryAccountNumberSequenceNumber"></a>
-	<h3 class="method-title"><code><a href="#//api/name/primaryAccountNumberSequenceNumber">&nbsp;&nbsp;primaryAccountNumberSequenceNumber</a></code>
+	<a name="//api/name/maximumPrimaryAccountNumberMaskedLength" title="maximumPrimaryAccountNumberMaskedLength"></a>
+	<h3 class="method-title"><code><a href="#//api/name/maximumPrimaryAccountNumberMaskedLength">&nbsp;&nbsp;maximumPrimaryAccountNumberMaskedLength</a></code>
 </h3>
 
 	<div class="method-info">
@@ -225,12 +227,53 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Primary account number sequence number. Identifies and differentiates cards with the same PAN.</p>
+				<p>Maximum length of the untruncated primary account number for the card brand specified in <a href="#//api/name/cardBrandIdentifier">cardBrandIdentifier</a>. E.g. 16</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberSequenceNumber</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) NSUInteger maximumPrimaryAccountNumberMaskedLength</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVPaymentResultAdditionalData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/primaryAccountNumberMaskedSequenceNumber" title="primaryAccountNumberMaskedSequenceNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/primaryAccountNumberMaskedSequenceNumber">&nbsp;&nbsp;primaryAccountNumberMaskedSequenceNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Primary account number sequence number. Identifies and differentiates cards with the same PAN. Possible characters: [0-9]. E.g. 01</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMaskedSequenceNumber</code></div>
 
 		    
 			
@@ -266,7 +309,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>POS entry mode.</p>
+				<p>Indicates the method by which the Primary Account Number (PAN) was entered.</p>
 			</div>
 			
 		    
@@ -307,7 +350,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Cardholder verification method.</p>
+				<p>Verification method of the cardholder, used for the payment.</p>
 			</div>
 			
 		    
@@ -348,7 +391,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Card application identifier (AID).</p>
+				<p>Identifies the application of the card used for the payment as described in ISO/IEC 7816-5.</p>
 			</div>
 			
 		    
@@ -389,7 +432,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Card authorization code.</p>
+				<p>Authorization code generated by the issuing bank of a payer’s payment card, in order to validate a payment card when it is approved or declined in the sale of a good or service.</p>
 			</div>
 			
 		    
@@ -430,7 +473,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Card brand identifier.</p>
+				<p>Card brand identifier used for the payment.</p>
 			</div>
 			
 		    
@@ -471,7 +514,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Card brand name.</p>
+				<p>Card brand name used for the payment.</p>
 			</div>
 			
 		    
@@ -501,8 +544,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/expiryMonth" title="expiryMonth"></a>
-	<h3 class="method-title"><code><a href="#//api/name/expiryMonth">&nbsp;&nbsp;expiryMonth</a></code>
+	<a name="//api/name/cardExpiryMonth" title="cardExpiryMonth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardExpiryMonth">&nbsp;&nbsp;cardExpiryMonth</a></code>
 </h3>
 
 	<div class="method-info">
@@ -512,12 +555,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Card expiryMonth</p>
+				<p>Expiration month of the card used for the payment. Returns 2 digits. Possible characters: [0-9].</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger expiryMonth</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger cardExpiryMonth</code></div>
 
 		    
 			
@@ -542,8 +585,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/expiryYear" title="expiryYear"></a>
-	<h3 class="method-title"><code><a href="#//api/name/expiryYear">&nbsp;&nbsp;expiryYear</a></code>
+	<a name="//api/name/cardExpiryYear" title="cardExpiryYear"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cardExpiryYear">&nbsp;&nbsp;cardExpiryYear</a></code>
 </h3>
 
 	<div class="method-info">
@@ -553,12 +596,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Card expiryYear</p>
+				<p>Expiration year of the card used for the payment.  Returns 4 digits. Possible characters: [0-9].</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger expiryYear</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSInteger cardExpiryYear</code></div>
 
 		    
 			
@@ -595,7 +638,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-04-11</p>
+						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-05-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

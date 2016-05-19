@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PLVReceiptGenerator Class Reference</title>
+	<title>PLVPaymentProgressViewController Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -60,7 +60,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:">- generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</option>
+		<option value="//api/name/animateWithPaymentProgressState:">- animateWithPaymentProgressState:</option>
+		
+		<option value="//api/name/initWithPrimaryColor:secondaryColor:">- initWithPrimaryColor:secondaryColor:</option>
 		
 	</optgroup>
 	
@@ -77,27 +79,21 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PLVReceiptGenerator Class Reference</h1>
+					<h1 class="title">PLVPaymentProgressViewController Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>NSObject</td>
+	<td>UIViewController</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>PLVReceiptGenerator.h</td>
+	<td>PLVPaymentProgressViewController.h</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
-					
-					<div class="section section-overview">
-						<a title="Overview" name="overview"></a>
-						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>PLVReceiptGenerator creates receipt images.</p>
-					</div>
 					
 					
 
@@ -112,8 +108,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:" title="generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:">&ndash;&nbsp;generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</a></code>
+	<a name="//api/name/initWithPrimaryColor:secondaryColor:" title="initWithPrimaryColor:secondaryColor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithPrimaryColor:secondaryColor:">&ndash;&nbsp;initWithPrimaryColor:secondaryColor:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,12 +119,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Generates the receipt image.</p>
+				<p>init object of PLVPaymentProgressViewController using custom colors</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)generateReceiptWithWidth:(CGFloat)<em>width</em> fontSize:(CGFloat)<em>fontSize</em> lineSpacing:(CGFloat)<em>lineSpacing</em> padding:(CGFloat)<em>padding</em> completionHandler:(void ( ^ ) ( CGImageRef receipt ))<em>completionHandler</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithPrimaryColor:(UIColor *)<em>primaryColor</em> secondaryColor:(UIColor *)<em>secondaryColor</em></code></div>
 
 		    
 			
@@ -137,29 +133,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>width</code></th>
-						<td><p>Receipt image width.</p></td>
+						<th scope="row" class="argument-name"><code>primaryColor</code></th>
+						<td><p>color of the payment device used in animations.</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>fontSize</code></th>
-						<td><p>Receipt font size.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>lineSpacing</code></th>
-						<td><p>Receipt text line spacing.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>padding</code></th>
-						<td><p>Receipt contents padding.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completionHandler</code></th>
-						<td><p>Block that is called when the receipt generation finishes. The block takes a single
-parameter <code>receipt</code>.</p></td>
+						<th scope="row" class="argument-name"><code>secondaryColor</code></th>
+						<td><p>color of cards and PIN indicators used in animations.</p></td>
 					</tr>
 				
 				</table>
@@ -179,7 +159,60 @@ parameter <code>receipt</code>.</p></td>
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVReceiptGenerator.h</code></p>
+				<p><code class="declared-in-ref">PLVPaymentProgressViewController.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/animateWithPaymentProgressState:" title="animateWithPaymentProgressState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/animateWithPaymentProgressState:">&ndash;&nbsp;animateWithPaymentProgressState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method on PLVPaymentTaskDelegate&rsquo;s paymentTask:progressDidChange: and forward the received <a href="../Constants/PLVPaymentProgressState.html">PLVPaymentProgressState</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)animateWithPaymentProgressState:(PLVPaymentProgressState)<em>progressState</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>progressState</code></th>
+						<td><p><a href="../Constants/PLVPaymentProgressState.html">PLVPaymentProgressState</a> to animate current state.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVPaymentProgressViewController.h</code></p>
 			</div>
 			
 			

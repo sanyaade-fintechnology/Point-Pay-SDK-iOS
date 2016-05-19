@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Payleven mPOS SDK </a>
+				<a href="../index.html">payleven Point Pay SDK </a>
 			</h1>
 
 			<p id="developer-home">
@@ -58,23 +58,25 @@
 		
 		<option value="//api/name/additionalData">additionalData</option>
 		
-		<option value="//api/name/amount">amount</option>
+		<option value="//api/name/authorizationCode">authorizationCode</option>
 		
-		<option value="//api/name/currency">currency</option>
+		<option value="//api/name/merchantIdentifier">merchantIdentifier</option>
 		
-		<option value="//api/name/date">date</option>
+		<option value="//api/name/paymentAmount">paymentAmount</option>
 		
-		<option value="//api/name/identifier">identifier</option>
+		<option value="//api/name/paymentCurrency">paymentCurrency</option>
 		
-		<option value="//api/name/merchantId">merchantId</option>
+		<option value="//api/name/paymentDate">paymentDate</option>
+		
+		<option value="//api/name/paymentIdentifier">paymentIdentifier</option>
+		
+		<option value="//api/name/paymentState">paymentState</option>
 		
 		<option value="//api/name/receiptGenerator">receiptGenerator</option>
 		
 		<option value="//api/name/signatureImageURL">signatureImageURL</option>
 		
-		<option value="//api/name/state">state</option>
-		
-		<option value="//api/name/terminalId">terminalId</option>
+		<option value="//api/name/terminalIdentifier">terminalIdentifier</option>
 		
 	</optgroup>
 	
@@ -124,8 +126,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/identifier" title="identifier"></a>
-	<h3 class="method-title"><code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+	<a name="//api/name/paymentIdentifier" title="paymentIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentIdentifier">&nbsp;&nbsp;paymentIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -135,12 +137,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment identifier.</p>
+				<p>Mandatory unique identifier (e.g order number) of the payment request.
+The ID can be any set of alphanumeric characters [A-Z, a-z, 0-9].
+This payment identifier must be included in receipts and will be reflected on payleven&rsquo;s receipt images. Please retain this identifier for your records and for further reference (e.g Refund).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *identifier</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *paymentIdentifier</code></div>
 
 		    
 			
@@ -165,8 +169,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/state" title="state"></a>
-	<h3 class="method-title"><code><a href="#//api/name/state">&nbsp;&nbsp;state</a></code>
+	<a name="//api/name/paymentState" title="paymentState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentState">&nbsp;&nbsp;paymentState</a></code>
 </h3>
 
 	<div class="method-info">
@@ -176,12 +180,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment state.</p>
+				<p>State of payment.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) PLVPaymentResultState state</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) PLVPaymentResultState paymentState</code></div>
 
 		    
 			
@@ -206,8 +210,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/amount" title="amount"></a>
-	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+	<a name="//api/name/paymentAmount" title="paymentAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentAmount">&nbsp;&nbsp;paymentAmount</a></code>
 </h3>
 
 	<div class="method-info">
@@ -217,12 +221,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment amount.</p>
+				<p>Amount to be charged in a decimal format, which must be at least one major currency unit (e.g 1.00 Euro) and cannot be negative or zero.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *paymentAmount</code></div>
 
 		    
 			
@@ -247,8 +251,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currency" title="currency"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currency">&nbsp;&nbsp;currency</a></code>
+	<a name="//api/name/paymentCurrency" title="paymentCurrency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCurrency">&nbsp;&nbsp;paymentCurrency</a></code>
 </h3>
 
 	<div class="method-info">
@@ -258,12 +262,13 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment currency.</p>
+				<p>Three-letter alphabetical code according to ISO 4217 representing the payment&rsquo;s currency that must match the merchant country&rsquo;s local currency.
+Supported currencies are EUR, GBP and PLN.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *currency</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *paymentCurrency</code></div>
 
 		    
 			
@@ -288,8 +293,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/date" title="date"></a>
-	<h3 class="method-title"><code><a href="#//api/name/date">&nbsp;&nbsp;date</a></code>
+	<a name="//api/name/paymentDate" title="paymentDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentDate">&nbsp;&nbsp;paymentDate</a></code>
 </h3>
 
 	<div class="method-info">
@@ -299,12 +304,53 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment date.</p>
+				<p>Date representing the date and time when the payment was requested.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDate *date</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, strong) NSDate *paymentDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVPaymentResult.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authorizationCode" title="authorizationCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authorizationCode">&nbsp;&nbsp;authorizationCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authorization code generated by the issuing bank of a payer’s payment card, in order to validate a payment card when it is approved or declined in the sale of a good or service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *authorizationCode</code></div>
 
 		    
 			
@@ -340,7 +386,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Signature image URL.</p>
+				<p>URL of the stored signature image if the payment card requires the payer&rsquo;s signature as a payment verification method. Returns nil if not applicable.</p>
 			</div>
 			
 		    
@@ -370,8 +416,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/terminalId" title="terminalId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/terminalId">&nbsp;&nbsp;terminalId</a></code>
+	<a name="//api/name/terminalIdentifier" title="terminalIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminalIdentifier">&nbsp;&nbsp;terminalIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -381,12 +427,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Terminal Identifier</p>
+				<p>Serial number of the payleven terminal facilitating the payment.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *terminalId</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *terminalIdentifier</code></div>
 
 		    
 			
@@ -411,8 +457,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/merchantId" title="merchantId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/merchantId">&nbsp;&nbsp;merchantId</a></code>
+	<a name="//api/name/merchantIdentifier" title="merchantIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/merchantIdentifier">&nbsp;&nbsp;merchantIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -422,12 +468,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Merchant Identifier</p>
+				<p>payleven merchant account identifier that executed the payment attempt.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *merchantId</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *merchantIdentifier</code></div>
 
 		    
 			
@@ -463,7 +509,8 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Receipt generator.</p>
+				<p>Returns an instance of <a href="../Classes/PLVReceiptGenerator.html">PLVReceiptGenerator</a>, which generates a receipt image for the payment.
+NOTE: Receipt image must be extended with the merchant&rsquo;s name, address and respective receipt identifier.</p>
 			</div>
 			
 		    
@@ -504,7 +551,8 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Additional payment result data.</p>
+				<p>Returns additional response data of the payment attempt. Returns nil if integrator account is not enabled.
+If you would like to create your own receipts, you will require these details. Please contact developer@payleven.com.</p>
 			</div>
 			
 		    
@@ -546,7 +594,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-04-11</p>
+						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-05-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

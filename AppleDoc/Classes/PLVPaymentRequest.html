@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Payleven mPOS SDK </a>
+				<a href="../index.html">payleven Point Pay SDK </a>
 			</h1>
 
 			<p id="developer-home">
@@ -56,13 +56,13 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/amount">amount</option>
+		<option value="//api/name/paymentAmount">paymentAmount</option>
 		
-		<option value="//api/name/coordinate">coordinate</option>
+		<option value="//api/name/paymentCoordinate">paymentCoordinate</option>
 		
-		<option value="//api/name/currency">currency</option>
+		<option value="//api/name/paymentCurrency">paymentCurrency</option>
 		
-		<option value="//api/name/identifier">identifier</option>
+		<option value="//api/name/paymentIdentifier">paymentIdentifier</option>
 		
 	</optgroup>
 	
@@ -118,8 +118,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/identifier" title="identifier"></a>
-	<h3 class="method-title"><code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+	<a name="//api/name/paymentIdentifier" title="paymentIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentIdentifier">&nbsp;&nbsp;paymentIdentifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -129,12 +129,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment identifier.</p>
+				<p>Mandatory unique identifier (e.g order number) of the payment request.
+The ID can be any set of alphanumeric characters [A-Z, a-z, 0-9].
+This payment identifier must be included in receipts and will be reflected on payleven&rsquo;s receipt images. Please retain this identifier for your records and for further reference (e.g Refund).</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *identifier</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *paymentIdentifier</code></div>
 
 		    
 			
@@ -159,8 +161,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/amount" title="amount"></a>
-	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+	<a name="//api/name/paymentAmount" title="paymentAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentAmount">&nbsp;&nbsp;paymentAmount</a></code>
 </h3>
 
 	<div class="method-info">
@@ -170,13 +172,59 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Payment amount. The value can be fractional, maximum two fraction digits are allowed.
+				<p>Amount to be charged in a decimal format, which must be at least one major currency unit (e.g 1.00 Euro) and cannot be negative or zero.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *paymentAmount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The value can be fractional, maximum two fraction digits are allowed.
 When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator into account.</p>
 			</div>
 			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paymentCurrency" title="paymentCurrency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCurrency">&nbsp;&nbsp;paymentCurrency</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Three-letter alphabetic code according to ISO 4217 representing the payment&rsquo;s currency that must match the merchant country&rsquo;s local currency. Supported currencies are EUR, GBP and PLN.</p>
+			</div>
+			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *paymentCurrency</code></div>
 
 		    
 			
@@ -201,8 +249,8 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currency" title="currency"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currency">&nbsp;&nbsp;currency</a></code>
+	<a name="//api/name/paymentCoordinate" title="paymentCoordinate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCoordinate">&nbsp;&nbsp;paymentCoordinate</a></code>
 </h3>
 
 	<div class="method-info">
@@ -212,53 +260,12 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Three-letter ISO 4217 currency code. For example, EUR.</p>
+				<p>Current device coordinate at the time of the payment attempt.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *currency</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PLVPaymentRequest.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/coordinate" title="coordinate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/coordinate">&nbsp;&nbsp;coordinate</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Current device coordinate.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) CLLocationCoordinate2D coordinate</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) CLLocationCoordinate2D paymentCoordinate</code></div>
 
 		    
 			
@@ -294,7 +301,7 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initializes the receiver with the specified <a href="#//api/name/identifier">identifier</a>, <a href="#//api/name/amount">amount</a>, <a href="#//api/name/currency">currency</a>, and <a href="#//api/name/coordinate">coordinate</a>.</p>
+				<p>Initializes the receiver with the specified identifier, amount, currency, and coordinate.</p>
 			</div>
 			
 		    
@@ -309,24 +316,24 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>identifier</code></th>
-						<td><p>Payment <a href="#//api/name/identifier">identifier</a>.</p></td>
+						<td><p>Payment identifier.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>amount</code></th>
-						<td><p>Payment <a href="#//api/name/amount">amount</a>. The value can be fractional, maximum two fraction digits are allowed. When creating
+						<td><p>Payment amount. The value can be fractional, maximum two fraction digits are allowed. When creating
                 <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator
                 into account.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>currency</code></th>
-						<td><p>Three-letter ISO 4217 <a href="#//api/name/currency">currency</a> code. For example, EUR.</p></td>
+						<td><p>Three-letter ISO 4217 currency code. For example, EUR.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>coordinate</code></th>
-						<td><p>Current device <a href="#//api/name/coordinate">coordinate</a>.</p></td>
+						<td><p>Current device coordinate.</p></td>
 					</tr>
 				
 				</table>
@@ -365,7 +372,7 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-04-11</p>
+						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-05-19</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
