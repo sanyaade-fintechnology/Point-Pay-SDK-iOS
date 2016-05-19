@@ -12,7 +12,7 @@ From version 1.1.0 onwards, the payleven Point Pay SDK provides an API to proces
 The SDK is a static library, which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
 
 > Note: 
-> The product has been renamed to payleven Point Pay SDK from mPOS SDK. Any references within the documentation or classes are relevant to payleven Point Pay SDK.
+> - The product has been renamed to payleven Point Pay SDK from mPOS SDK. Any references within the documentation or classes are relevant to payleven Point Pay SDK.
 
 ### Prerequisites
 1. Register on one of payleven's country [websites](https://payleven.com/) to get a merchant account and a card reader.
@@ -38,8 +38,9 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
   * [Start refund](#start-refund)
   * [Handle refund](#handle-refund)
 * [Receipts](#receipts)
-* [Documentation](#documentation)
 * [Point Pay SDK Sample App](#point-pay-sdk-sample-app)
+* [Documentation](#documentation)
+
 
 ### Installation
 
@@ -347,9 +348,49 @@ self.receiptGenerator = paymentTask.result.receiptGenerator;
 ```
 
 
+### Point Pay SDK Sample App
+The Point Pay SDK includes a sample app illustrating how the SDK can be integrated. 
+> Note: 
+> - The location is hardcoded and needs to be changed according to user's current position.
+> - The Bundle ID of the sample app has been registered already and is uniquely associated to the API key used in the project. In case you change the API key to the one you have obtained from payleven during the developer registration, please remember to change also the Bundle ID to the one you have registered.
+
+The sample integration exemplifies the following:
+- It allows to select a card reader, conduct card payments and refund them (full or partial amount).
+- A signature view that is required if the payment has to be verified with the customer's signature.
+- In alignment with the provided payment progress states (see above under "Payment"), **optional** and customizable UI/design elements are offered for integration to show the payment progress.
+
+
+```objective-c	
+
+#import <PaylevenSDK/PLVPaymentProgressViewController.h>
+
+```
+
+```objective-c	
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    
+    //Init
+    self.paymentProgressViewController = [[PLVPaymentProgressViewController alloc]init];
+    [self addChildViewController:self.paymentProgressViewController];
+
+    //Set size
+    self.paymentProgressViewController.view.frame = self.paymentProgressContainerView.bounds;
+
+    //Add
+    [self.paymentProgressContainerView addSubview:self.paymentProgressViewController.view];
+    [self.paymentProgressViewController didMoveToParentViewController:self];
+}
+
+-(void)paymentTask:(PLVPaymentTask *)paymentTask progressDidChange:(PLVPaymentProgressState)progressState
+{
+    if (self.paymentProgressViewController) {
+        [self.paymentProgressViewController animateWithPaymentProgressState:progressState];
+    }
+}   
+
+```
+
 ### Documentation
 [API Reference](http://payleven.github.io/mPOS-SDK-iOS/AppleDoc/)
-
-### Point Pay SDK Sample App
-The Point Pay SDK includes a sample app illustrating how the SDK can be integrated. Within this sample app it is possible to select a card reader, make payments and refund them. It also contains a Signature View, where the user can sign in case the payment requires a signature.
-Please note that the location is hardcoded and needs to be changed depending on the country that the user is conducting the payment.
