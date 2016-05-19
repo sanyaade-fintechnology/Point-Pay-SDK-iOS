@@ -24,7 +24,8 @@
 @property(nonatomic, readonly)PLVRefund *refund;
 
 /** 
- * PLVReceiptGenerator the receipt generator.
+ * Returns an instance of PLVReceiptGenerator, which generates a receipt image for the refund.
+ NOTE: Receipt image must be extended with the merchant's name, address and respective receipt ID.
  */
 @property(nonatomic, readonly) PLVReceiptGenerator *receiptGenerator;
 

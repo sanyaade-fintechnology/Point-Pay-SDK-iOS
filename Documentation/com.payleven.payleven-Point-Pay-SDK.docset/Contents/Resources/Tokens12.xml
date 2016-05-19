@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PLVRefundTask.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVRefundTask</TokenIdentifier>
+			<Abstract type="html">PLVRefundTask instance is used to trigger
+and start the refund task. Contains 2 readonly properties
+the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/setRefundRequest:</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefundRequest *refundRequest</Declaration>
+			
+			
+			<Anchor>//api/name/refundRequest</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/refundRequest</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefundRequest *refundRequest</Declaration>
+			
+			
+			<Anchor>//api/name/refundRequest</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefundTask/refundRequest</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefundRequest *refundRequest</Declaration>
+			
+			
+			<Anchor>//api/name/refundRequest</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/setResult:</TokenIdentifier>
+			<Abstract type="html">Refund result.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefundResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/result</TokenIdentifier>
+			<Abstract type="html">Refund result.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefundResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefundTask/result</TokenIdentifier>
+			<Abstract type="html">Refund result.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefundResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/start</TokenIdentifier>
+			<Abstract type="html">Starts the refund task.</Abstract>
+			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

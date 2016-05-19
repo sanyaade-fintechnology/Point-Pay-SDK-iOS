@@ -56,6 +56,7 @@
 	
 	<optgroup label="Properties">
 		
+<<<<<<< HEAD
 		<option value="//api/name/amount">amount</option>
 		
 		<option value="//api/name/coordinate">coordinate</option>
@@ -63,6 +64,15 @@
 		<option value="//api/name/currency">currency</option>
 		
 		<option value="//api/name/identifier">identifier</option>
+=======
+		<option value="//api/name/paymentAmount">paymentAmount</option>
+		
+		<option value="//api/name/paymentCoordinate">paymentCoordinate</option>
+		
+		<option value="//api/name/paymentCurrency">paymentCurrency</option>
+		
+		<option value="//api/name/paymentIdentifier">paymentIdentifier</option>
+>>>>>>> test
 		
 	</optgroup>
 	
@@ -118,8 +128,13 @@
 
 						<div class="task-list">
 							<div class="section-method">
+<<<<<<< HEAD
 	<a name="//api/name/identifier" title="identifier"></a>
 	<h3 class="method-title"><code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
+=======
+	<a name="//api/name/paymentIdentifier" title="paymentIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentIdentifier">&nbsp;&nbsp;paymentIdentifier</a></code>
+>>>>>>> test
 </h3>
 
 	<div class="method-info">
@@ -129,12 +144,22 @@
 			
 			
 			<div class="method-subsection brief-description">
+<<<<<<< HEAD
 				<p>Payment identifier.</p>
+=======
+				<p>Mandatory unique identifier (e.g order number) of the payment request.
+The ID can be any set of alphanumeric characters [A-Z, a-z, 0-9].
+This payment identifier must be included in receipts and will be reflected on payleven&rsquo;s receipt images. Please retain this identifier for your records and for further reference (e.g Refund).</p>
+>>>>>>> test
 			</div>
 			
 		    
 
+<<<<<<< HEAD
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *identifier</code></div>
+=======
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *paymentIdentifier</code></div>
+>>>>>>> test
 
 		    
 			
@@ -159,8 +184,13 @@
 		</div>
 	</div>
 </div><div class="section-method">
+<<<<<<< HEAD
 	<a name="//api/name/amount" title="amount"></a>
 	<h3 class="method-title"><code><a href="#//api/name/amount">&nbsp;&nbsp;amount</a></code>
+=======
+	<a name="//api/name/paymentAmount" title="paymentAmount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentAmount">&nbsp;&nbsp;paymentAmount</a></code>
+>>>>>>> test
 </h3>
 
 	<div class="method-info">
@@ -170,22 +200,39 @@
 			
 			
 			<div class="method-subsection brief-description">
+<<<<<<< HEAD
 				<p>Payment amount. The value can be fractional, maximum two fraction digits are allowed.
+When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator into account.</p>
+=======
+				<p>Amount to be charged in a decimal format, which must be at least one major currency unit (e.g 1.00 Euro) and cannot be negative or zero.</p>
+>>>>>>> test
+			</div>
+			
+		    
+
+<<<<<<< HEAD
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</code></div>
+=======
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *paymentAmount</code></div>
+>>>>>>> test
+
+		    
+			
+
+			
+
+			
+
+			
+<<<<<<< HEAD
+=======
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The value can be fractional, maximum two fraction digits are allowed.
 When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator into account.</p>
 			</div>
 			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSDecimalNumber *amount</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
+>>>>>>> test
 
 			
 
@@ -201,8 +248,13 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 		</div>
 	</div>
 </div><div class="section-method">
+<<<<<<< HEAD
 	<a name="//api/name/currency" title="currency"></a>
 	<h3 class="method-title"><code><a href="#//api/name/currency">&nbsp;&nbsp;currency</a></code>
+=======
+	<a name="//api/name/paymentCurrency" title="paymentCurrency"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCurrency">&nbsp;&nbsp;paymentCurrency</a></code>
+>>>>>>> test
 </h3>
 
 	<div class="method-info">
@@ -212,12 +264,20 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Three-letter ISO 4217 currency code. For example, EUR.</p>
+<<<<<<< HEAD
+				<p>Three-letter ISO 4217 currency code. Supported currencies: EUR, GBP, PLZ.</p>
+=======
+				<p>Three-letter alphabetic code according to ISO 4217 representing the payment&rsquo;s currency that must match the merchant country&rsquo;s local currency. Supported currencies are EUR, GBP and PLN.</p>
+>>>>>>> test
 			</div>
 			
 		    
 
+<<<<<<< HEAD
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *currency</code></div>
+=======
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy) NSString *paymentCurrency</code></div>
+>>>>>>> test
 
 		    
 			
@@ -227,6 +287,14 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 
 			
+<<<<<<< HEAD
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Currency must match the predefined currency of merchant that is logged in. For more info please contact payleven support.</p>
+			</div>
+			
+=======
+>>>>>>> test
 
 			
 
@@ -242,8 +310,13 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 		</div>
 	</div>
 </div><div class="section-method">
+<<<<<<< HEAD
 	<a name="//api/name/coordinate" title="coordinate"></a>
 	<h3 class="method-title"><code><a href="#//api/name/coordinate">&nbsp;&nbsp;coordinate</a></code>
+=======
+	<a name="//api/name/paymentCoordinate" title="paymentCoordinate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paymentCoordinate">&nbsp;&nbsp;paymentCoordinate</a></code>
+>>>>>>> test
 </h3>
 
 	<div class="method-info">
@@ -253,12 +326,20 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
+<<<<<<< HEAD
 				<p>Current device coordinate.</p>
+=======
+				<p>Current device coordinate at the time of the payment attempt.</p>
+>>>>>>> test
 			</div>
 			
 		    
 
+<<<<<<< HEAD
 			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) CLLocationCoordinate2D coordinate</code></div>
+=======
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, assign) CLLocationCoordinate2D paymentCoordinate</code></div>
+>>>>>>> test
 
 		    
 			
@@ -294,7 +375,11 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 			
 			<div class="method-subsection brief-description">
+<<<<<<< HEAD
 				<p>Initializes the receiver with the specified <a href="#//api/name/identifier">identifier</a>, <a href="#//api/name/amount">amount</a>, <a href="#//api/name/currency">currency</a>, and <a href="#//api/name/coordinate">coordinate</a>.</p>
+=======
+				<p>Initializes the receiver with the specified identifier, amount, currency, and coordinate.</p>
+>>>>>>> test
 			</div>
 			
 		    
@@ -309,24 +394,40 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>identifier</code></th>
+<<<<<<< HEAD
 						<td><p>Payment <a href="#//api/name/identifier">identifier</a>.</p></td>
+=======
+						<td><p>Payment identifier.</p></td>
+>>>>>>> test
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>amount</code></th>
+<<<<<<< HEAD
 						<td><p>Payment <a href="#//api/name/amount">amount</a>. The value can be fractional, maximum two fraction digits are allowed. When creating
+=======
+						<td><p>Payment amount. The value can be fractional, maximum two fraction digits are allowed. When creating
+>>>>>>> test
                 <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo;t forget to take the current locale and the decimal separator
                 into account.</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>currency</code></th>
-						<td><p>Three-letter ISO 4217 <a href="#//api/name/currency">currency</a> code. For example, EUR.</p></td>
+<<<<<<< HEAD
+						<td><p>three-letter ISO 4217 <a href="#//api/name/currency">currency</a> code. Supported currencies: EUR, GBP, PLZ.</p></td>
+=======
+						<td><p>Three-letter ISO 4217 currency code. For example, EUR.</p></td>
+>>>>>>> test
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>coordinate</code></th>
+<<<<<<< HEAD
 						<td><p>Current device <a href="#//api/name/coordinate">coordinate</a>.</p></td>
+=======
+						<td><p>Current device coordinate.</p></td>
+>>>>>>> test
 					</tr>
 				
 				</table>
@@ -338,6 +439,14 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 			
 
 			
+<<<<<<< HEAD
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Currency must match the predefined <a href="#//api/name/currency">currency</a> of merchant that is logged in. For more info please contact payleven support.</p>
+			</div>
+			
+=======
+>>>>>>> test
 
 			
 
@@ -365,7 +474,11 @@ When creating <code>NSDecimalNumber</code> from <code>NSString</code>, don&rsquo
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-04-11</p>
+<<<<<<< HEAD
+						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-04-12</p>
+=======
+						<p class="copyright">Copyright &copy; 2016 Payleven Holding GmbH. All rights reserved. Updated: 2016-05-13</p>
+>>>>>>> test
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

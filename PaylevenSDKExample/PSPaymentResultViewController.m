@@ -38,7 +38,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    [self configureViewForPaymentState:self.paymentTask.result.state];
+    [self configureViewForPaymentState:self.paymentTask.result.paymentState];
 }
 
 #pragma mark  - ConfigureViewForPaymentState

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Constants/PLVPaymentProgressState.html">
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/c/tdef/PLVPaymentProgressState</TokenIdentifier>
 			<Abstract type="html">Payment Progress state constants.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+=======
+	<File path="Constants/PLVPaylevenLoginState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PLVPaylevenLoginState</TokenIdentifier>
+			<Abstract type="html">Login state constants.</Abstract>
+			<DeclaredIn>PLVPayleven.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="15"/>
@@ -14,36 +23,61 @@
 		
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateNone</TokenIdentifier>
             <Abstract type="html">Payment state none.</Abstract>
             <Declaration>PLVPaymentProgressStateNone</Declaration>
             
             <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaylevenLoginStateLoggedOut</TokenIdentifier>
+            <Abstract type="html">Logged out.</Abstract>
+            <Declaration>PLVPaylevenLoginStateLoggedOut</Declaration>
+            
+            <DeclaredIn>PLVPayleven.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="15"/>
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateStarted</TokenIdentifier>
             <Abstract type="html">Payment started.</Abstract>
             <Declaration>PLVPaymentProgressStateStarted</Declaration>
             
             <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaylevenLoginStateLoggingIn</TokenIdentifier>
+            <Abstract type="html">Logging in.</Abstract>
+            <Declaration>PLVPaylevenLoginStateLoggingIn</Declaration>
+            
+            <DeclaredIn>PLVPayleven.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="15"/>
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateRequestPresentCard</TokenIdentifier>
             <Abstract type="html">Terminal requests customer to present (Tap or Insert) card.</Abstract>
             <Declaration>PLVPaymentProgressStateRequestPresentCard</Declaration>
             
             <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaylevenLoginStateLoggedIn</TokenIdentifier>
+            <Abstract type="html">Logged in.</Abstract>
+            <Declaration>PLVPaylevenLoginStateLoggedIn</Declaration>
+            
+            <DeclaredIn>PLVPayleven.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="15"/>
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateRequestInsertCard</TokenIdentifier>
             <Abstract type="html">Terminal requests customer to insert card.</Abstract>
             <Declaration>PLVPaymentProgressStateRequestInsertCard</Declaration>
@@ -109,6 +143,13 @@
             <Declaration>PLVPaymentProgressStateRequestSwipeCard</Declaration>
             
             <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaylevenLoginStateLoggingOut</TokenIdentifier>
+            <Abstract type="html">Logging out.</Abstract>
+            <Declaration>PLVPaylevenLoginStateLoggingOut</Declaration>
+            
+            <DeclaredIn>PLVPayleven.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="15"/>
         </Token>

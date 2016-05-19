@@ -22,6 +22,10 @@
 						<NodeRef refid="9"/>
 						<NodeRef refid="10"/>
 						<NodeRef refid="11"/>
+<<<<<<< HEAD
+=======
+						<NodeRef refid="12"/>
+>>>>>>> test
 						
 					</Subnodes>
 				</Node>
@@ -32,7 +36,11 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+<<<<<<< HEAD
 						<NodeRef refid="12"/>
+=======
+						<NodeRef refid="13"/>
+>>>>>>> test
 						
 					</Subnodes>
 				</Node>
@@ -42,11 +50,18 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+<<<<<<< HEAD
 						<NodeRef refid="13"/>
+=======
+>>>>>>> test
 						<NodeRef refid="14"/>
 						<NodeRef refid="15"/>
 						<NodeRef refid="16"/>
 						<NodeRef refid="17"/>
+<<<<<<< HEAD
+=======
+						<NodeRef refid="18"/>
+>>>>>>> test
 						
 					</Subnodes>
 				</Node>
@@ -130,6 +145,36 @@
             
         </Node>
 		<Node id="3" type="file" documentType="reference">
+<<<<<<< HEAD
+=======
+            <Name>PLVPaymentProgressViewController</Name>
+            <Path>Classes/PLVPaymentProgressViewController.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PLVPaymentProgressViewController.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PLVPaymentProgressViewController.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PLVPaymentProgressViewController.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentRequest</Name>
             <Path>Classes/PLVPaymentRequest.html</Path>
             
@@ -162,7 +207,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="4" type="file" documentType="reference">
+=======
+		<Node id="5" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentResult</Name>
             <Path>Classes/PLVPaymentResult.html</Path>
             
@@ -189,7 +238,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="5" type="file" documentType="reference">
+=======
+		<Node id="6" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentResultAdditionalData</Name>
             <Path>Classes/PLVPaymentResultAdditionalData.html</Path>
             
@@ -216,7 +269,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="6" type="file" documentType="reference">
+=======
+		<Node id="7" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentTask</Name>
             <Path>Classes/PLVPaymentTask.html</Path>
             
@@ -249,7 +306,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="7" type="file" documentType="reference">
+=======
+		<Node id="8" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVReceiptGenerator</Name>
             <Path>Classes/PLVReceiptGenerator.html</Path>
             
@@ -276,7 +337,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="8" type="file" documentType="reference">
+=======
+		<Node id="9" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVRefund</Name>
             <Path>Classes/PLVRefund.html</Path>
             
@@ -303,7 +368,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="9" type="file" documentType="reference">
+=======
+		<Node id="10" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVRefundRequest</Name>
             <Path>Classes/PLVRefundRequest.html</Path>
             
@@ -336,7 +405,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="10" type="file" documentType="reference">
+=======
+		<Node id="11" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVRefundResult</Name>
             <Path>Classes/PLVRefundResult.html</Path>
             
@@ -363,7 +436,11 @@
             </Subnodes>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="11" type="file" documentType="reference">
+=======
+		<Node id="12" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVRefundTask</Name>
             <Path>Classes/PLVRefundTask.html</Path>
             
@@ -398,7 +475,11 @@
         </Node>
 		
 		
+<<<<<<< HEAD
         <Node id="12" type="file" documentType="reference">
+=======
+        <Node id="13" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentTaskDelegate</Name>
             <Path>Protocols/PLVPaymentTaskDelegate.html</Path>
             
@@ -426,27 +507,47 @@
             
         </Node>
 		
+<<<<<<< HEAD
         <Node id="13" type="file" documentType="reference">
+=======
+        <Node id="14" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVCardholderVerificationMethod</Name>
             <Path>Constants/PLVCardholderVerificationMethod.html</Path>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="14" type="file" documentType="reference">
+=======
+		<Node id="15" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaylevenLoginState</Name>
             <Path>Constants/PLVPaylevenLoginState.html</Path>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="15" type="file" documentType="reference">
+=======
+		<Node id="16" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentProgressState</Name>
             <Path>Constants/PLVPaymentProgressState.html</Path>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="16" type="file" documentType="reference">
+=======
+		<Node id="17" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPaymentResultState</Name>
             <Path>Constants/PLVPaymentResultState.html</Path>
             
         </Node>
+<<<<<<< HEAD
 		<Node id="17" type="file" documentType="reference">
+=======
+		<Node id="18" type="file" documentType="reference">
+>>>>>>> test
             <Name>PLVPointOfSaleEntryMode</Name>
             <Path>Constants/PLVPointOfSaleEntryMode.html</Path>
             

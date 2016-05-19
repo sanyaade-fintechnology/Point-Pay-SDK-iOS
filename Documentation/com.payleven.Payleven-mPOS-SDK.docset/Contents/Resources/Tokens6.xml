@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Classes/PLVPaymentTask.html">
 		
 		<Token>
@@ -9,6 +10,14 @@ It contains a PLVPaymentRequest, PLVPaymentResult and PLVPaymentTaskDelegate.
 The delegate is a required delegate which needs the methods implement on
 adoption.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+=======
+	<File path="Classes/PLVPaymentResultAdditionalData.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentResultAdditionalData</TokenIdentifier>
+			<Abstract type="html">Payment result additional data.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="6"/>
@@ -16,6 +25,7 @@ adoption.</Abstract>
 		
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setPaymentRequest:</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -24,10 +34,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/paymentRequest</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setPrimaryAccountNumberLastDigits:</TokenIdentifier>
+			<Abstract type="html">Truncated Primary Account Number (PAN) displaying the last four digits of the PAN. Possible characters: [0-9]. E.g. 1234</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberLastDigits</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberLastDigits</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/paymentRequest</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -36,10 +57,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/paymentRequest</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/primaryAccountNumberLastDigits</TokenIdentifier>
+			<Abstract type="html">Truncated Primary Account Number (PAN) displaying the last four digits of the PAN. Possible characters: [0-9]. E.g. 1234</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberLastDigits</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberLastDigits</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/paymentRequest</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -48,10 +80,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/paymentRequest</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/primaryAccountNumberLastDigits</TokenIdentifier>
+			<Abstract type="html">Truncated Primary Account Number (PAN) displaying the last four digits of the PAN. Possible characters: [0-9]. E.g. 1234</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberLastDigits</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberLastDigits</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setDelegate:</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -60,10 +103,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setPrimaryAccountNumberMasked:</TokenIdentifier>
+			<Abstract type="html">Masked Primary Account Number (PAN) that displays the last four digits of the card number used for the payment. Possible characters: 0-9, X. E.g. XXXXXXXXXXXX1234</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMasked</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberMasked</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/delegate</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -72,10 +126,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/primaryAccountNumberMasked</TokenIdentifier>
+			<Abstract type="html">Masked Primary Account Number (PAN) that displays the last four digits of the card number used for the payment. Possible characters: 0-9, X. E.g. XXXXXXXXXXXX1234</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMasked</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberMasked</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/delegate</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -84,10 +149,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/delegate</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/primaryAccountNumberMasked</TokenIdentifier>
+			<Abstract type="html">Masked Primary Account Number (PAN) that displays the last four digits of the card number used for the payment. Possible characters: 0-9, X. E.g. XXXXXXXXXXXX1234</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMasked</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberMasked</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setResult:</TokenIdentifier>
 			<Abstract type="html">Payment result.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -96,10 +172,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/result</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setMaximumPrimaryAccountNumberMaskedLength:</TokenIdentifier>
+			<Abstract type="html">Maximum length of the untruncated primary account number for the card brand specified in cardBrandIdentifier. E.g. 16</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger maximumPrimaryAccountNumberMaskedLength</Declaration>
+			
+			
+			<Anchor>//api/name/maximumPrimaryAccountNumberMaskedLength</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/result</TokenIdentifier>
 			<Abstract type="html">Payment result.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -108,10 +195,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/result</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/maximumPrimaryAccountNumberMaskedLength</TokenIdentifier>
+			<Abstract type="html">Maximum length of the untruncated primary account number for the card brand specified in cardBrandIdentifier. E.g. 16</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger maximumPrimaryAccountNumberMaskedLength</Declaration>
+			
+			
+			<Anchor>//api/name/maximumPrimaryAccountNumberMaskedLength</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/result</TokenIdentifier>
 			<Abstract type="html">Payment result.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -120,10 +218,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/result</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/maximumPrimaryAccountNumberMaskedLength</TokenIdentifier>
+			<Abstract type="html">Maximum length of the untruncated primary account number for the card brand specified in cardBrandIdentifier. E.g. 16</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) NSUInteger maximumPrimaryAccountNumberMaskedLength</Declaration>
+			
+			
+			<Anchor>//api/name/maximumPrimaryAccountNumberMaskedLength</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setProgressState:</TokenIdentifier>
 			<Abstract type="html">Payment progress state.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -132,10 +241,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/progressState</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setPrimaryAccountNumberMaskedSequenceNumber:</TokenIdentifier>
+			<Abstract type="html">Primary account number sequence number. Identifies and differentiates cards with the same PAN. Possible characters: [0-9]. E.g. 01</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMaskedSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberMaskedSequenceNumber</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/progressState</TokenIdentifier>
 			<Abstract type="html">Payment progress state.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -144,10 +264,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/progressState</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/primaryAccountNumberMaskedSequenceNumber</TokenIdentifier>
+			<Abstract type="html">Primary account number sequence number. Identifies and differentiates cards with the same PAN. Possible characters: [0-9]. E.g. 01</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMaskedSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberMaskedSequenceNumber</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/progressState</TokenIdentifier>
 			<Abstract type="html">Payment progress state.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -156,10 +287,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/progressState</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/primaryAccountNumberMaskedSequenceNumber</TokenIdentifier>
+			<Abstract type="html">Primary account number sequence number. Identifies and differentiates cards with the same PAN. Possible characters: [0-9]. E.g. 01</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *primaryAccountNumberMaskedSequenceNumber</Declaration>
+			
+			
+			<Anchor>//api/name/primaryAccountNumberMaskedSequenceNumber</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/start</TokenIdentifier>
 			<Abstract type="html">Starts the payment task.</Abstract>
 			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
@@ -168,10 +310,21 @@ adoption.</Abstract>
 			
 			
 			<Anchor>//api/name/start</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setPointOfSaleEntryMode:</TokenIdentifier>
+			<Abstract type="html">Indicates the method by which the Primary Account Number (PAN) was entered.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) PLVPointOfSaleEntryMode pointOfSaleEntryMode</Declaration>
+			
+			
+			<Anchor>//api/name/pointOfSaleEntryMode</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/cancel</TokenIdentifier>
 			<Abstract type="html">Cancels the payment task. Calling this method doesn&apos;t cancel the task immediately.
 When the task finishes or fails after the cancellation, the corresponding delegate methods will be called.
@@ -182,6 +335,280 @@ The result will be nil afterwards.</Abstract>
 			
 			
 			<Anchor>//api/name/cancel</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/pointOfSaleEntryMode</TokenIdentifier>
+			<Abstract type="html">Indicates the method by which the Primary Account Number (PAN) was entered.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) PLVPointOfSaleEntryMode pointOfSaleEntryMode</Declaration>
+			
+			
+			<Anchor>//api/name/pointOfSaleEntryMode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/pointOfSaleEntryMode</TokenIdentifier>
+			<Abstract type="html">Indicates the method by which the Primary Account Number (PAN) was entered.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) PLVPointOfSaleEntryMode pointOfSaleEntryMode</Declaration>
+			
+			
+			<Anchor>//api/name/pointOfSaleEntryMode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setCardholderVerificationMethod:</TokenIdentifier>
+			<Abstract type="html">Verification method of the cardholder, used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) PLVCardholderVerificationMethod cardholderVerificationMethod</Declaration>
+			
+			
+			<Anchor>//api/name/cardholderVerificationMethod</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/cardholderVerificationMethod</TokenIdentifier>
+			<Abstract type="html">Verification method of the cardholder, used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) PLVCardholderVerificationMethod cardholderVerificationMethod</Declaration>
+			
+			
+			<Anchor>//api/name/cardholderVerificationMethod</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/cardholderVerificationMethod</TokenIdentifier>
+			<Abstract type="html">Verification method of the cardholder, used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) PLVCardholderVerificationMethod cardholderVerificationMethod</Declaration>
+			
+			
+			<Anchor>//api/name/cardholderVerificationMethod</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setApplicationIdentifier:</TokenIdentifier>
+			<Abstract type="html">Identifies the application of the card used for the payment as described in ISO/IEC 7816-5.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *applicationIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/applicationIdentifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/applicationIdentifier</TokenIdentifier>
+			<Abstract type="html">Identifies the application of the card used for the payment as described in ISO/IEC 7816-5.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *applicationIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/applicationIdentifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/applicationIdentifier</TokenIdentifier>
+			<Abstract type="html">Identifies the application of the card used for the payment as described in ISO/IEC 7816-5.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *applicationIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/applicationIdentifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setAuthorizationCode:</TokenIdentifier>
+			<Abstract type="html">Authorization code generated by the issuing bank of a payer’s payment card, in order to validate a payment card when it is approved or declined in the sale of a good or service.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authorizationCode</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationCode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/authorizationCode</TokenIdentifier>
+			<Abstract type="html">Authorization code generated by the issuing bank of a payer’s payment card, in order to validate a payment card when it is approved or declined in the sale of a good or service.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authorizationCode</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationCode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/authorizationCode</TokenIdentifier>
+			<Abstract type="html">Authorization code generated by the issuing bank of a payer’s payment card, in order to validate a payment card when it is approved or declined in the sale of a good or service.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *authorizationCode</Declaration>
+			
+			
+			<Anchor>//api/name/authorizationCode</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setCardBrandIdentifier:</TokenIdentifier>
+			<Abstract type="html">Card brand identifier used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *cardBrandIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cardBrandIdentifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/cardBrandIdentifier</TokenIdentifier>
+			<Abstract type="html">Card brand identifier used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *cardBrandIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cardBrandIdentifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/cardBrandIdentifier</TokenIdentifier>
+			<Abstract type="html">Card brand identifier used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *cardBrandIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cardBrandIdentifier</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setCardBrandName:</TokenIdentifier>
+			<Abstract type="html">Card brand name used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *cardBrandName</Declaration>
+			
+			
+			<Anchor>//api/name/cardBrandName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/cardBrandName</TokenIdentifier>
+			<Abstract type="html">Card brand name used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *cardBrandName</Declaration>
+			
+			
+			<Anchor>//api/name/cardBrandName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/cardBrandName</TokenIdentifier>
+			<Abstract type="html">Card brand name used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *cardBrandName</Declaration>
+			
+			
+			<Anchor>//api/name/cardBrandName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setCardExpiryMonth:</TokenIdentifier>
+			<Abstract type="html">Expiration month of the card used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger cardExpiryMonth</Declaration>
+			
+			
+			<Anchor>//api/name/cardExpiryMonth</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/cardExpiryMonth</TokenIdentifier>
+			<Abstract type="html">Expiration month of the card used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger cardExpiryMonth</Declaration>
+			
+			
+			<Anchor>//api/name/cardExpiryMonth</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/cardExpiryMonth</TokenIdentifier>
+			<Abstract type="html">Expiration month of the card used for the payment.</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger cardExpiryMonth</Declaration>
+			
+			
+			<Anchor>//api/name/cardExpiryMonth</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/setCardExpiryYear:</TokenIdentifier>
+			<Abstract type="html">Expiration year of the card used for the payment.  Returns 4 digits. Possible characters: [0-9].</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger cardExpiryYear</Declaration>
+			
+			
+			<Anchor>//api/name/cardExpiryYear</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResultAdditionalData/cardExpiryYear</TokenIdentifier>
+			<Abstract type="html">Expiration year of the card used for the payment.  Returns 4 digits. Possible characters: [0-9].</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger cardExpiryYear</Declaration>
+			
+			
+			<Anchor>//api/name/cardExpiryYear</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResultAdditionalData/cardExpiryYear</TokenIdentifier>
+			<Abstract type="html">Expiration year of the card used for the payment.  Returns 4 digits. Possible characters: [0-9].</Abstract>
+			<DeclaredIn>PLVPaymentResultAdditionalData.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger cardExpiryYear</Declaration>
+			
+			
+			<Anchor>//api/name/cardExpiryYear</Anchor>
+>>>>>>> test
             <NodeRef refid="6"/>
 		</Token>
 		

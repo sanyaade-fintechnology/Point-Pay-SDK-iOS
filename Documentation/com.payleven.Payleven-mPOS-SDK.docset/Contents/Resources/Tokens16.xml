@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Constants/PLVPaymentResultState.html">
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/c/tdef/PLVPaymentResultState</TokenIdentifier>
 			<Abstract type="html">Payment result state. Indicates the payment state as Approved, Declined or Cancelled</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+=======
+	<File path="Constants/PLVPaymentProgressState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PLVPaymentProgressState</TokenIdentifier>
+			<Abstract type="html">Payment Progress state constants.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="16"/>
@@ -14,34 +23,128 @@
 		
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentResultStateApproved</TokenIdentifier>
             <Abstract type="html">     Approved. 
      </Abstract>
             <Declaration>PLVPaymentResultStateApproved</Declaration>
             
             <DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateNone</TokenIdentifier>
+            <Abstract type="html">Payment state none.</Abstract>
+            <Declaration>PLVPaymentProgressStateNone</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="16"/>
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentResultStateDeclined</TokenIdentifier>
             <Abstract type="html">     Declined. 
      </Abstract>
             <Declaration>PLVPaymentResultStateDeclined</Declaration>
             
             <DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateStarted</TokenIdentifier>
+            <Abstract type="html">Payment started.</Abstract>
+            <Declaration>PLVPaymentProgressStateStarted</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="16"/>
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPaymentResultStateCancelled</TokenIdentifier>
             <Abstract type="html">     Cancelled. 
      </Abstract>
             <Declaration>PLVPaymentResultStateCancelled</Declaration>
             
             <DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateRequestPresentCard</TokenIdentifier>
+            <Abstract type="html">Terminal requests customer to present (Tap or Insert) card.</Abstract>
+            <Declaration>PLVPaymentProgressStateRequestPresentCard</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateRequestInsertCard</TokenIdentifier>
+            <Abstract type="html">Terminal requests customer to insert card.</Abstract>
+            <Declaration>PLVPaymentProgressStateRequestInsertCard</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateCardInserted</TokenIdentifier>
+            <Abstract type="html">Customer inserted card.</Abstract>
+            <Declaration>PLVPaymentProgressStateCardInserted</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateRequestEnterPin</TokenIdentifier>
+            <Abstract type="html">Terminal requests customer to enter Pin.</Abstract>
+            <Declaration>PLVPaymentProgressStateRequestEnterPin</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStatePinEntered</TokenIdentifier>
+            <Abstract type="html">Customer entered Pin.</Abstract>
+            <Declaration>PLVPaymentProgressStatePinEntered</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateContactlessBeepFailed</TokenIdentifier>
+            <Abstract type="html">Customer Tapped contactless card failed.</Abstract>
+            <Declaration>PLVPaymentProgressStateContactlessBeepFailed</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateContactlessBeepOk</TokenIdentifier>
+            <Abstract type="html">Customer Tapped contactless card successfully.</Abstract>
+            <Declaration>PLVPaymentProgressStateContactlessBeepOk</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+            
+            <NodeRef refid="16"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentProgressStateRequestSwipeCard</TokenIdentifier>
+            <Abstract type="html">Terminal requests customer to Swipe Card.</Abstract>
+            <Declaration>PLVPaymentProgressStateRequestSwipeCard</Declaration>
+            
+            <DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+>>>>>>> test
             
             <NodeRef refid="16"/>
         </Token>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Classes/PLVRefundTask.html">
 		
 		<Token>
@@ -8,6 +9,17 @@
 and start the refund task. Contains 2 readonly properties
 the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
+=======
+	<File path="Classes/PLVRefundResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVRefundResult</TokenIdentifier>
+			<Abstract type="html">PLVRefundResult represents the result form obtained from the
+PLVRefundRequest that was triggered with the PLVRefundTask.
+It contains a PLVRefund class and PLVReceiptGenerator class which
+generates the image receipt for every refund that was made.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="11"/>
@@ -15,6 +27,7 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 		
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/setRefundRequest:</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
@@ -23,10 +36,21 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			
 			
 			<Anchor>//api/name/refundRequest</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundResult/setRefund:</TokenIdentifier>
+			<Abstract type="html">PLVRefund the refund object containing details for receipts.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefund *refund</Declaration>
+			
+			
+			<Anchor>//api/name/refund</Anchor>
+>>>>>>> test
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/refundRequest</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
@@ -35,10 +59,21 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			
 			
 			<Anchor>//api/name/refundRequest</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundResult/refund</TokenIdentifier>
+			<Abstract type="html">PLVRefund the refund object containing details for receipts.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefund *refund</Declaration>
+			
+			
+			<Anchor>//api/name/refund</Anchor>
+>>>>>>> test
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVRefundTask/refundRequest</TokenIdentifier>
 			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
@@ -47,10 +82,21 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			
 			
 			<Anchor>//api/name/refundRequest</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefundResult/refund</TokenIdentifier>
+			<Abstract type="html">PLVRefund the refund object containing details for receipts.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVRefund *refund</Declaration>
+			
+			
+			<Anchor>//api/name/refund</Anchor>
+>>>>>>> test
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/setResult:</TokenIdentifier>
 			<Abstract type="html">Refund result.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
@@ -59,10 +105,22 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			
 			
 			<Anchor>//api/name/result</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundResult/setReceiptGenerator:</TokenIdentifier>
+			<Abstract type="html">* Returns an instance of PLVReceiptGenerator, which generates a receipt image for the refund.
+NOTE: Receipt image must be extended with the merchant&apos;s name, address and respective receipt ID.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVReceiptGenerator *receiptGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/receiptGenerator</Anchor>
+>>>>>>> test
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundTask/result</TokenIdentifier>
 			<Abstract type="html">Refund result.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
@@ -71,10 +129,22 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			
 			
 			<Anchor>//api/name/result</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVRefundResult/receiptGenerator</TokenIdentifier>
+			<Abstract type="html">* Returns an instance of PLVReceiptGenerator, which generates a receipt image for the refund.
+NOTE: Receipt image must be extended with the merchant&apos;s name, address and respective receipt ID.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVReceiptGenerator *receiptGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/receiptGenerator</Anchor>
+>>>>>>> test
             <NodeRef refid="11"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVRefundTask/result</TokenIdentifier>
 			<Abstract type="html">Refund result.</Abstract>
 			<DeclaredIn>PLVRefundTask.h</DeclaredIn>
@@ -95,6 +165,17 @@ the PLVRefundRequest and the PLVRefundResult with a start method.</Abstract>
 			
 			
 			<Anchor>//api/name/start</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVRefundResult/receiptGenerator</TokenIdentifier>
+			<Abstract type="html">* Returns an instance of PLVReceiptGenerator, which generates a receipt image for the refund.
+NOTE: Receipt image must be extended with the merchant&apos;s name, address and respective receipt ID.</Abstract>
+			<DeclaredIn>PLVRefundResult.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVReceiptGenerator *receiptGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/receiptGenerator</Anchor>
+>>>>>>> test
             <NodeRef refid="11"/>
 		</Token>
 		

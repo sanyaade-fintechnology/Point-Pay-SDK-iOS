@@ -219,13 +219,13 @@ NSString *const PSCoreDataManagerErrorDomain = @"PSCoreDataManagerErrorDomain";
     PSPayment *entity = [NSEntityDescription insertNewObjectForEntityForName:kPaymentEntity inManagedObjectContext:self.taskManagedObjectContext];
     entity.index = [NSNumber numberWithInteger:numberOfObjects+1];
     entity.merchantId = merchanId;
-    entity.paymentId = paymentResult.identifier;
-    entity.date = paymentResult.date;
-    entity.currency = paymentResult.currency;
-    entity.amount = [NSNumber numberWithDouble:paymentResult.amount.doubleValue];
-    entity.paymentState = [NSNumber numberWithInteger:paymentResult.state];
+    entity.paymentId = paymentResult.paymentIdentifier;
+    entity.date = paymentResult.paymentDate;
+    entity.currency = paymentResult.paymentCurrency;
+    entity.amount = [NSNumber numberWithDouble:paymentResult.paymentAmount.doubleValue];
+    entity.paymentState = [NSNumber numberWithInteger:paymentResult.paymentState];
     entity.refundedAmount = @0.00;
-    entity.remainingAmount = [NSNumber numberWithDouble:paymentResult.amount.doubleValue];
+    entity.remainingAmount = [NSNumber numberWithDouble:paymentResult.paymentAmount.doubleValue];
     entity.signature = paymentResult.signatureImageURL.absoluteString;
     completion([self saveContext:self.taskManagedObjectContext]);
 }
@@ -241,8 +241,8 @@ NSString *const PSCoreDataManagerErrorDomain = @"PSCoreDataManagerErrorDomain";
     NSArray *result = [self.taskManagedObjectContext executeFetchRequest:request error:&error];
     if ([result count] > 0) {
         PSPayment *payment = [result lastObject];
-        payment.refundedAmount = [NSNumber numberWithDouble:refund.refundedAmount.doubleValue];
-        payment.remainingAmount = [NSNumber numberWithDouble:refund.remainingAmount.doubleValue];
+        payment.refundedAmount = [NSNumber numberWithDouble:refund.refundAmount.doubleValue];
+        payment.remainingAmount = [NSNumber numberWithDouble:refund.refundableAmount.doubleValue];
     }
     completion([self saveContext:self.taskManagedObjectContext]);
 }

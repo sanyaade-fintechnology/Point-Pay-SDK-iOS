@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Classes/PLVRefund.html">
 		
 		<Token>
@@ -12,6 +13,14 @@ in case of partial refunds. The currency is Three-letter ISO 4217 currency code.
 refundDate represents the date of execution. The refundDescription represents the refund desc.
   </Abstract>
 			<DeclaredIn>PLVRefund.h</DeclaredIn>
+=======
+	<File path="Classes/PLVReceiptGenerator.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVReceiptGenerator</TokenIdentifier>
+			<Abstract type="html">PLVReceiptGenerator creates receipt images.</Abstract>
+			<DeclaredIn>PLVReceiptGenerator.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="8"/>
@@ -19,6 +28,7 @@ refundDate represents the date of execution. The refundDescription represents th
 		
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVRefund/setMerchantIdentifier:</TokenIdentifier>
 			<Abstract type="html">The merchant identifier</Abstract>
 			<DeclaredIn>PLVRefund.h</DeclaredIn>
@@ -339,6 +349,34 @@ refundDate represents the date of execution. The refundDescription represents th
 			
 			
 			<Anchor>//api/name/refundDescription</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVReceiptGenerator/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Generates the receipt image.</Abstract>
+			<DeclaredIn>PLVReceiptGenerator.h</DeclaredIn>
+			
+			<Declaration>- (void)generateReceiptWithWidth:(CGFloat)width fontSize:(CGFloat)fontSize lineSpacing:(CGFloat)lineSpacing padding:(CGFloat)padding completionHandler:(void ( ^ ) ( CGImageRef receipt ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Receipt image width.</Abstract>
+				</Parameter><Parameter>
+					<Name>fontSize</Name>
+					<Abstract type="html">Receipt font size.</Abstract>
+				</Parameter><Parameter>
+					<Name>lineSpacing</Name>
+					<Abstract type="html">Receipt text line spacing.</Abstract>
+				</Parameter><Parameter>
+					<Name>padding</Name>
+					<Abstract type="html">Receipt contents padding.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">Block that is called when the receipt generation finishes. The block takes a single
+parameter receipt.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</Anchor>
+>>>>>>> test
             <NodeRef refid="8"/>
 		</Token>
 		

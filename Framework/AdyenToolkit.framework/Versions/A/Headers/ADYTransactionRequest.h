@@ -70,6 +70,12 @@ the following fields:
 /** Locale of the transaction, or `nil` to use default locale. */
 @property (nonatomic, strong) NSLocale *locale;
 
+/** 
+ Optional property to set staff name who starts a transaction. If you support staff management within your app,
+ use this property to differentiate transactions started by different staff members.
+ */
+@property (nonatomic, strong) NSString *cashregisterAgent;
+
 /** Optional dictionary with transaction options. Only NSString typed values are allowed */
 @property (nonatomic, strong) NSDictionary *options;
 

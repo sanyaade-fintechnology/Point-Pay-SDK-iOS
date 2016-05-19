@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Classes/PLVPaymentRequest.html">
 		
 		<Token>
@@ -7,6 +8,14 @@
 			<Abstract type="html">PLVPaymentRequest is payment request instance that requires the identifier,
 amount, coordinate and currency.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+=======
+	<File path="Classes/PLVPaymentProgressViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentProgressViewController</TokenIdentifier>
+			<Abstract type="html">PLVPaymentProgressViewController enables you to implement optional animations to your user interface in your app. You can also customize the View’s appearance and provide a primary and/or secondary colour to align with your branding.</Abstract>
+			<DeclaredIn>PLVPaymentProgressViewController.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="3"/>
@@ -14,6 +23,7 @@ amount, coordinate and currency.</Abstract>
 		
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setIdentifier:</TokenIdentifier>
 			<Abstract type="html">Payment identifier.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
@@ -90,7 +100,7 @@ When creating NSDecimalNumber from NSString, don&apos;t forget to take the curre
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setCurrency:</TokenIdentifier>
-			<Abstract type="html">Three-letter ISO 4217 currency code. For example, EUR.</Abstract>
+			<Abstract type="html">Three-letter ISO 4217 currency code. Supported currencies: EUR, GBP, PLZ.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, copy) NSString *currency</Declaration>
@@ -102,7 +112,7 @@ When creating NSDecimalNumber from NSString, don&apos;t forget to take the curre
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/currency</TokenIdentifier>
-			<Abstract type="html">Three-letter ISO 4217 currency code. For example, EUR.</Abstract>
+			<Abstract type="html">Three-letter ISO 4217 currency code. Supported currencies: EUR, GBP, PLZ.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, copy) NSString *currency</Declaration>
@@ -114,7 +124,7 @@ When creating NSDecimalNumber from NSString, don&apos;t forget to take the curre
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentRequest/currency</TokenIdentifier>
-			<Abstract type="html">Three-letter ISO 4217 currency code. For example, EUR.</Abstract>
+			<Abstract type="html">Three-letter ISO 4217 currency code. Supported currencies: EUR, GBP, PLZ.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readonly, copy) NSString *currency</Declaration>
@@ -157,10 +167,29 @@ When creating NSDecimalNumber from NSString, don&apos;t forget to take the curre
 			
 			
 			<Anchor>//api/name/coordinate</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentProgressViewController/initWithPrimaryColor:secondaryColor:</TokenIdentifier>
+			<Abstract type="html">init object of PLVPaymentProgressViewController using custom colors</Abstract>
+			<DeclaredIn>PLVPaymentProgressViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithPrimaryColor:(UIColor *)primaryColor secondaryColor:(UIColor *)secondaryColor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>primaryColor</Name>
+					<Abstract type="html">color of the payment device used in animations.</Abstract>
+				</Parameter><Parameter>
+					<Name>secondaryColor</Name>
+					<Abstract type="html">color of cards and PIN indicators used in animations.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithPrimaryColor:secondaryColor:</Anchor>
+>>>>>>> test
             <NodeRef refid="3"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/initWithIdentifier:amount:currency:coordinate:</TokenIdentifier>
 			<Abstract type="html">Initializes the receiver with the specified identifier, amount, currency, and coordinate.</Abstract>
 			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
@@ -177,7 +206,7 @@ When creating NSDecimalNumber from NSString, don&apos;t forget to take the curre
                 into account.</Abstract>
 				</Parameter><Parameter>
 					<Name>currency</Name>
-					<Abstract type="html">Three-letter ISO 4217 currency code. For example, EUR.</Abstract>
+					<Abstract type="html">three-letter ISO 4217 currency code. Supported currencies: EUR, GBP, PLZ.</Abstract>
 				</Parameter><Parameter>
 					<Name>coordinate</Name>
 					<Abstract type="html">Current device coordinate.</Abstract>
@@ -185,6 +214,21 @@ When creating NSDecimalNumber from NSString, don&apos;t forget to take the curre
 			</Parameters>
 			
 			<Anchor>//api/name/initWithIdentifier:amount:currency:coordinate:</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentProgressViewController/animateWithPaymentProgressState:</TokenIdentifier>
+			<Abstract type="html">Call this method on PLVPaymentTaskDelegate&apos;s paymentTask:progressDidChange: and forward the received PLVPaymentProgressState</Abstract>
+			<DeclaredIn>PLVPaymentProgressViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)animateWithPaymentProgressState:(PLVPaymentProgressState)progressState</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>progressState</Name>
+					<Abstract type="html">PLVPaymentProgressState to animate current state.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/animateWithPaymentProgressState:</Anchor>
+>>>>>>> test
             <NodeRef refid="3"/>
 		</Token>
 		

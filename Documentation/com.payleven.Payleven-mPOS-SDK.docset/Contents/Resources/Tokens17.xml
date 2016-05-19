@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Constants/PLVPointOfSaleEntryMode.html">
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/c/tdef/PLVPointOfSaleEntryMode</TokenIdentifier>
 			<Abstract type="html">POS entry mode constants. Indicates point of sale type.</Abstract>
+=======
+	<File path="Constants/PLVPaymentResultState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PLVPaymentResultState</TokenIdentifier>
+			<Abstract type="html">Payment result state. Indicates the payment state as Approved, Declined or Cancelled</Abstract>
+>>>>>>> test
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
             
 			
@@ -14,10 +22,17 @@
 		
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPointOfSaleEntryModeUnknown</TokenIdentifier>
             <Abstract type="html">     Unknown mode. 
      </Abstract>
             <Declaration>PLVPointOfSaleEntryModeUnknown</Declaration>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentResultStateApproved</TokenIdentifier>
+            <Abstract type="html">     Approved. 
+     </Abstract>
+            <Declaration>PLVPaymentResultStateApproved</Declaration>
+>>>>>>> test
             
             <DeclaredIn>PLVPaymentResult.h</DeclaredIn>
             
@@ -25,10 +40,17 @@
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPointOfSaleEntryModeIntegratedCircuitCard</TokenIdentifier>
             <Abstract type="html">     ICC (chip) mode. 
      </Abstract>
             <Declaration>PLVPointOfSaleEntryModeIntegratedCircuitCard</Declaration>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentResultStateDeclined</TokenIdentifier>
+            <Abstract type="html">     Declined. 
+     </Abstract>
+            <Declaration>PLVPaymentResultStateDeclined</Declaration>
+>>>>>>> test
             
             <DeclaredIn>PLVPaymentResult.h</DeclaredIn>
             
@@ -36,6 +58,7 @@
         </Token>
         
         <Token>
+<<<<<<< HEAD
             <TokenIdentifier>//apple_ref/c/econst/PLVPointOfSaleEntryModeContactless</TokenIdentifier>
             <Abstract type="html">     Contactless (NFC) mode.
      </Abstract>
@@ -62,6 +85,12 @@
             <Abstract type="html">     Manual mode. 
      </Abstract>
             <Declaration>PLVPointOfSaleEntryModePANKeyEntry</Declaration>
+=======
+            <TokenIdentifier>//apple_ref/c/econst/PLVPaymentResultStateCancelled</TokenIdentifier>
+            <Abstract type="html">     Cancelled. 
+     </Abstract>
+            <Declaration>PLVPaymentResultStateCancelled</Declaration>
+>>>>>>> test
             
             <DeclaredIn>PLVPaymentResult.h</DeclaredIn>
             

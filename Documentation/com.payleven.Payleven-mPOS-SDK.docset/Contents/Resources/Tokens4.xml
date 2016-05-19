@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Classes/PLVPaymentResult.html">
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentResult</TokenIdentifier>
 			<Abstract type="html">PLVPaymentResult class represents payment results.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
+=======
+	<File path="Classes/PLVPaymentRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentRequest</TokenIdentifier>
+			<Abstract type="html">PLVPaymentRequest is payment request instance that requires the identifier,
+amount, coordinate and currency.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="4"/>
@@ -13,6 +23,7 @@
 		
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setIdentifier:</TokenIdentifier>
 			<Abstract type="html">Payment identifier.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -21,10 +32,23 @@
 			
 			
 			<Anchor>//api/name/identifier</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setPaymentIdentifier:</TokenIdentifier>
+			<Abstract type="html">Mandatory unique identifier (e.g order number) of the payment request.
+The ID can be any set of alphanumeric characters [A-Z, a-z, 0-9].
+This payment identifier must be included in receipts and will be reflected on payleven&apos;s receipt images. Please retain this identifier for your records and for further reference (e.g Refund).</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *paymentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/paymentIdentifier</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/identifier</TokenIdentifier>
 			<Abstract type="html">Payment identifier.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -33,10 +57,23 @@
 			
 			
 			<Anchor>//api/name/identifier</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/paymentIdentifier</TokenIdentifier>
+			<Abstract type="html">Mandatory unique identifier (e.g order number) of the payment request.
+The ID can be any set of alphanumeric characters [A-Z, a-z, 0-9].
+This payment identifier must be included in receipts and will be reflected on payleven&apos;s receipt images. Please retain this identifier for your records and for further reference (e.g Refund).</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *paymentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/paymentIdentifier</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResult/identifier</TokenIdentifier>
 			<Abstract type="html">Payment identifier.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -45,10 +82,23 @@
 			
 			
 			<Anchor>//api/name/identifier</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentRequest/paymentIdentifier</TokenIdentifier>
+			<Abstract type="html">Mandatory unique identifier (e.g order number) of the payment request.
+The ID can be any set of alphanumeric characters [A-Z, a-z, 0-9].
+This payment identifier must be included in receipts and will be reflected on payleven&apos;s receipt images. Please retain this identifier for your records and for further reference (e.g Refund).</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *paymentIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/paymentIdentifier</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setState:</TokenIdentifier>
 			<Abstract type="html">Payment state.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -57,10 +107,21 @@
 			
 			
 			<Anchor>//api/name/state</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setPaymentAmount:</TokenIdentifier>
+			<Abstract type="html">Amount to be charged in a decimal format, which must be at least one major currency unit (e.g 1.00 Euro) and cannot be negative or zero.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSDecimalNumber *paymentAmount</Declaration>
+			
+			
+			<Anchor>//api/name/paymentAmount</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/state</TokenIdentifier>
 			<Abstract type="html">Payment state.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -69,10 +130,21 @@
 			
 			
 			<Anchor>//api/name/state</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/paymentAmount</TokenIdentifier>
+			<Abstract type="html">Amount to be charged in a decimal format, which must be at least one major currency unit (e.g 1.00 Euro) and cannot be negative or zero.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSDecimalNumber *paymentAmount</Declaration>
+			
+			
+			<Anchor>//api/name/paymentAmount</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResult/state</TokenIdentifier>
 			<Abstract type="html">Payment state.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -81,10 +153,21 @@
 			
 			
 			<Anchor>//api/name/state</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentRequest/paymentAmount</TokenIdentifier>
+			<Abstract type="html">Amount to be charged in a decimal format, which must be at least one major currency unit (e.g 1.00 Euro) and cannot be negative or zero.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSDecimalNumber *paymentAmount</Declaration>
+			
+			
+			<Anchor>//api/name/paymentAmount</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setAmount:</TokenIdentifier>
 			<Abstract type="html">Payment amount.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -93,10 +176,21 @@
 			
 			
 			<Anchor>//api/name/amount</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setPaymentCurrency:</TokenIdentifier>
+			<Abstract type="html">Three-letter alphabetic code according to ISO 4217 representing the payment&apos;s currency that must match the merchant country&apos;s local currency. Supported currencies are EUR, GBP and PLN.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *paymentCurrency</Declaration>
+			
+			
+			<Anchor>//api/name/paymentCurrency</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/amount</TokenIdentifier>
 			<Abstract type="html">Payment amount.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -105,10 +199,21 @@
 			
 			
 			<Anchor>//api/name/amount</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/paymentCurrency</TokenIdentifier>
+			<Abstract type="html">Three-letter alphabetic code according to ISO 4217 representing the payment&apos;s currency that must match the merchant country&apos;s local currency. Supported currencies are EUR, GBP and PLN.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *paymentCurrency</Declaration>
+			
+			
+			<Anchor>//api/name/paymentCurrency</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResult/amount</TokenIdentifier>
 			<Abstract type="html">Payment amount.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -117,10 +222,21 @@
 			
 			
 			<Anchor>//api/name/amount</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentRequest/paymentCurrency</TokenIdentifier>
+			<Abstract type="html">Three-letter alphabetic code according to ISO 4217 representing the payment&apos;s currency that must match the merchant country&apos;s local currency. Supported currencies are EUR, GBP and PLN.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, copy) NSString *paymentCurrency</Declaration>
+			
+			
+			<Anchor>//api/name/paymentCurrency</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setCurrency:</TokenIdentifier>
 			<Abstract type="html">Payment currency.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -129,10 +245,21 @@
 			
 			
 			<Anchor>//api/name/currency</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/setPaymentCoordinate:</TokenIdentifier>
+			<Abstract type="html">Current device coordinate at the time of the payment attempt.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) CLLocationCoordinate2D paymentCoordinate</Declaration>
+			
+			
+			<Anchor>//api/name/paymentCoordinate</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/currency</TokenIdentifier>
 			<Abstract type="html">Payment currency.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -141,10 +268,21 @@
 			
 			
 			<Anchor>//api/name/currency</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/paymentCoordinate</TokenIdentifier>
+			<Abstract type="html">Current device coordinate at the time of the payment attempt.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) CLLocationCoordinate2D paymentCoordinate</Declaration>
+			
+			
+			<Anchor>//api/name/paymentCoordinate</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentResult/currency</TokenIdentifier>
 			<Abstract type="html">Payment currency.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -153,10 +291,21 @@
 			
 			
 			<Anchor>//api/name/currency</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentRequest/paymentCoordinate</TokenIdentifier>
+			<Abstract type="html">Current device coordinate at the time of the payment attempt.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) CLLocationCoordinate2D paymentCoordinate</Declaration>
+			
+			
+			<Anchor>//api/name/paymentCoordinate</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentResult/setDate:</TokenIdentifier>
 			<Abstract type="html">Payment date.</Abstract>
 			<DeclaredIn>PLVPaymentResult.h</DeclaredIn>
@@ -369,6 +518,32 @@
 			
 			
 			<Anchor>//api/name/additionalData</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentRequest/initWithIdentifier:amount:currency:coordinate:</TokenIdentifier>
+			<Abstract type="html">Initializes the receiver with the specified identifier, amount, currency, and coordinate.</Abstract>
+			<DeclaredIn>PLVPaymentRequest.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithIdentifier:(NSString *)identifier amount:(NSDecimalNumber *)amount currency:(NSString *)currency coordinate:(CLLocationCoordinate2D)coordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">Payment identifier.</Abstract>
+				</Parameter><Parameter>
+					<Name>amount</Name>
+					<Abstract type="html">Payment amount. The value can be fractional, maximum two fraction digits are allowed. When creating
+                NSDecimalNumber from NSString, don&apos;t forget to take the current locale and the decimal separator
+                into account.</Abstract>
+				</Parameter><Parameter>
+					<Name>currency</Name>
+					<Abstract type="html">Three-letter ISO 4217 currency code. For example, EUR.</Abstract>
+				</Parameter><Parameter>
+					<Name>coordinate</Name>
+					<Abstract type="html">Current device coordinate.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithIdentifier:amount:currency:coordinate:</Anchor>
+>>>>>>> test
             <NodeRef refid="4"/>
 		</Token>
 		

@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
+<<<<<<< HEAD
 	<File path="Classes/PLVReceiptGenerator.html">
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/PLVReceiptGenerator</TokenIdentifier>
 			<Abstract type="html">PLVReceiptGenerator creates receipt images.</Abstract>
 			<DeclaredIn>PLVReceiptGenerator.h</DeclaredIn>
+=======
+	<File path="Classes/PLVPaymentTask.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentTask</TokenIdentifier>
+			<Abstract type="html">PLVPaymentTask instance is used to make payments.
+It contains a PLVPaymentRequest, PLVPaymentResult and PLVPaymentTaskDelegate.
+The delegate is a required delegate which needs the methods implement on
+adoption.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+>>>>>>> test
             
 			
 			<NodeRef refid="7"/>
@@ -13,6 +25,7 @@
 		
 		
 		<Token>
+<<<<<<< HEAD
 			<TokenIdentifier>//apple_ref/occ/instm/PLVReceiptGenerator/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</TokenIdentifier>
 			<Abstract type="html">Generates the receipt image.</Abstract>
 			<DeclaredIn>PLVReceiptGenerator.h</DeclaredIn>
@@ -39,6 +52,174 @@ parameter receipt.</Abstract>
 			</Parameters>
 			
 			<Anchor>//api/name/generateReceiptWithWidth:fontSize:lineSpacing:padding:completionHandler:</Anchor>
+=======
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setPaymentRequest:</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) PLVPaymentRequest *paymentRequest</Declaration>
+			
+			
+			<Anchor>//api/name/paymentRequest</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/paymentRequest</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) PLVPaymentRequest *paymentRequest</Declaration>
+			
+			
+			<Anchor>//api/name/paymentRequest</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/paymentRequest</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s payment request.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) PLVPaymentRequest *paymentRequest</Declaration>
+			
+			
+			<Anchor>//api/name/paymentRequest</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, weak) id&lt;PLVPaymentTaskDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/delegate</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, weak) id&lt;PLVPaymentTaskDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/delegate</TokenIdentifier>
+			<Abstract type="html">The receiver&apos;s delegate.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, weak) id&lt;PLVPaymentTaskDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setResult:</TokenIdentifier>
+			<Abstract type="html">Payment result.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) PLVPaymentResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/result</TokenIdentifier>
+			<Abstract type="html">Payment result.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) PLVPaymentResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/result</TokenIdentifier>
+			<Abstract type="html">Payment result.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, strong) PLVPaymentResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/setProgressState:</TokenIdentifier>
+			<Abstract type="html">Payment progress state.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVPaymentProgressState progressState</Declaration>
+			
+			
+			<Anchor>//api/name/progressState</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/progressState</TokenIdentifier>
+			<Abstract type="html">Payment progress state.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVPaymentProgressState progressState</Declaration>
+			
+			
+			<Anchor>//api/name/progressState</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PLVPaymentTask/progressState</TokenIdentifier>
+			<Abstract type="html">Payment progress state.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) PLVPaymentProgressState progressState</Declaration>
+			
+			
+			<Anchor>//api/name/progressState</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/start</TokenIdentifier>
+			<Abstract type="html">Starts the payment task.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentTask/cancel</TokenIdentifier>
+			<Abstract type="html">Cancels the payment task. Calling this method doesn&apos;t cancel the task immediately.
+When the task finishes or fails after the cancellation, the corresponding delegate methods will be called.
+The result will be nil afterwards.</Abstract>
+			<DeclaredIn>PLVPaymentTask.h</DeclaredIn>
+			
+			<Declaration>- (void)cancel</Declaration>
+			
+			
+			<Anchor>//api/name/cancel</Anchor>
+>>>>>>> test
             <NodeRef refid="7"/>
 		</Token>
 		

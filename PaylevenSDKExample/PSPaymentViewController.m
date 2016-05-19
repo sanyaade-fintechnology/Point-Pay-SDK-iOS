@@ -261,7 +261,11 @@
     NSString *externalID = self.externalIdTextField.text;
     CLLocationCoordinate2D coordinate = self.manager.coordinate;
     PLVDevice *device = self.manager.selectedDevice;
-    PLVPaymentRequest *paymentRequest = [[PLVPaymentRequest alloc]initWithIdentifier:externalID amount:decimalAmount currency:self.currency coordinate:coordinate];
+    PLVPaymentRequest *paymentRequest = [[PLVPaymentRequest alloc]initWithIdentifier:externalID
+                                                                              amount:decimalAmount
+                                                                            currency:self.currency coordinate:coordinate];
+    
+    
     self.paymentTask = [self.manager.payleven paymentTaskWithRequest:paymentRequest device:device delegate:self];
     if (self.paymentTask) {
         [self.paymentTask start];
@@ -450,7 +454,7 @@
 }
 
 - (void)paymentTaskDidFinish:(PLVPaymentTask *)paymentTask {
-    if (paymentTask.result.state == PLVPaymentResultStateApproved) {
+    if (paymentTask.result.paymentState == PLVPaymentResultStateApproved) {
         [self registerPaymentWithTask:paymentTask];
     }
     
@@ -460,7 +464,7 @@
 
     [self.paymentProcessDelegate paymentViewControllerDidFinish:nil];
     __weak typeof(self)weakSelf = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.40 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf)strongSelf = weakSelf;
         [strongSelf performSegueWithIdentifier:PaymentResultViewSegue sender:strongSelf];
     });
@@ -478,44 +482,7 @@
 
 -(void)paymentTask:(PLVPaymentTask *)paymentTask progressDidChange:(PLVPaymentProgressState)progressState
 {
-    NSString *progressStateDescriptor;
-    
-    switch (progressState) {
-        case PLVPaymentProgressStateNone:
-            progressStateDescriptor = @"None";
-            break;
-        case PLVPaymentProgressStateStarted:
-            progressStateDescriptor = @"Started";
-            break;
-        case PLVPaymentProgressStateRequestInsertCard:
-            progressStateDescriptor = @"Please insert card";
-            break;
-        case PLVPaymentProgressStateRequestPresentCard:
-            progressStateDescriptor = @"Please present card";
-            break;
-        case PLVPaymentProgressStateCardInserted:
-            progressStateDescriptor = @"Card inserted";
-            break;
-        case PLVPaymentProgressStateRequestEnterPin:
-            progressStateDescriptor = @"Please enter Pin";
-            break;
-        case PLVPaymentProgressStatePinEntered:
-            progressStateDescriptor = @"Pin entered";
-            break;
-        case PLVPaymentProgressStateContactlessBeepFailed:
-            progressStateDescriptor = @"Contactless Tap failed";
-            break;
-        case PLVPaymentProgressStateContactlessBeepOk:
-            progressStateDescriptor = @"Contactless Tap Ok";
-            break;
-        case PLVPaymentProgressStateRequestSwipeCard:
-            progressStateDescriptor = @"Please swipe card";
-            break;
-        default:
-            break;
-    }
-    
-    [self.paymentProcessDelegate paymentStateChangedToDesciption:progressStateDescriptor];
+    [self.paymentProcessDelegate paymentProgressStateChangedToState:progressState];
 }
 
 #pragma mark - UITextFieldDelegate

@@ -167,7 +167,7 @@ extern NSString *const ADYNotificationBarcodeReceived;
 @property (nonatomic, strong) NSString *activeMerchantCode;
 
 /**
- * A property
+ * Integrator name. Set company name of your app.
  */
 @property (nonatomic, strong) NSString *integratorName;
 

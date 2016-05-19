@@ -28,6 +28,10 @@ enum {
      */
     PLVPaylevenCurrencyError,
     /**
+     External ID Error
+     */
+    PLVPaylevenExternalIdentifierError,
+    /**
      * Server returned an error. 
      */
     PLVPaylevenServerError,

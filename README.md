@@ -1,4 +1,4 @@
-# payleven mPOS SDK
+# payleven Point Pay SDK
 
 [![CocoaPods](https://img.shields.io/badge/Licence-MIT-brightgreen.svg?style=flat-square)]()
 [![CocoaPods](https://img.shields.io/badge/Platform-iOS-yellow.svg?style=flat-square)]()
@@ -7,14 +7,17 @@
 [![CocoaPods](https://img.shields.io/badge/Made%20in-Berlin-red.svg?style=flat-square)]()
 
 This project enables an iOS API to communicate with the payleven Classic (Chip & PIN) and Plus (NFC) card reader to accept debit and credit card payments. Learn more about the card readers on one of payleven's country [websites](https://payleven.com/).
-The payleven mPOS SDK provides an API to process refund payments (from version 1.1.0 onwards). Additionally, the SDK issues a receipt images of both sale and refund payments that contain the bare minimum of receipt details. Please remember to extend the image with the merchants name, address and a respective receipt ID. If you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
+From version 1.1.0 onwards, the payleven Point Pay SDK provides an API to process full and partial refunds. Additionally, the SDK issues a receipt image of both sale and refund payments that contain the bare minimum of receipt details. If you have any questions or require further assistance, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.
 
 The SDK is a static library, which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
 
+> Note: 
+> The product has been renamed to payleven Point Pay SDK from mPOS SDK. Any references within the documentation or classes are relevant to payleven Point Pay SDK.
+
 ### Prerequisites
 1. Register on one of payleven's country [websites](https://payleven.com/) to get a merchant account and a card reader.
-2. Request an API key by registering for the mPOS SDK on the [payleven developer page](https://service.payleven.com/uk/developer).
-3. System requirements: iOS 7 or later for both, the mPOS SDK and the mPOS SDK Sample App
+2. Request an API key by registering for the Point Pay SDK on the [payleven developer page](https://service.payleven.com/uk/developer).
+3. System requirements: iOS 7 or later for both, the Point Pay SDK and the Point Pay Sample App
 4. A payleven card reader, Classic or Plus
 
 ### Table of Contents
@@ -34,8 +37,9 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 * [Refund](#refund)
   * [Start refund](#start-refund)
   * [Handle refund](#handle-refund)
+* [Receipts](#receipts)
 * [Documentation](#documentation)
-* [mPOS SDK Sample App](#mpos-sdk-sample-app)
+* [Point Pay SDK Sample App](#point-pay-sdk-sample-app)
 
 ### Installation
 
@@ -255,18 +259,7 @@ The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are calle
  ```objective-c
 - (void)paymentTaskDidFinish:(PLVPaymentTask *)paymentTask { 
 	   
-    self.receiptGenerator = paymentTask.result.receiptGenerator;
-    CGFloat scale = [UIScreen mainScreen].scale;
-    [self.receiptGenerator generateReceiptWithWidth:(384.0 * scale)
-                                           fontSize:(16.0 * scale)
-                                        lineSpacing:(8.0 * scale)
-                                            padding:(20.0 * scale)
-                                  completionHandler:
-     ^(CGImageRef receipt) {
-         CGFloat scale = [UIScreen mainScreen].scale;
-         UIImage *image = [UIImage imageWithCGImage:receipt scale:scale orientation:UIImageOrientationUp];
-         self.receiptGenerator = nil;
-     }];
+    //Check paymentTask's result and inform the user
     
     self.paymentTask = nil;
  }
@@ -280,14 +273,14 @@ The delegate's paymentTaskDidFinish: and paymentTask:didFailWithError: are calle
 
 
 ### Refund
-You can refund a payment conducted via the mPOS SDK partially or in full. First, you create a PLVRefundRequest. 
+You can refund a payment conducted via the Point Pay SDK partially or in full. First, you create a PLVRefundRequest. 
 It is used to create or generate the request for refunds that will later be executed by the PLVRefundTask instance. 
 For a refund you need
 
-1. Identifier 			//String to uniquely specify the refund
-2. Amount 				//NSDecimalNumber indicating the amount to be refunded, which cannot be greater than original payment's amount
-3. PaymentIdentifier 	//String to specify the original sale payment's ID that is supposed to be refunded
-4. Currency 			//3 letter ISO character (e.g EUR) that is identical with the original sale payment's currency  
+- **Identifier**: String to uniquely specify the refund
+- **Amount**: NSDecimalNumber indicating the amount to be refunded, which cannot be greater than original payment's amount
+- **PaymentIdentifier**: String to specify the original sale payment's ID that is supposed to be refunded
+- **Currency**: 3 letter ISO character (e.g EUR) that is identical with the original sale payment's currency  
 
 
 ```objective-c
@@ -335,10 +328,28 @@ Once you have initialised PLVRefundRequest sucessfully you can trigger the refun
 
 ```
 
+### Receipts		
+Additionally, the SDK issues a receipt image of sale and refund payments that contains the bare minimum of receipt details. Please keep in mind to extend the image with the merchants name, address and a respective receipt ID. In case you wish to create your own receipt by using a set of raw payment data, please contact <a href="mailto:developer@payleven.com">developer@payleven.com</a>.		
+		
+```objective-c		
+self.receiptGenerator = paymentTask.result.receiptGenerator;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    [self.receiptGenerator generateReceiptWithWidth:(384.0 * scale)
+                                           fontSize:(16.0 * scale)
+                                        lineSpacing:(8.0 * scale)
+                                            padding:(20.0 * scale)
+                                  completionHandler:
+     ^(CGImageRef receipt) {
+         CGFloat scale = [UIScreen mainScreen].scale;
+         UIImage *image = [UIImage imageWithCGImage:receipt scale:scale orientation:UIImageOrientationUp];
+         self.receiptGenerator = nil;
+     }];		
+```
+
 
 ### Documentation
 [API Reference](http://payleven.github.io/mPOS-SDK-iOS/AppleDoc/)
 
-### mPOS SDK Sample App
-The mPOS SDK includes a sample app illustrating how the SDK can be integrated. Within this sample app it is possible to select a card reader, make payments and refund them. It also contains a Signature View, where the user can sign in case the payment requires a signature.
+### Point Pay SDK Sample App
+The Point Pay SDK includes a sample app illustrating how the SDK can be integrated. Within this sample app it is possible to select a card reader, make payments and refund them. It also contains a Signature View, where the user can sign in case the payment requires a signature.
 Please note that the location is hardcoded and needs to be changed depending on the country that the user is conducting the payment.

@@ -129,6 +129,7 @@
     } else {
         [self disableLoginButton];
     }
+    
 }
 
 - (void)enableLoginButton {

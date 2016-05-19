@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PLVPaymentProgressViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PLVPaymentProgressViewController</TokenIdentifier>
+			<Abstract type="html">PLVPaymentProgressViewController enables you to implement optional animations to your user interface in your app. You can also customize the View’s appearance and provide a primary and/or secondary colour to align with your branding.</Abstract>
+			<DeclaredIn>PLVPaymentProgressViewController.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentProgressViewController/initWithPrimaryColor:secondaryColor:</TokenIdentifier>
+			<Abstract type="html">init object of PLVPaymentProgressViewController using custom colors</Abstract>
+			<DeclaredIn>PLVPaymentProgressViewController.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithPrimaryColor:(UIColor *)primaryColor secondaryColor:(UIColor *)secondaryColor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>primaryColor</Name>
+					<Abstract type="html">color of the payment device used in animations.</Abstract>
+				</Parameter><Parameter>
+					<Name>secondaryColor</Name>
+					<Abstract type="html">color of cards and PIN indicators used in animations.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithPrimaryColor:secondaryColor:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PLVPaymentProgressViewController/animateWithPaymentProgressState:</TokenIdentifier>
+			<Abstract type="html">Call this method on PLVPaymentTaskDelegate&apos;s paymentTask:progressDidChange: and forward the received PLVPaymentProgressState</Abstract>
+			<DeclaredIn>PLVPaymentProgressViewController.h</DeclaredIn>
+			
+			<Declaration>- (void)animateWithPaymentProgressState:(PLVPaymentProgressState)progressState</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>progressState</Name>
+					<Abstract type="html">PLVPaymentProgressState to animate current state.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/animateWithPaymentProgressState:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

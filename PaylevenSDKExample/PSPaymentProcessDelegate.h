@@ -8,6 +8,7 @@
 
 @import Foundation;
 @import UIKit;
+#import <PaylevenSDK/PLVPaymentTask.h>
 
 @protocol PSPaymentProcessDelegate <NSObject>
 /**
@@ -27,6 +28,6 @@
 /**
  * Called when payment progress state changed
  */
-- (void)paymentStateChangedToDesciption:(nonnull NSString *) description;
+- (void)paymentProgressStateChangedToState:(PLVPaymentProgressState) progressState;
 
 @end

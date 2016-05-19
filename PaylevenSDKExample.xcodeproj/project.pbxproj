@@ -69,6 +69,7 @@
 		AAB83D511A6D49C000951A81 /* AdyenToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB83D4E1A6D49C000951A81 /* AdyenToolkit.framework */; };
 		AAB83D521A6D49C000951A81 /* PaylevenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */; };
 		AAE125861A2F13F800F6B88A /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = AAE125851A2F13F800F6B88A /* Readme.txt */; };
+		F377B88C1CC7A4F100B2E934 /* PaylevenBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F377B88B1CC7A4F100B2E934 /* PaylevenBundle.bundle */; };
 		F3C12B3F1CBC11090084F93B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C12B3E1CBC11090084F93B /* AudioToolbox.framework */; };
 		F3ECBDE31CBC11AA009CF430 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ECBDE21CBC11A9009CF430 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -183,6 +184,7 @@
 		AAB83D4E1A6D49C000951A81 /* AdyenToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdyenToolkit.framework; path = Framework/AdyenToolkit.framework; sourceTree = "<group>"; };
 		AAB83D4F1A6D49C000951A81 /* PaylevenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaylevenSDK.framework; path = Framework/PaylevenSDK.framework; sourceTree = "<group>"; };
 		AAE125851A2F13F800F6B88A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		F377B88B1CC7A4F100B2E934 /* PaylevenBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PaylevenBundle.bundle; path = Framework/PaylevenBundle.bundle; sourceTree = "<group>"; };
 		F3C12B3E1CBC11090084F93B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F3ECBDE21CBC11A9009CF430 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -430,6 +432,7 @@
 		AA6449CC19ED681300FAD24B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F377B88B1CC7A4F100B2E934 /* PaylevenBundle.bundle */,
 				F3ECBDE21CBC11A9009CF430 /* AVFoundation.framework */,
 				F3C12B3E1CBC11090084F93B /* AudioToolbox.framework */,
 				AAB601E51A092C0900AF070D /* UIKit.framework */,
@@ -517,6 +520,7 @@
 				75E9FCB61BE2256B009AB9E7 /* Config.plist in Resources */,
 				75E9FCB21BE22510009AB9E7 /* Main.storyboard in Resources */,
 				AA5612FF19ED338200F6C5E0 /* Images.xcassets in Resources */,
+				F377B88C1CC7A4F100B2E934 /* PaylevenBundle.bundle in Resources */,
 				AAE125861A2F13F800F6B88A /* Readme.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
