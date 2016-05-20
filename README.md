@@ -256,7 +256,7 @@ Optionally, you can offer a more comprehensive user experience by implementing p
 
 > Note: 
 >
-> A successful tap of the card to be charged for a contactless (NFC) transaction is indicated by all four (green) LEDs lighting up on the payleven Plus reader, a confirmation on the reader’s display followed by a short beep of your mobile device. Please ensure the mobile device’s volume is turned-on for audio confirmation.
+> A successful tap of the card to be charged for a contactless (NFC) transaction is indicated by all four (green) LEDs lighting up on the payleven plus reader and a confirmation on the card reader display is followed by a short beep of your mobile device. Please ensure the volume of the mobile device is turned-on for audio confirmation.
 
 
 #### Finish payment
