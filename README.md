@@ -11,8 +11,9 @@ From version 1.1.0 onwards, the payleven Point Pay SDK provides an API to proces
 
 The SDK is a static library, which supports other platforms like Xamarin and is fully compatible with the i386, x86_64, armv7, arm64 architectures.
 
-> Note: 
-> - The product has been renamed to payleven Point Pay SDK from mPOS SDK. Any references within the documentation or classes are relevant to payleven Point Pay SDK.
+> Note:
+> 
+> The product has been renamed to payleven Point Pay SDK from mPOS SDK. Any references within the documentation or classes are relevant to payleven Point Pay SDK.
 
 ### Prerequisites
 1. Register on one of payleven's country [websites](https://payleven.com/) to get a merchant account and a card reader.
@@ -252,6 +253,11 @@ Optionally, you can offer a more comprehensive user experience by implementing p
 	//Display progressStateDescriptor to your user
 }
 ```
+
+> Note: 
+>
+> A successful tap of the card to be charged for a contactless (NFC) transaction is indicated by all four (green) LEDs lighting up on the payleven Plus reader, a confirmation on the reader’s display followed by a short beep of your mobile device. Please ensure the mobile device’s volume is turned-on for audio confirmation.
+
 
 #### Finish payment
 
