@@ -1,4 +1,4 @@
-![payleven Point Pay SDK for iOS](https://massets.payleven.com/imgs/point_pay_logos/payleven_pointpay_sdk_logo.pdf )
+![payleven Point Pay SDK for iOS](https://massets.payleven.com/imgs/point_pay_logos/payleven_pointpay_sdk_logo.png "payleven Point Pay SDK for iOS")
 
 [![CocoaPods](https://img.shields.io/badge/Licence-MIT-brightgreen.svg?style=flat-square)]()
 [![CocoaPods](https://img.shields.io/badge/Platform-iOS-yellow.svg?style=flat-square)]()
