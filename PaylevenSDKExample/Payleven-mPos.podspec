@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Payleven-mPos"
-  s.version      = "1.1.0"
+  s.version      = "1.2.1"
   s.summary      = "Payleven mPos SDK"
 
   s.description  = <<-DESC
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/payleven/mPOS-SDK-iOS.git", :tag => "1.1.0" }
+  s.source       = { :git => "https://github.com/payleven/Point-Pay-SDK-iOS", :tag => "1.2.1" }
 
   s.vendored_frameworks = "Framework/AdyenToolkit.framework", "Framework/PaylevenSDK.framework"
   s.resources = "Framework/AdyenToolkit.bundle"
