@@ -399,4 +399,4 @@ The sample integration exemplifies the following:
 ```
 
 ### Documentation
-[API Reference](http://payleven.github.io/mPOS-SDK-iOS/AppleDoc/)
+[API Reference](http://payleven.github.io/Point-Pay-SDK-iOS/AppleDoc/)
