@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/payleven/Point-Pay-SDK-iOS", :tag => "1.2.1" }
+  s.source       = { :git => "https://github.com/payleven/Point-Pay-SDK-iOS.git", :tag => "1.2.1" }
 
   s.vendored_frameworks = "Framework/AdyenToolkit.framework", "Framework/PaylevenSDK.framework"
   s.resources = "Framework/AdyenToolkit.bundle"
