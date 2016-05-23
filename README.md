@@ -17,7 +17,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 
 ### Prerequisites
 1. Register on one of payleven's country [websites](https://payleven.com/) to get a merchant account and a card reader.
-2. Request an API key by registering for the Point Pay SDK on the [payleven developer page](https://service.payleven.com/uk/developer).
+2. Request an API key by registering for the Point Pay SDK on the [payleven developer page](https://service.payleven.com/uk/developer?product=pointpay&type=SDK).
 3. System requirements: iOS 7 or later for both, the Point Pay SDK and the Point Pay Sample App
 4. A payleven card reader, Classic or Plus
 
