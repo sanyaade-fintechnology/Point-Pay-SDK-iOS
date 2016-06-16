@@ -47,7 +47,7 @@ The SDK is a static library, which supports other platforms like Xamarin and is 
 
 ##### CocoaPods
 
-	pod 'Payleven-mPos', '~> 1.1.0'
+	pod 'Payleven-mPos', '~> 1.2.1'
 
 ##### Manual Setup
 
