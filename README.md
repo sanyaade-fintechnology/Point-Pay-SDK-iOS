@@ -1,5 +1,5 @@
-## NOTE: 
-## Payleven and SumUp are now one company. The payleven SDKs are no longer supported. Please see [SumUp's iOS SDK](https://github.com/sumup/sumup-ios-sdk).
+### NOTE: 
+### Payleven and SumUp are now one company. The payleven SDKs are no longer supported. Please see [SumUp's iOS SDK](https://github.com/sumup/sumup-ios-sdk).
 
 ---
 ---
