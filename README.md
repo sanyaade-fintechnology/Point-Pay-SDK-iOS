@@ -1,3 +1,9 @@
+## NOTE: 
+## Payleven and SumUp are now one company. The payleven SDKs are no longer supported. Please see [SumUp's iOS SDK](https://github.com/sumup/sumup-ios-sdk).
+
+---
+---
+
 ![payleven Point Pay SDK for iOS](https://massets.payleven.com/imgs/point_pay_logos/payleven_pointpay_sdk_logo.png "payleven Point Pay SDK for iOS")
 
 [![CocoaPods](https://img.shields.io/badge/Licence-MIT-brightgreen.svg?style=flat-square)]()
